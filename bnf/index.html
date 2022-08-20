@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+    <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="../js/init.js"></script>
+	</head>
+  <body><div class="intestazione">
+    <a href="../index.html">Storia dei territori amministrativi</a>
+    <br/>BNF utilizzata in questo sito
+  </div><div class="corpo">
+    <!-- ================================================================================== -->
+    <h1>BNF utilizzata in questo sito</h1>
+    <ul id="indice"></ul>
+    <!-- ================================================================================== -->
+    <p>
+      In alcuni casi sono presentate delle descrizioni formali di particolari componenti informatiche. 
+      A questo scopo vengono usati alcuni simboli basati sulla metasintassi BNF, che sono descritti in questo documento.
+    </p>
+    <p>
+      Le descrizioni sono accompagnate da esempi; si noti che questi esempi sono puramente dimostrativi e non necessariamente 
+      descrivono una grammatica realistica.
+    </p>
+    <h2>Simboli terminali e non terminali</h2>
+    <p>
+      Per racchiudere i simboli terminali vengono usati i caratteri <code class="syntax brush-bnf">"</code> oppure <code class="syntax brush-bnf">'</code>;
+      simboli terminali formati da singoli caratteri possono essere indicati con il codice unicode preceduto da una barra retroversa: 
+      per esempio <code class="syntax brush-bnf">\U-002a</code> rappresenta il carattere <code class="syntax brush-bnf">*</code>.
+      I simboli non terminali sono invece racchiusi nei due caratteri <code class="syntax brush-bnf">‹</code> e <code class="syntax brush-bnf">›</code>.
+    </p>
+    <p>
+      Per esempio, l'espressione <code class="syntax brush-bnf">‹frase› " e " ‹frase›</code> 
+      descrive un simbolo terminale (<code class="syntax brush-bnf">" e "</code>)
+      tra due simboli non terminali uguali (<code class="syntax brush-bnf">‹frase›</code>).
+    </p>
+    <p>
+      In alcuni casi i simboli terminali saranno qui scritti in grassetto, come in <code class="syntax brush-bnf">«nome»</code>:
+      questa scrittura non ha un significato sintattico ma ha solo lo scopo di evidenziare alcuni termini particolarmente importanti.
+    </p>
+    <p>
+      Un simbolo terminale particolare è <code class="syntax brush-bnf">""</code>, che rappresenta la stringa vuota.
+    </p>
+    <h2>Derivazione</h2>
+    <p>
+      L'attività di derivazione è rappresentata dal simbolo <code class="syntax brush-bnf">→</code>; 
+      la derivazione indica che il simbolo sulla sinistra della freccia può essere sostituito dall'espressione sulla destra; 
+      per esempio
+    </p>
+    <pre class="syntax brush-bnf">
+‹frase› → ‹locuzione nominale› ‹locuzione verbale›
+    </pre>
+    <p>
+      afferma che una frase è formata da una locuzione nominale seguita da una locuzione verbale, mentre la derivazione
+    </p>
+    <pre class="syntax brush-bnf">
+‹congiunzione› → ‹frase› " e " ‹frase› 
+    </pre>
+    <p>
+      afferma che una congiunzione è formata da due frasi separate dal carattere <code class="syntax brush-bnf">e</code> 
+      preceduto e seguito da uno spazio.
+    </p>
+    <h2>Alternative e raggruppamenti</h2>
+    <p>
+      Il simbolo <code class="syntax brush-bnf">|</code> viene usato per separare due o più alternative; 
+      per esempio si può scrivere 
+    </p>
+    <pre class="syntax brush-bnf">
+‹locuzione verbale› → ‹verbo intransitivo› 
+    | ‹verbo transitivo› ‹locuzione nominale› 
+    </pre>
+    <p>
+      per indicare che una locuzione verbale è formata da un verbo intransitivo oppure da un verbo transitivo seguito da una locuzione nominale; 
+      si noti che il simbolo <code class="syntax brush-bnf">|</code>, di per sé utile e chiarificatore, 
+      è di fatto superfluo in quanto potrebbe essere sostituito da due derivazioni; 
+      quella precedente diventerebbe:
+    </p>
+    <pre class="syntax brush-bnf">
+‹locuzione verbale› → ‹verbo intransitivo› 
+‹locuzione verbale› → ‹verbo transitivo› ‹locuzione nominale› 
+    </pre>
+    <p>
+      È anche utile poter raggruppare parti di una derivazione con le parentesi <code class="syntax brush-bnf">(</code> e <code class="syntax brush-bnf">)</code>. 
+      Scrivere, per esempio 
+    </p>
+    <pre class="syntax brush-bnf">
+‹frase intransitiva› →
+    ( ‹pronome› | ‹locuzione nominale› )
+    ‹verbo intransitivo› 
+    </pre>
+    <p>
+equivale a 
+    </p>
+    <pre class="syntax brush-bnf">
+‹frase intransitiva› → 
+    ‹pronome› ‹verbo intransitivo› 
+    | ‹locuzione nominale› ‹verbo intransitivo›
+    </pre>
+    <p>
+ovvero a 
+    </p>
+    <pre class="syntax brush-bnf">
+‹frase intransitiva› →
+    ‹pronome› ‹verbo intransitivo›
+‹frase intransitiva› →
+    ‹locuzione nominale› ‹verbo intransitivo›
+    </pre>
+    <h2>Simboli facoltativi e ripetuti</h2>
+    <p>
+      Si può indicare un simbolo o un'espressione facoltativa facendole seguire da un punto interrogativo <code class="syntax brush-bnf">?</code>; per esempio 
+    </p>
+    <pre class="syntax brush-bnf">
+‹locuzione nominale› →
+    ‹articolo›? ‹aggettivi›? ‹nome› ‹aggettivi›? 
+    </pre>
+    <p>
+      indica che una locuzione nominale è formato da un nome preceduto opzionalmente da un articolo e da aggettivi e seguito opzionalmente da ulteriori aggettivi.
+      Anche questo simbolo non sarebbe necessario: infatti il frammento
+    </p>
+    <pre class="syntax brush-bnf">
+‹locuzione nominale› → … ‹nome› ‹aggettivi›? 
+    </pre>
+    <p>
+      si potrebbe rendere come
+    </p>
+    <pre class="syntax brush-bnf">
+‹locuzione nominale› → … ‹nome›
+‹locuzione nominale› → … ‹nome› ‹aggettivi›
+    </pre>
+    <p>
+      L'unica derivazione originalmente proposta si trasformerebbe, in assenza del punto interrogativo <code class="syntax brush-bnf">?</code>, 
+      in otto derivazioni, con una diminuzione della chiarezza.
+    </p>
+    <p>
+      Per simboli o espressioni ripetuti più volte sono usati l'asterisco <code class="syntax brush-bnf">*</code> o il più <code class="syntax brush-bnf">+</code>; 
+      il primo viene utilizzato per simboli completamente facoltativi mentre il secondo viene usato per simboli che devono apparire almeno una volta;
+      per esempio 
+    </p>
+    <pre class="syntax brush-bnf">
+‹aggettivi› → ‹aggettivo›+
+‹pronomi› → ‹pronome›*
+    </pre>
+    <p>
+      indica che una sequenza di aggettivi è formata da uno o più aggettivi, mentre una sequenza di pronomi è formata da nessun pronome, oppure uno oppure più di uno. 
+      Anche queste espressioni potrebbero essere rese senza l'uso dei simboli <code class="syntax brush-bnf">*</code> o il più <code class="syntax brush-bnf">+</code>:
+    </p>
+    <pre class="syntax brush-bnf">
+‹aggettivi› → ‹aggettivo›
+‹aggettivi› → ‹aggettivo› ‹aggettivi›
+‹pronomi› → ""
+‹pronomi› → ‹pronome›
+‹pronomi› → ‹pronome› ‹pronomi›
+    </pre>
+    <p>
+      Si può verificare che le due espressioni possono anche essere ricondotte l'una all'altra:
+    </p>
+    <pre class="syntax brush-bnf">
+‹aggettivi› → ‹aggettivo› ‹aggettivo›*
+‹pronomi› → "" | ‹pronome›+
+    </pre>
+    <p>
+      In alcuni casi è comodo indicare il numero minimo e massimo di ripetizioni nella forma <code class="syntax brush-bnf">{min,max}</code>;
+      anche queste scritture, utili a facilitare l'interpretazione delle grammatiche BNF, sono in realtà superflue, in quanto, volendo, 
+      si può verificare che le tre espressioni descritte di seguito sono equivalenti:
+    </p>
+    <pre class="syntax brush-bnf">
+‹a›{2,4}
+‹a› ‹a› ‹a›? ‹a›?
+‹a› ‹a› ( ‹a› ( ‹a› )? )?
+    </pre>
+    <p>
+      In questi casi può mancare il valore <code class="syntax brush-bnf">max</code> per indicare un numero qualunque di ripetizioni.
+      Si vede subito che <code class="syntax brush-bnf">*</code> o <code class="syntax brush-bnf">+</code> possono essere rispettivamente resi come
+      <code class="syntax brush-bnf">{0,}</code> o il più <code class="syntax brush-bnf">{1,}</code>
+    </p>
+    <h2>Commenti</h2>
+    <p>
+      Si può indicare un commento in fomdo a una regola bnf facendolo precedere dai due caratteri <code class="syntax brush-bnf">;;</code>; per esempio 
+    </p>
+    <pre class="syntax brush-bnf">
+‹locuzione verbale› →
+    ‹verbo transitivo› ‹locuzione nominale› ;; frase transitiva
+    | ‹verbo intransitivo› ;; frase intransitiva
+    </pre>
+  </div></body>
+</html>

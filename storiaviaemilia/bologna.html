@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:v="urn:schemas-microsoft-com:vml"
+>
+  <head>
+    <meta
+      http-equiv="content-type"
+      content="text/html; charset=iso-8859-15"
+    />
+    <title>Lo sviluppo urbanistico di Bologna</title>
+    <style type="text/css">
+      v\:* { behavior:url(#default#VML); }
+    </style>
+    <script
+      src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAA44kfNuDGepWiwwXqZwd8VBTpFWDQviHr7MnnFNdJoipYrmO_lhS4ygK5ATX4RjqOFDUrH9X3VETiMQ"
+      type="text/javascript"
+    ></script>
+    <script src="funzioni.js" type="text/javascript" ></script>
+    <script src="coordinate.js" type="text/javascript" ></script>
+    <script type="text/javascript">
+      //<![CDATA[
+        var map; // inizializzata in load()
+        function loadBologna() {
+          if (GBrowserIsCompatible()) {
+            map = new GMap2(document.getElementById('map'));
+            map.addControl(new GSmallMapControl());
+            map.addControl(new GMapTypeControl());
+            mostraMappa(BolognaOvr,G_NORMAL_MAP,BolognaZoom);
+            addOvr(BolognaSFOvr);
+            addOvr(BolognaUniversitaOvr);
+            addOvr(BolognaRomaBassiOvr);
+          }
+          for (var i=0;i<mapForm.elements.length;i++){
+            if (mapForm.elements[i].checked==true){
+              mapForm.elements[i].checked=false;
+            }
+          }
+        }
+      //]]>
+    </script>
+  </head>
+  <body onload="loadBologna();" onunload="GUnload()">
+    <h1>Lo sviluppo urbanistico di Bologna</h1>
+    
+    <form id="mapForm" name="mapForm">
+      <div id="map" style="width: 800px; height: 600px"></div>
+      <p>
+        <h2>Punti rappresentativi della città di Bologna</h2>
+        <input type="checkbox" onclick="switchOvr(this,BolognaPiazzaMaggioreOvr);"/> Centro storico di Bologna (<i>Piazza Maggiore</i>)
+        <br/><input type="checkbox" onclick="switchOvr(this,Bologna2TorriOvr);"/> <i>piazza di Porta Ravegnana</i> e le <b>due Torri</b>
+        <h2>Interventi urbanistici</h2>
+        <br/>L'area di <i>via Ugo Bassi</i>-<i>via Rizzoli</i> e di <i>piazza della Vittoria</i>
+        <ul>
+        <li><input type="checkbox" onclick="switchOvr(this,BolognaRizzoliOvr);"/> Asse di <i>via Rizzoli</i></li>
+        <li><input type="checkbox" onclick="switchOvr(this,BolognaUgoBassiOvr);"/> Asse di <i>via Ugo Bassi</i></li>
+        <li><input type="checkbox" onclick="switchOvr(this,BolognaPiazzaVittoriaOvr);"/> Area di <i>piazza della Vittoria</i>, oggi <i>piazza Roosvelt</i></li>
+        </ul>
+        <input type="checkbox" onclick="switchOvrBase(this,BolognaRomaOvrPart);"/> <i>Via Roma</i>, oggi <i>via Marconi</i>
+        <br/><input type="checkbox" onclick="switchOvr(this,BolognaStadioOvr);"/> <b>Stadio «Littoriale»</b>, oggi <b>stadio Comunale «Renato Dall'Ara»</b>
+        <h2>Torna alla mappa iniziale</h2>
+        <button onclick="mostraMappa(BolognaOvr,G_NORMAL_MAP,BolognaZoom);">Mappa stradale</button>
+        <button onclick="mostraMappa(BolognaOvr,G_SATELLITE_MAP,BolognaZoom);">Immagine satellitare</button>
+      </p>
+    </form>
+    <address>
+      <a href="mailto:webmaster@palareti.eu">webmaster@palareti.eu</a>
+    </address>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <title>Repertorio di orari</title>
+    <link rel="stylesheet" href="../css/demo_table.css" type="text/css" media="screen">
+    <script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="../js/init.js"></script>
+    <script type="text/javascript">
+$(document).ready(function(){
+  var file='dati/orari.json';
+  var tabella = $('#orari').dataTable({
+    "bProcessing": true
+    , "oLanguage": {"sUrl": "../js/it_IT.txt"}
+    , "bAutoWidth": false
+    , "bSort": true
+    , "bPaginate": false
+    , "bFilter": true
+    // , "sDom": '<"top"f<"clear">>rti<"clear">'
+    , "sDom": '<"top"f<"clear">>rt<"bottom"i<"clear">>'
+    , "bInfo": true
+    , "sAjaxSource": file
+    , "aoColumnDefs":[
+      {"sClass":"code","aTargets":[0,1,2,3]}
+      , {"bSortable":false,"aTargets":[1,2,4,5]}
+    ]
+  });
+  $("tfoot input").keyup( function () {
+    tabella.fnFilter( this.value, $("tfoot input").index(this) );
+  });
+});
+    </script>
+  </head>
+  <body><div class="intestazione">
+    <a href="../index.html">Storia dei territori amministrativi</a>
+    <br/>La descrizione del tempo
+    <a href="index.html">Home</a> » <a href="descrizionedate.html">La descrizione delle informazioni di tipo temporale</a>
+  </div><div class="corpo">
+    <!-- ================================================================================== -->
+    <h1>Repertorio di orari</h1>
+    <p>
+      Nella successiva tabella sono indicati gli orari presenti nel repertorio.
+    </p>
+    <p>
+      Per ogni orario sono indicati il periodo di riferimento e il relativo numero di divisioni.
+      È inoltre indicato qual è l'ora del cambio giorno.
+    </p>
+    <table id="orari">
+      <thead class="top">
+        <!--
+        <caption>
+          Repertorio di orari
+        </caption>
+        -->
+        <tr>
+          <th>Orario&nbsp;&nbsp;&nbsp;&nbsp;</th>
+          <th>Da<br/>a</th>
+          <th>Numero parti</th>
+          <th>Cambio&nbsp;&nbsp;&nbsp;&nbsp; data&nbsp;&nbsp;&nbsp;&nbsp;</th>
+          <th>Nome</th>
+          <th>Note</th>
+        </tr>
+      </thead>
+      <!--
+      <tfoot>
+        <tr>
+          <th>Orario</th>
+          <th>Periodo</th>
+          <th>Parti</th>
+          <th>Cambio giorno</th>
+          <th>Nome</th>
+          <th>Note</th>
+        </tr>
+      </tfoot>
+      -->
+    </table>
+  </div></body>
+</html>

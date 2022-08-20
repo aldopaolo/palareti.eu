@@ -1,0 +1,85 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <title>Repertorio di ere</title>
+    <link rel="stylesheet" href="../css/demo_table.css" type="text/css" media="screen">
+    <script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="../js/init.js"></script>
+    <script type="text/javascript">
+$(document).ready(function(){
+  var file='dati/ere.json';
+  var tabella = $('#ere').dataTable({
+    "bProcessing":true
+    , "oLanguage":{"sUrl":"../js/it_IT.txt"}
+    , "bAutoWidth":false
+    , "bSort":true
+    , "aaSorting":[[0,'asc'],[1,'asc']]
+    , "bPaginate":false
+    , "bFilter":true
+    , "sDom":'<"top"f<"clear">>rt<"bottom"i<"clear">>'
+    , "bInfo":true
+    , "sAjaxSource":file
+    , "aoColumnDefs":[
+      {"sClass":"code","aTargets":[0,1,2,3]}
+      , {"bSortable":false,"aTargets":[2,3,4,5]}
+    ]
+  });
+  $("tfoot input").keyup( function () {
+    tabella.fnFilter( this.value, $("tfoot input").index(this) );
+  });
+});
+    </script>
+  </head>
+  <body><div class="intestazione">
+    <a href="../index.html">Storia dei territori amministrativi</a>
+    <br/>La descrizione del tempo
+    <a href="index.html">Home</a> » <a href="descrizionedate.html">La descrizione delle informazioni di tipo temporale</a>
+  </div><div class="corpo">
+    <!-- ================================================================================== -->
+    <h1>Repertorio delle ere e dei relativi stili</h1>
+    <p>
+      Nella successiva tabella sono indicate le ere relative ai vari calendari.
+    </p>
+    <p>
+      Per ogni era sono indicate le date iniziali e finali utilizzabili (utilizzando la notazione del calendario);
+      infatti ogni era ha un proprio ambito di validità.
+      Se non è attualmente definita una data iniziale o finale, viene indicato <code>ND</code>.
+    </p>
+    <p>
+      È inoltre indicato qual è il primo giorno di un nuovo anno, ovviamente solo per i calendari organizzati in anni.
+      Infatti non sempre il giorno iniziale dell'anno è anche il giorno iniziale del primo mese.
+    </p>
+    <table id="ere">
+      <thead class="top">
+        <!--
+        <caption>
+          Repertorio di ere
+        </caption>
+        -->
+        <tr>
+          <th><a href="calendari.html">Calendario</a>&nbsp;&nbsp;&nbsp;&nbsp;</th>
+          <th>Era&nbsp;e&nbsp;&nbsp;&nbsp;&nbsp; stile&nbsp;&nbsp;&nbsp;&nbsp;</th>
+          <th>Inizio<br/>Fine</th>
+          <th>Cambio anno</th>
+          <th>Nome</th>
+          <th>Note</th>
+        </tr>
+      </thead>
+      <!--
+      <tfoot>
+        <tr>
+          <th>Calendario</th>
+          <th>Era</th>
+          <th>Inizio</th>
+          <th>Fine</th>
+          <th>Cambio anno</th>
+          <th>Nome</th>
+          <th>Note</th>
+        </tr>
+      </tfoot>
+      -->
+    </table>
+  </div></body>
+</html>
+

@@ -1,0 +1,208 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <title>La normalizzazione delle denominazioni</title>
+    <script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="../js/init.js"></script>
+  </head>
+  <body><div class="intestazione">
+    <a href="../index.html">Storia dei territori amministrativi</a>
+    <br/>Classi di equivalenza delle denominazioni
+  </div><div class="corpo">
+    <!-- ================================================================================== -->
+    <h1>La normalizzazione delle denominazioni</h1>
+    <!-- ================================================================================== -->
+    <p id="indice"/>
+    <!-- ================================================================================== -->
+    <h2>1. Introduzione</h2>
+    <p>
+      I cambi di denominazione sono un fenomeno interessante dal punto di vista
+      storico informatico in quanto da una parte rispecchiano variazioni
+      nel linguaggio e nell'uso, e dall'altra aprono il problema del
+      riconoscimento (semi)automatico dei nomi da repertori d'epoca.
+    </p>
+    <p>
+      Ovviamente il cambio di denominazione vero e proprio dovuto a eventi
+      storicamente significativi è un problema squisitamente storico:
+      individuare che Bononia evolve in Bologna è di interesse storico-linguistico,
+      ricostruire che Piandicastello diventa Mercatino Conca richiede un'analisi
+      documentale di tipo storico.
+    </p>
+    <p>
+      Esistono infine quasi-sinonimi dovuti semplicemente
+      a un uso non standardizzato.
+      Si scrive Sant'Arcangelo o Santarcangelo?
+      Il termine preferito è Reggio, Reggio Emilia o Reggio nell'Emilia?
+      Queste domande e altre analoghe ci indicano che sarebbe utile
+      sviluppare metodi per risolvere senza interventi manuali 
+      piccole modifiche di questo tipo.
+    </p>
+    <p>
+      Nei prossimi paragrafi cercheremo di proporre alcuni principi per
+      facilitare l'individuazione automatica di toponimi sulla base
+      di scritture alternative.
+      In particolare distingueremo tre situazioni principali:
+    </p>
+    <ol>
+      <li>Omografie</li>
+      <li>Equivalenze</li>
+      <li>Cambi di denominazione</li>
+    </ol>
+    <!-- ================================================================================== -->
+    <h2>2. Aspetti preliminari</h2>
+    <p>
+      Lo scopo di questo documento è quello di proporre sistemi
+      di denominazioni che ne permettano il confronto automatico
+      o semiautomatico con un minimo intervento manuale.
+      L'individuazione del fatto che due denominazioni  
+      siano nella stessa classe dovrebbe implicare
+      una maggiore probabilità che entrambe facciano riferimento
+      allo stesso toponimo. Ovviamente rimane sempre un margine di dubbio
+      che sarebbe bene individuare in maniera precisa,
+      utilizzando per esempio criteri statistici.
+    </p>
+    <h3>2.1 Limitazioni applicate a questo documento</h3>
+    <p>
+      Un aspetto da evidenziare subito è che i criteri di equivalenza
+      possono essere dipendenti o indipendenti dalla lingua di uso.
+      Infatti, come vedremo, alcuni criteri sono fortemente legati
+      alla lingua, altri dipendono solo dalle convenzioni del 
+      sistema di scrittura in uso.
+      Nel seguito ipotizzeremo che il sistema di scrittura sia il latino
+      moderno, mentre per le lingue faremo riferimento principalmente
+      a caratteristiche dell'italiano con qualche esempio tedesco e
+      francese per evidenziare i diversi comportamenti nei vari sistemi.
+    </p>
+    <h3>2.2 Caratteri considerati nelle denominazioni</h3>
+    <p>
+      Dal punto di vista tecnico informatico, verranno prese in considerazione
+      tutte le possibili denominazioni espresse in Unicode attraverso l'utilizzo
+      dello script Latin:
+    </p>
+    <ul>
+      <li>C0 Control and Basic Latin (U+0000-U+007F)</li>
+      <li>C1 Controls and Latin-1 Supplement (U+0080-U+00FF)</li>
+      <li>Latin Extended-A (U+0100-U+017F)</li>
+      <li>Latin Extended-B (U+0180-U+024F)</li>
+      <li>Latin Extended-C (U+2C60-U+2C7F)</li>
+      <li>Latin Extended-D (U+A720-U+A7FF)</li>
+      <li>Latin Extended Additional (U+1E00-U+1EFF)</li>
+    </ul>
+    <p>
+      mentre non sono stati considerati i caratteri latini presenti
+      nelle Presentation forms e in alcuni contesti di script non latini:
+    </p>
+    <ul>
+      <li>Alphabetic Presentation Forms (U+FB00-U+FB4F; 
+      alcuni caratteri latini sono nel range U+FB00-U+FB08)</li>
+      <li>Halfwidth and Fullwidth Forms (U+FF00-U+FFEF; 
+      alcuni caratteri latini sono nel range U+FF20-U+FF5F)</li>
+    </ul>
+    <p>
+      (anche se, come vedremo, le regole di seguito descritte
+      permetterebbero di includere anche questi script).
+    </p>
+    <p>
+      Non verranno considerate tutte le tipologie di caratteri Unicode,
+      in quanto alcune di queste tipologie non sono significative
+      nelle denominazioni toponomastiche.
+      Le tipologie considerate sono le seguenti:
+    </p>
+    <table border="1">
+      <thead>
+        <tr>
+          <th colspan="3">Categorie unicode</th>
+          <th>Trasformazioni iniziali</th>
+          <th>Trasformazioni successive</th>
+        </tr>
+      </thead>
+      <tbody> <!-- ottenuto da L2:P29 di CategorieUnicode.xlsl -->
+<tr>	<td rowspan='5' colspan='2'><code>C</code> Other</td>			
+	<td><code>Cc</code> Control</td>			</tr>
+<tr>	<td><code>Cf</code> Format</td>			</tr>
+<tr>	<td><code>Cn</code> Unassigned</td>			</tr>
+<tr>	<td><code>Co</code> Private_Use</td>			</tr>
+<tr>	<td><code>Cs</code> Surrogate</td>			</tr>
+<tr>	<td rowspan='5'><code>L</code> Letter</td>			
+	<td rowspan='3'><code>LC</code> Cased_Letter</td>			
+	<td><code>Ll</code> Lowercase_Letter</td>	<td><code>Ll</code></td>	<td><code>Ll</code></td>	</tr>
+<tr>	<td><code>Lt</code> Titlecase_Letter</td>	<td><code>Lt</code></td>	<td><code>Ll</code></td>	</tr>
+<tr>	<td><code>Lu</code> Uppercase_Letter</td>	<td><code>Lu</code></td>	<td><code>Ll</code></td>	</tr>
+<tr>	<td rowspan='2'><code>–</code> </td>			
+	<td><code>Lm</code> Modifier_Letter</td>	<td><code>Lm</code></td>		</tr>
+<tr>	<td><code>Lo</code> Other_Letter</td>	<td><code>Lo</code></td>		</tr>
+<tr>	<td rowspan='3' colspan='2'><code>M</code> Mark</td>			
+	<td><code>Mc</code> Spacing_Mark</td>	<td><code>Mc</code></td>		</tr>
+<tr>	<td><code>Me</code> Enclosing_Mark</td>			</tr>
+<tr>	<td><code>Mn</code> Nonspacing_Mark</td>	<td><code>Mn</code></td>		</tr>
+<tr>	<td rowspan='3' colspan='2'><code>N</code> Number</td>			
+	<td><code>Nd</code> Decimal_Number</td>			</tr>
+<tr>	<td><code>Nl</code> Letter_Number</td>			</tr>
+<tr>	<td><code>No</code> Other_Number</td>			</tr>
+<tr>	<td rowspan='7' colspan='2'><code>P</code> Punctuation</td>			
+	<td><code>Pc</code> Connector_Punctuation</td>	<td><code>_</code></td>		</tr>
+<tr>	<td><code>Pd</code> Dash_Punctuation</td>	<td><code>-</code></td>		</tr>
+<tr>	<td><code>Pe</code> Close_Punctuation</td>	<td><code>)</code></td>		</tr>
+<tr>	<td><code>Pf</code> Final_Punctuation</td>	<td><code>»</code></td>		</tr>
+<tr>	<td><code>Pi</code> Initial_Punctuation</td>	<td><code>«</code></td>		</tr>
+<tr>	<td><code>Po</code> Other_Punctuation</td>	<td><code>.</code></td>	<td><code>.</code></td>	</tr>
+<tr>	<td><code>Ps</code> Open_Punctuation</td>	<td><code>(</code></td>		</tr>
+<tr>	<td rowspan='4' colspan='2'><code>S</code> Symbol</td>			
+	<td><code>Sc</code> Currency_Symbol</td>			</tr>
+<tr>	<td><code>Sk</code> Modifier_Symbol</td>	<td><code>Sk</code></td>		</tr>
+<tr>	<td><code>Sm</code> Math_Symbol</td>			</tr>
+<tr>	<td><code>So</code> Other_Symbol</td>			</tr>
+<tr>	<td rowspan='3' colspan='2'><code>Z</code> Separator</td>			
+	<td><code>Zl</code> Line_Separator</td>			</tr>
+<tr>	<td><code>Zp</code> Paragraph_Separator</td>			</tr>
+<tr>	<td><code>Zs</code> Space_Separator</td>	<td><code>&nbsp;</code></td>		</tr>
+      </tbody>
+    </table>
+    <h3>2.2 Utilità della normalizzazione</h3>
+    <p>
+      Come già osservato, il problema affrontato riguarda 
+      la creazione di classi di equivalenza per il confronto
+      (semi)automatico di denominazioni.
+      Quando possibile verranno definiti dei criteri di normalizzazione
+      per individuare un rappresentante per gni classe di equivalenza, scelto
+      in modo da minimizzare le cnversioni da fare per il confronto di
+      due denominazioni qualunque.
+    </p>
+    <!-- ================================================================================== -->
+    <h2 class="todo">3. Omografia</h2>
+    <p>
+      Con omografia si intendono le scritture in cui si usano caratteri diversi
+      che hanno però la stessa forma 
+      o sono comunque considerati analoghi nella cultura di riferimento.
+    </p>
+    <!-- ================================================================================== -->
+    <h2 class="todo">4. Equivalenza</h2>
+    <p>
+      Con omografia si intendono le scritture in cui si usano caratteri diversi
+      che hanno però la stessa forma 
+<!--      <ins datetime="2012-01">o sono comunque considerati analoghi nella cultura di riferimento.</ins> -->
+    </p>
+    <!-- ================================================================================== -->
+    <h2 class="todo">5. Cambi di denominazione</h2>
+    <p>
+      <!-- <del datetime="2011-02"> -->
+      Con omografia si intendono le scritture in cui si usano caratteri diversi
+      che hanno però la stessa forma 
+      o sono comunque considerati analoghi nella cultura di riferimento.
+      <!-- </del> -->
+    </p>
+    <!-- ================================================================================== -->
+    <!-- 
+    <h2 class="todo">X. Aspetti statistici</h2> 
+    -->
+    <!-- ================================================================================== -->
+    <!-- 
+    <h2 class="todo">X. Aspetti statistici</h2> 
+    -->
+    <!-- ================================================================================== -->
+    <!-- 
+    <h2 class="todo">X. Aspetti statistici</h2> 
+    -->
+    <!-- ================================================================================== -->
+  </div></body>
+</html>

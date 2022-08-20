@@ -1,0 +1,64 @@
+﻿
+<!--
+<script type="text/javascript" src="../js/_getGeoHistory.js"></script>
+-->
+
+<div id="splitter">
+<div class="pane" id="infocontainer">
+  <h1 class="sep ui-tabs ui-widget-content ui-corner-all" id="title">Informazioni geografiche e temporali non disponibili</h1>
+  <div class="sep" id="tabs">
+    <ul>
+      <li><a href="#legend">Legenda</a></li>
+      <li><a href="#modify">Aggiorna</a></li>
+      <li><a href="#info">Info</a></li>
+    </ul>
+    <div id="legend">
+      <p>Data: </p>
+      <table><thead><tr><td>Territori</td><td>Vista</td></tr><tbody id="leg-tbody"></tbody></table>
+    </div>
+    <div id="modify">
+      <p class="todo">
+        Questa parte non è ancora pronta.
+      </p>
+    </div>
+    <div id="info">
+      <p>La <strong>Legenda</strong> permette di definire quali informazioni geografiche vengono mostrate.</p>
+      <!-- accordion per la Legenda -->
+      <div id="info-legenda">
+        <h3>Campo data</h3>
+        <div>
+          <p>
+            Il campo <strong>Data</strong> permette di verificare la data su cui è posizionata la linea del tempo.
+          </p>
+        </div>
+        <h3>Colonna Territori</h3>
+        <div>
+          <p>
+            Nella colonna <strong>Territori</strong> sono riportati i titoli dei territori; cliccando su di essi si può
+            selezionare il territorio descritto posizionandosi nella linea del tempo.
+          </p>
+        </div>
+        <h3>Colonna Vista</h3>
+        <div>
+          <p>
+            Nella colonna <strong>Vista</strong> è presente, per ogni territorio, un pulsante; premendolo si passa in sequenza di una modalità di visione a un'altra.
+            Le modaltà di visione attive sono rappresentate dalle seguenti icone:
+            <table>
+              <tbody>
+                <tr><td><button type="button" id="rHide">&nbsp;</button></td><td>indica che il territorio non viene mai mostrato</td></tr>
+                <tr><td><button type="button" id="rShowMomentOnly">&nbsp;</button></td><td>mostra il territorio solo se esistente alla data di riferimento della linea temporale</td></tr>
+                <tr><td><button type="button" id="rShow">&nbsp;</button></td><td>permette di avere sempre visibile il territorio</td></tr>
+              </tbody>
+            </table>
+          </p>
+        </div>
+      </div>
+      <!-- fine accordion per la Legenda -->
+    </div>
+  </div>
+</div>
+<div class="pane sep ui-tabs ui-widget-content ui-corner-all" id="timemap">
+  <div class="timelinecontainer" id="timelinecontainer"><div class="timeline" id="timeline"></div></div>
+  <div class="mapcontainer" id="mapcontainer"><div class="map" id="map"></div></div>
+</div>
+</div>

@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:v="urn:schemas-microsoft-com:vml"
+>
+  <head>
+    <meta
+      http-equiv="content-type"
+      content="text/html; charset=iso-8859-15"
+    />
+    <title>La storia urbanistica della via Emilia in età contemporanea</title>
+    <style type="text/css">
+      v\:* { behavior:url(#default#VML); }
+    </style>
+    <script
+      src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAA44kfNuDGepWiwwXqZwd8VBTpFWDQviHr7MnnFNdJoipYrmO_lhS4ygK5ATX4RjqOFDUrH9X3VETiMQ"
+      type="text/javascript"
+    ></script>
+    <script src="funzioni.js" type="text/javascript" ></script>
+    <script src="coordinate.js" type="text/javascript" ></script>
+    <script type="text/javascript">
+      //<![CDATA[
+        var map; // inizializzata in load()
+        function loadViaEmilia() {
+          if (GBrowserIsCompatible()) {
+            map = new GMap2(document.getElementById('map'));
+            map.addControl(new GSmallMapControl());
+            map.addControl(new GMapTypeControl());
+            map.setCenter(ViaEmiliaCentroLatLng,ViaEmiliaCentroZoom,G_SATELLITE_MAP); // G_NORMAL_MAP G_SATELLITE_MAP G_HYBRID_TYPE
+            map.openInfoWindowHtml(map.getCenter(),ViaEmiliaCentroInfo);
+            addOvr(RiminiArcoViaEmiliaOvr);
+            addOvr(BolognaViaEmiliaOvr);
+            addOvr(PiacenzaOvr);
+            addOvr(ViaEmiliaOvr);
+            // Poly,ViaEmiliaCentroZoom,ViaEmiliaCentroLatLng,ViaEmiliaCentroInfo);
+          }
+        }
+      //]]>
+    </script>
+  </head>
+  <body onload="loadViaEmilia();" onunload="GUnload()">
+    <h1>La storia urbanistica della via Emilia in età contemporanea</h1>
+    <p><i>Avvertenza</i>:
+    quella che si rende visibile è una prima versione, ancora parziale, del sito Internet
+    dedicato allo sviluppo urbanistico contemporaneo (soprattutto dalla metà dell<b>'800</b>
+    in avanti) delle principali località poste lungo la <i>via Emilia</i>.
+    </p>
+    <p>
+    Attualmente sono inseriti, in forma sperimentale, dati e informazioni su alcuni aspetti
+    della storia urbana di <b>Bologna</b> e di <b>Rimini</b>.
+    </p>
+    <p>
+    Sono graditi fin da ora suggerimenti o segnalazioni di eventuali errori, presso la casella
+    di posta elettronica riportata a pie' di pagina.
+    </p>
+    <div id="map" style="width: 800px; height: 600px"></div>
+    <form>
+<!--
+      <button onclick="panTo(RiminiLatLng,RiminiZoom,RiminiInfo);">Centro storico di Rimini</button>
+      <br/><button onclick="panTo(RiminiArcoLatLng,RiminiZoom,RiminiArcoInfo);">Arco di Augusto</button>
+      <br/><button onclick="panTo(RiminiTiberioLatLng,RiminiZoom,RiminiTiberioInfo);">Ponte di Tiberio</button>
+      <br/><button onclick="mostraPoly(RiminiPolyArea1,RiminiZoom,RiminiPolyArea1InfoLatLng,RiminiPolyArea1Info);">Urbanizzazione di Marina Centro</button>
+-->
+      <p>
+        <ul>
+        <li><a href="bologna.html">Bologna</a>
+        <li><a href="rimini.html">Rimini</a>
+        </ul>
+      </p>
+    </form>
+    <address>
+      <a href="mailto:webmaster@palareti.eu">webmaster@palareti.eu</a>
+    </address>
+  </body>
+</html>
