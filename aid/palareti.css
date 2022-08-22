@@ -1,6 +1,10 @@
-﻿/* da https://christianoliff.com/blog/styling-external-links-with-an-icon-in-css/ */
-a[target="_blank"]::after
-{
+﻿a[target="_blank"]::after {
+  /*
+    aggiunge un icona alla fine di un link esterno
+    il link viene individuato dalla presenza di target="_blank"
+    modificato da
+      https://christianoliff.com/blog/styling-external-links-with-an-icon-in-css/
+  */
   content: "";
   width: 11px;
   height: 11px;
