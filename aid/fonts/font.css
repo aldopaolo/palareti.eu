@@ -2,28 +2,28 @@
 /* Roboto Mono - monospaced */
 @font-face {
   font-family: "Roboto Mono";
-  src: url("/aid/Titilium_Web/titilium-web-v10-latin-ext_latin-regular.woff2")
+  src: url("roboto-mono-v13-latin-ext_latin-regular.woff2")
     format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Roboto Mono";
-  src: url("/aid/Titilium_Web/titilium-web-v10-latin-ext_latin-700.woff2")
+  src: url("roboto-mono-v13-latin-ext_latin-700.woff2")
     format("woff2");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: "Roboto Mono";
-  src: url("/aid/Titilium_Web/titilium-web-v10-latin-ext_latin-italic.woff2")
+  src: url("roboto-mono-v13-latin-ext_latin-italic.woff2")
     format("woff2");
   font-weight: normal;
   font-style: italic;
 }
 @font-face {
   font-family: "Roboto Mono";
-  src: url("/aid/Titilium_Web/titilium-web-v10-latin-ext_latin-700italic.woff2")
+  src: url("roboto-mono-v13-latin-ext_latin-700italic.woff2")
     format("woff2");
   font-weight: bold;
   font-style: italic;
@@ -31,28 +31,28 @@
 /* Titilium web - sans serif */
 @font-face {
   font-family: "Titilium Web";
-  src: url("/aid/Titilium_Web/titilium-web-v10-latin-ext_latin-regular.woff2")
+  src: url("titilium-web-v10-latin-ext_latin-regular.woff2")
     format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Titilium Web";
-  src: url("/aid/Titilium_Web/titilium-web-v10-latin-ext_latin-700.woff2")
+  src: url("titilium-web-v10-latin-ext_latin-700.woff2")
     format("woff2");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: "Titilium Web";
-  src: url("/aid/Titilium_Web/titilium-web-v10-latin-ext_latin-italic.woff2")
+  src: url("titilium-web-v10-latin-ext_latin-italic.woff2")
     format("woff2");
   font-weight: normal;
   font-style: italic;
 }
 @font-face {
   font-family: "Titilium Web";
-  src: url("/aid/Titilium_Web/titilium-web-v10-latin-ext_latin-700italic.woff2")
+  src: url("titilium-web-v10-latin-ext_latin-700italic.woff2")
     format("woff2");
   font-weight: bold;
   font-style: italic;
@@ -60,25 +60,25 @@
 /* Lora -serif */
 @font-face {
   font-family: "Lora";
-  src: url("/aid/Lora/lora-v20-latin-ext_latin-regular.woff2") format("woff2");
+  src: url("lora-v20-latin-ext_latin-regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Lora";
-  src: url("/aid/Lora/lora-v20-latin-ext_latin-700.woff2") format("woff2");
+  src: url("lora-v20-latin-ext_latin-700.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: "Lora";
-  src: url("/aid/Lora/lora-v20-latin-ext_latin-italic.woff2") format("woff2");
+  src: url("lora-v20-latin-ext_latin-italic.woff2") format("woff2");
   font-weight: normal;
   font-style: italic;
 }
 @font-face {
   font-family: "Lora";
-  src: url("/aid/Lora/lora-v20-latin-ext_latin-700italic.woff2") format("woff2");
+  src: url("lora-v20-latin-ext_latin-700italic.woff2") format("woff2");
   font-weight: bold;
   font-style: italic;
 }
