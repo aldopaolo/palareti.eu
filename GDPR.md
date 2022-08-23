@@ -1,5 +1,9 @@
 # Compliance GDPR
 
+## compliance CDN Jsdelivr
+
+Vedi [How the German court’s ruling on Google Fonts affects jsDelivr and why it is safe to use](<https://www.jsdelivr.com/blog/how-the-german-courts-ruling-on-google-fonts-affects-jsdelivr-and-why-it-is-safe-to-use//>)
+
 ## compliance CDN Unpkg
 
 > Unpkg does not collect, process, or store any personal information, including client IPs, so it is not subject to GDPR.
