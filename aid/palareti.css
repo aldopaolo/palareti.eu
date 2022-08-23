@@ -1,4 +1,4 @@
-﻿@import url("fonts/font.css")
+﻿@import url("fonts/font.css");
 a[target="_blank"]::after {
   /*
     aggiunge un icona alla fine di un link esterno

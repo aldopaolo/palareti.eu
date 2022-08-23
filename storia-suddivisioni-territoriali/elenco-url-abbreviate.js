@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 const elencoUrlCompletoJson=getJson("elenco-url-completo.json")
 const elencoUrlAbbreviateJson=getJson("elenco-url-abbreviate.json")

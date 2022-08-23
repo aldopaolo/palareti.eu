@@ -1,4 +1,4 @@
-﻿## realizzazione della favicon.ico
+﻿# realizzazione della favicon.ico
 
 Creata tramite [Favicon Generator](https://favicon.io/favicon-generator/)
 
