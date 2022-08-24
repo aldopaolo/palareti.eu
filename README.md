@@ -2,15 +2,19 @@
 
 Elenco delle cartelle gestite
 
+## aid
+
+File CSS, JS e fonti comuni a tutti i folder.
+
+I file relativi alle fonti sono conservati in un folder interno; le fonti sono locali, in quanto ci sono dei dubbi sull'uso di Googlefonts.
+
+I file CSS e JS dedicati a un folder sono al suo interno e hanno il nome del folder.
+
+I file CSS e JS dedicati a una singola pagina sono insieme alla pagina e hanno il nome della pagina.
+
 ## bnf
 
 Descrizione della sintassi BNF utilizzata
-
-## css
-
-File CSS comuni
-I file CSS dedicati a un folder sono al suo interno e hanno il nome del folder
-I file CSS dedicati a una singola pagina sono insieme alla pagina e hanno il nome della pagina
 
 ## calendari
 
