@@ -20,7 +20,8 @@ $html=($html0 |
 ## $html | Format-Table Name, SitePath
 $html | Sort-Object SitePath | Group-Object SitePath | ForEach-Object{
   $Directory=$_.Name
-  if($Directory -notmatch '^(aid|classeliceo|css|js|img|lib|tra-guerra-e-resistenza)(/|$)'){
+  if($Directory -notmatch '^(aid|classeliceo|css|js|img|lib)(/|$)'){
+    ## lavori/tra-guerra-e-resistenza|lavori/2006-Aica
     $lista=@($_.Group | Select-Object Name -ExpandProperty Name)
     [pscustomobject]@{
       Directory =$Directory
