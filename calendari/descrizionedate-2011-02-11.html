@@ -1,0 +1,503 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <title>La descrizione delle informazioni di tipo temporale</title>
+    <script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="../js/init.js"></script>
+  </head>
+  <body><div class="intestazione">
+    <a href="../index.html">Storia dei territori amministrativi</a>
+    <br/>La descrizione del tempo
+    <a href="index.html">Home</a>
+  </div><div class="corpo">
+    <!-- ================================================================================== -->
+    <h1>La descrizione delle informazioni di tipo temporale</h1>
+    <!-- ================================================================================== -->
+    <ul id="indice"></ul>
+    <!-- ================================================================================== -->
+    <h2>1. Introduzione</h2>
+    <p>
+      In questo documento si propone uno standard per l'inserimento di una data generica utilizzando un qualunque calendario.
+      Lo standard proposto risponde ai seguenti requisiti:
+    </p>
+    <ol>
+      <li>la definizione della data è indipendente dalla localizzazione;</li>
+      <li>permette di definire una data a un qualunque livello di precisione in base alle conoscenze disponibili;</li>
+      <li>permette di descrivere le date contemporaneamente, tramite differenti calendari;</li>
+      <li>permette di utilizzare ere diverse per lo stesso calendario;</li>
+      <li>inoltre, nel caso di un calendario gregoriano, è compatibile con il formato mensile dell'Iso 8601.</li>
+    </ol>
+    <p>
+      Nei seguenti paragrafi viene descritto il BNF utilizzato; le convenzioni qui seguite sono:
+    </p>
+    <ul>
+      <li>i simboli non terminali sono racchiusi tra parentesi angolose <code>‹...›</code>;</li>
+      <li>per indicare la produzione si usa il carattere <code>→</code>;</li>
+      <li>per indicare la sequenza si usano gli spazi; nel caso di possibili ambiguità, la sequenza potrà essere racchiusa tra parentesi;</li>
+      <li>per indicare l'alternativa si usa il carattere <code>|</code>; nel caso di possibili ambiguità, le alternative potranno essere racchiuse tra parentesi;</li>
+      <li>
+        per indicare eventuali parti opzionali si usano le parentesi quadre <code>[ ... ]</code>;
+        si noti che <samp>‹a› [ ‹b› ]</samp> è ovviamente equivalente a <samp>‹a› | ‹a› ‹b›</samp>;
+      </li>
+      <li>
+        per indicare eventuali parti opzionali che possono essere ripetute più volte (o anche mai) si usano le parentesi graffe <code>{ ... }</code>;
+        in questo documento l'uso di parentesi graffe è sottoposto a una restrizione: la parentesi graffa deve sempre essere preceduta da un oggetto non opzionale;
+        in altri termini non sono qui utilizzate produzioni come <samp>‹a› → [ ‹x› ] { ‹b› }</samp> o <samp>‹a› → { ‹b› }</samp>
+        si noti che la produzione <samp>‹a› → ‹x› { ‹b› }</samp> è ovviamente equivalente a <samp>‹a› → ‹x› | ‹a› ‹b›</samp>;
+      </li>
+    </ul>
+    <!-- ================================================================================== -->
+    <h2>2. Elementi di base</h2>
+    <p class="code">‹cifra› → 0|1|2|3|4|5|6|7|8|9</p>
+    <p class="code">
+      ‹lettera-iniziale› → A|B|C|D|E|F|G|H|I|J|K|L|M|N|O|Q|S|U|V|W|X|Y|Z
+    </p>
+    <p class="code">
+      ‹lettera-riservata> → T|P|R
+    </p>
+    <p class="code">
+      ‹lettera-durata> → ‹lettera-iniziale›|P|R
+    </p>
+    <p class="code">
+      ‹lettera› → ‹lettera-iniziale> | ‹lettera-riservata>
+    </p>
+    <p>
+      Si può notare che sono utilizzate solo le lettere maiuscole dell'ISO 646.
+      Le lettere <code>T</code>, <code>P</code> ed <code>R</code> sono riservate in quanto hanno un uso specifico nello standard ISO 646.
+    </p>
+    <!-- ================================================================================== -->
+    <h2>3. Calendario, Era e Stile</h2>
+    <p class="code">
+      ‹calendario-era› → ‹calendario› [ : ‹era› ] :
+    </p>
+    <p class="code">
+      ‹calendario› → 
+      <br /> &nbsp; ‹lettera-iniziale› ‹lettera› [ - ‹lettera› { ‹lettera› } ]
+    </p>
+    <p class="code">
+      ‹era› → ‹lettera› ‹lettera› [ - ‹lettera› { ‹lettera› } ]
+    </p>
+    <p>
+      Come si vede, i calendari sono indicati da due lettere (maiuscole) con eventualmente altre lettere aggiuntive,
+      da usare tipicamente per sottocasi dello stesso calendario; i codici sono predefiniti.
+      Nessun calendario può cominciare con la lettera <code>T</code>, <code>P</code> o <code>R</code>, mentre invece ciò è possibile per le ere.
+    </p>
+    <p>
+      Va precisato che la'<code>‹era›</code> qui utilizzata raggruppa due informazioni che in alcuni contesti sono separate:
+      l'era vera e propria (ovvero la scelta dell'anno iniziale di riferimento)
+      e lo stile (ovvero la scelta della data in cui si ha effettivamente il cambio di anno).
+      Qui si è preferito considerare un'unico codice che di fatto descrive la fase del calendario.
+      Esempi di ere e stili diversi usati per lo stesso calendario (in questo caso quello giuliano) sono:
+    </p>
+    <ul>
+      <li><em>Era della fondazione di Roma</em> comincia il 21 aprile del 753 aC;</li>
+      <li><em>Era di Spagna</em> comincia il primo gennaio del 38 aC;</li>
+      <li><em>Era Cristiana, stile della circoncisione</em> comincia il primo gennaio dell'anno 1 dC;</li>
+      <li><em>Era Cristiana, Anno Domini</em> comincia il 25 dicembre dell'anno 1 aC.</li>
+    </ul>
+    <p>
+      Un <a href="calendari.html">repertorio di calendari</a> 
+      e di <a href="ere.html">ere</a> è in fase di realizzazione.
+      Esempi di codici proposti nel repertorio sono i seguenti:
+    </p>
+    <ul>
+      <li><samp>GR:</samp> calendario gregoriano;</li>
+      <li><samp>IS:</samp> calendario Iso 8601 settimanale (esempio di calendario in cui la divisione non è in anni, mesi e giorni);</li>
+      <li><samp>GI:</samp> calendario Giuliano;</li>
+      <li><samp>AC:</samp> calendario Giuliano aC (esempio di calendario in cui una parte della data cala con il tempo invece di crescere: infatti l'anno 11 aC precede l'anno 10 aC);</li>
+      <li><samp>FR:</samp> calendario della rivoluzione francese;</li>
+      <li><samp>JD:</samp> calendario del giorno giuliano (altro calendario non diviso in anni, mesi e giorni).</li>
+    </ul>
+    <li>Per ogni calendario sono definite una o più ere, che dipendono dal calendario considerato. Esempi di ere sono le seguenti:</p>
+    <ul>
+      <li><samp>GR:EC:</samp> calendario gregoriano con uso dell'era cristiana (default per <samp>GR:</samp>);</li>
+      <li><samp>GR:EF:</samp> calendario gregoriano con uso dell'era fascista</li>
+    </ul>
+    <!-- ================================================================================== -->
+    <h2>4. Parti dei riferimenti temporali</h2>
+    <p>
+      In tutti i calendari di uso comune, l'unità di riferimento è il giorno.
+      Un istante nel tempo è indicato attraverso la data (che descrive un multiplo del giorno in vari formati)
+      e un'ora (che descrive una parte del giorno, anch'essa in vari formati)
+    </p>
+    <p>
+      Sia la data che l'ora sono descritte, in ogni calendario, attraverso una o più parti definite in base a motivazioni religiose, sociali o scientifiche.
+      Alcune di queste parti sono individuate con dei numeri, mentre in altri casi si utilizzano denominazioni specifiche.
+      Per avere una descrizione standardizzata non legata a localizzazioni, ogni nome di parte va sostituito da un numero, come per esempio 01 per gennaio, 02 per febbraio e così via.
+      Una parte di una data o di un'ora è quindi una sequenza di cifre, come descritto nella produzione successiva.
+    </p>
+    <p class="code">
+      ‹parte› → ‹cifra› { ‹cifra› }
+    </p>
+    <p>
+      Va notato che, anche se la produzione non lo specifica, il numero di cifre di una parte à determinato a priori:
+      se si sta rappresentando un mese, le cifre devono essere due, per un anno devono invece essere almeno 4.
+    </p>
+    <!-- ================================================================================== -->
+    <h3>4.1 Parti della data: multipli del giorno</h3>
+    <p>
+      La data è descritta attraverso una sequenza di parti che la compongono:
+    </p>
+    <p class="code">
+      ‹data incompleta› → ‹parte› { - ‹parte› } 
+    </p>
+    <p class="code">
+      ‹data semplice› → [ ‹calendario-era› ] ‹data incompleta› 
+    </p>
+    <p>
+      Le parti dipendono dal calendario in uso: nei calendari maggiormente usati, le parti sono l'anno, il mese e il giorno;
+      è comunque possibile avere calendari con una diversa suddivisione del tempo, come per esempio il calendario Iso settimanale.
+      Diamo di seguito alcuni esempi di date; nella stessa riga sono scritte date equivalente in base ai calendari ed ere di default.
+    </p>
+    <p class="samp">
+      GR:EC:2010 GR:2010 2010
+      <br />GR:EC:2010-31-12 GR:2010-31-12 2010-31-12
+      <br />GI:EC:1900-31-12 GI:1900-31-12
+      <br />GI-N:EC:100 GI-N:100
+      <br />GI-N:AS:99
+      <br />JD:12345678
+    </p>
+    <p>
+      È infine utile definire tre date per rappresentare casi speciali:
+      una data indefinita, la prima e l'ultima data utile del calendario. 
+    </p>
+    <p class="code">
+      ‹data generica› → [ ‹calendario-era› ] *
+      <br />‹data iniziale› → [ ‹calendario-era› ] *0
+      <br />‹data finale› → [ ‹calendario-era› ] *9
+      <br />‹data speciale› →
+      <br /> &nbsp; ‹data generica›
+      <br /> &nbsp; | ‹data iniziale›
+      <br /> &nbsp; | ‹data finale›
+    </p>
+    <p>
+      La data generica (indicata con il solo <code>*</code>)
+      rappresenta una qualunque possibile data del calendario,
+      la prima e l'ultima data utile
+      (indicate rispettivamente con <code>*0</code> e <code>*9</code>)
+      sono necessari in quei casi in cui si vuol
+      far riferimento a un periodo con un estremo indefinito
+      (l'uso di date della forma <samp>9999-12-31</samp> va infatti scoraggiato).
+    </p>
+    <p class="samp">
+      GR:EC:* GR:* *
+      <br />GI-N:*0
+      <br />GI-N:AS:*9
+    </p>
+    <!-- ================================================================================== -->
+    <h3>4.2 Orari</h3>
+    <p>
+      Anche per la suddivisione del giorno vi sono standard diversi.
+      Deve quindi essere possibile indicare un «orario», ovvero una modalità di descrizione delle ore.
+    </p>
+    <p class="code">
+      ‹orario› → ‹lettera› ‹lettera› [ - ‹lettera› { ‹lettera› } ] :
+    </p>
+    <p>
+      Esempi di Orari di uso comune sono <samp>CN</samp> per indicare l'orario moderno a 24 ore,
+      <samp>AM</samp> e <samp>PM</samp> per le rispettive parti della modalità anglosassone «am/pm», e così via.
+      Anche in questo caso è in fase di realizzazione iniziale un <a href="orari.html">repertorio di orari</a> 
+      Si può notare che per gli orari è ammessa la lettera <code>T</code> come carattere iniziale.
+    </p>
+    <!-- ================================================================================== -->
+    <h2>4.3 Descrizione dell'ora</h2>
+    <p>
+      Una importante componente dell'ora è la localizzazione; per la localizzazione si può utilizzare la seguente produzione:
+    </p>
+    <p class="code">
+      ‹base ora› → ‹parte› { : ‹parte› }
+    </p>
+    <p class="code">
+      ‹ora› → T [ ‹orario› ] ‹base ora› [ , ‹parte› ]
+    </p>
+    <p>
+      Come si vede, la lettera <code>T</code> precede obbligatoriamente l'ora;
+      per questo motivo, per evitare ambiguità, non può essere utilizzata come primo carattere di un codice di calendario.
+      La componenete facoltativa <code>‹parte›</code>, preceduta da un virgola <code>,</code> permette di descrivere parti frazionarie dell'ora 
+      o, per essere più precisi, parti frazionarie dell'ultima unità indicata nell'ora.
+    </p>
+    <p>
+      Diamo di seguito alcuni esempi di ore; nella stessa riga sono scritte ore equivalenti in base all'orario di default.
+    </p>
+    <p class="samp">
+      TNN:10 T10
+      <br />TNN:00:00:00 T00:00:00
+      <br />TNN:10:30:50 T10:30:50
+      <br />TNN:24:00:00 T24:00:00
+      <br />TAM:10:30:50
+      <br />TPM:10:30:50
+      <br />TNN:10,5
+      <br />TNN:10:30:50,678
+    </p>
+    <p>
+      Gli ultimi due esempi descrivono l'uso della parte frazionaria: 
+      il primo dei due descrive le 10 e mezzo, il secondo fa riferimento al millesimo 678 delle ore 10, 30 minuti e 50 secondi.
+    </p>
+    <!-- ================================================================================== -->
+    <h3>4.4 Ora localizzata</h3>
+    <p>
+      In genere si usa un'ora localizzata, basata sull'uso del territorio in cui ci si trova.
+      Nell'uso moderno è però spesso necessario far riferimento a un'ora universale, indipendente dal territorio considerato.
+      Il tempo coordinato universale, usato a questo scopo, viene denominato <em>UTC</em>
+      ; si noti che l'ordine delle tre lettere nell'acronimo è volutamente non correlato a una lingua specifica, allo scopo di evitare 
+      di dare prevalenza a una denominazione localizzata;
+      il termine corrispondente è, per esempio
+      <em>Coordinated Universal Time</em> in inglese, <em>Temps universel coordonné</em> in francese, ecc.).
+    </p>
+    <p>
+      L'ora UTC è formata dall'indicazione dell'ora locale con l'indicazione aggiuntiva di un codice della zona oraria.
+      Per esempio, in Italia quando è in vigore l'ora solare la zona oraria è +01:00, 
+      e quindi il tempo UTC corrispondente a mezzogiorno va indicato come 12:00:00+01:00.
+      Il mezzogiorno va indicato invece come 12:00:00+02:00 nel periodo di validità dell'ora solare.
+    </p>
+    <p>
+      Mentre quest'uso è utile quando si vogliano sincronizzare più attività a livello mondiale,
+      la rappresentazione delle ore localizzate in questo modo può porre alcuni problemi nell'uso storico.
+      Nello stesso tempo una eventuale informazione di localizzazione può essere utile.
+      La soluzione proposta è descritta nella successiva produzione.
+    </p>
+    <p class="code">
+      ‹tempo utc› →
+      <br /> &nbsp; ‹cifra› ‹cifra› [ : ‹cifra› ‹cifra› [ : ‹cifra› ‹cifra› ] ]
+    </p>
+    <p class="code">
+      ‹zona utc› →
+      <br /> &nbsp; Z
+      <br /> &nbsp; | ( - ‹tempo utc› )
+      <br /> &nbsp; | ( + ‹tempo utc› )
+    </p>
+    <p>
+      Questa produzione garantisce la compatibilità con il formato Iso 8601, in cui si utilizzano le zone orarie;
+      le cifre indicano un'ora ed eventuali minuti e secondi compresi tra <samp>-12:00:00</samp> e <samp>+12:00:00</samp>.
+      Il <code>+</code> identifica le zone orarie con longitudine Est e il <code>-</code> una longitudine Ovest.
+      Il valore indicato rappresenta lo spostamento orario rispetto a quello UTC.
+      Quando si vuol far riferimento alla posizione locale del sole, 
+      si può notare che un'ora corrisponde a 360°/24=15° di longitudine,
+      un minuto di tempo a 15' di longitudine 
+      e un secondo di tempo a 15" di longitudine.
+      Per una località di longitudine <samp>11°20'34"</samp> Est (Bologna) si dovrebbe indicare <samp>+00:45:22</samp>,
+      per la longitudine <samp>6°15'57"</samp> (Dublino) si userebbe <samp>-00:25:03</samp>
+      e per la longitudine <samp>30°20'</samp> (San Pietroburgo) si userebbe <samp>+02:01:20</samp>.
+      Va notato che attualmente si usa un'ora virtuale non necessariamente legata alla posizione del sole, per cui
+      la zona di Bologna è in effetti <samp>+01:00</samp> (o <samp>+02:00</samp> se è in vigore l'ora legale),
+      quella di Dublino è <samp>Z</samp> (corrispondente a <samp>+00:00</samp> o <samp>-00:00</samp>) 
+      mentre quella di San Pietroburgo è <samp>+03:00</samp>.
+    </p>
+<!--
+gl°ml'sl" ==> hh:mm:ss
+xh=gl         ; hh=gl\15 ; hr=gl mod 15
+xm=(ml+60*hr) ; mm=xm\15 ; mr=xm mod 15
+xs=(sl+60*mr) ; ss=xs\15 ; sr=xs mod 15
+-->
+    <p class="code">
+      ‹parte nome› → ‹lettera› { ‹lettera› }
+    </p>
+    <p class="code">
+      ‹parte codice› → ‹cifra› { ‹cifra› }
+    </p>
+    <p class="code">
+      ‹nome› → ‹parte nome› { _ ‹parte nome› }
+    </p>
+    <p class="code">
+      ‹codice› → ‹parte codice› { . ‹parte codice› }
+    </p>
+    <p class="code">
+      ‹localita› → @ ( ‹nome› | ‹codice› )
+    </p>
+    <p>
+      La produzione descritta permette invece di localizzare l'orario
+      indicando la località di origine. La località può essere indicata con un nome; 
+      l'uso di un codice numerico permette di far riferimento a un possibile futuro sistema di codifica delle località. 
+    </p>
+    <p class="code">
+      ‹localizzazione› → ‹zona utc› | ‹localita›
+    </p>
+    <p class="code">
+      ‹ora-localizzata› →
+      <br /> &nbsp; ‹ora› [ ‹localizzazione› ]
+    </p>
+    <p>
+      Di seguito sono dati esempi di come si potrebbe indicare il mezzogiorno solare locale a Bologna, a Dublino e a San Pietroburgo,
+      e, di seguito, l'indicazione del mezzogiorno in base alla zona UTC e non alla posizione reale del sole.
+    </p>
+    <p class="samp">
+      T12:00:00+00:45:22 T12:00:00@BOLOGNA
+      <br/>T12:00:00-00:25:03 T12:00:00@DUBLINO
+      <br/>T12:00:00+02:01:20 T12:00:00@SANKT_PETERBURG
+      <br/>T12:00:00+01:00
+      <br/>T12:00:00Z
+      <br/>T12:00:00+03:00
+    </p>
+    <!-- ================================================================================== -->
+    <h3>4.5 Descrizione completa della data e ora</h3>
+    <p>
+      Come precedentemente notato, una data può essere indicata con diversi livelli di precisione che non sono necessariamente corrispondenti a una parte.
+      Per permettere di definire in maniera precisa questa imprecisione, si utilizza la seguente produzione preliminare che definisce la struttura di base della data e ora:
+    </p>
+    <p class="code">
+      ‹data incompleta-ora-frazione› → 
+      <br /> &nbsp; ‹ora›
+      <br /> &nbsp; | ( ‹data incompleta› , ‹parte› )
+      <br /> &nbsp; | ( ‹data incompleta› [ ‹ora› ] )
+    </p>
+    <p class="code">
+      ‹data-ora-frazione› →
+      <br /> &nbsp; ( ‹data semplice› [ ‹ora› ] )
+    </p>
+    <p>
+      Va notato che per la data e l'ora può essere presente, solo nell'ultima parte, una frazione preceduta da una virgola; 
+      per esempio <samp>2010-02-03T06,5</samp> individua le 6 e mezzo del 3 febbraio 2010,
+      mentre <samp>2010-02,5</samp> individua il momento di mezzo del febbraio 2010 (ovvero il 15 febbraio alle ore 00:00:00).
+    </p>
+    <p>
+      Come precedentemente notato, una data può essere indicata con diversi livelli di precisione che non sono necessariamente corrispondenti a una parte.
+      Per permettere di definire in maniera precisa questa imprecisione, si utilizza la seguente produzione preliminare:
+    </p>
+    <p class="code">
+      ‹data-ora-frazione iniziale› → ‹data-ora-frazione› | ‹data speciale›
+      <br /> &nbsp; ( ‹data semplice› [ ‹ora› ] )
+      <br />‹data-ora completa› →
+      <br /> &nbsp; ‹data-ora-frazione›
+      <br /> &nbsp; | ‹data speciale›
+      <br /> &nbsp; | ( ‹data-ora-frazione› .. ‹data-ora-frazione› )
+      <br /> &nbsp; | ‹data speciale›
+    </p>
+    <p class="code">
+      ‹data incompleta-ora› → 
+      <br /> &nbsp; ‹data semplice›
+      <br /> &nbsp; # ‹data incompleta-ora-frazione›
+      <br /> &nbsp; .. ‹data incompleta-ora-frazione›
+    </p>
+    <p class="code">
+      ‹data-ora› → ‹data-ora completa› | ‹data incompleta-ora›
+    </p>
+    <p class="code">
+      ‹data-ora localizzata› → ‹data-ora› [ ‹localizzazione› ]
+    </p>
+    <p>
+      Per chiarire questa produzione, diamo alcuni esempi.
+      I primi esempi utilizzano solo il primo ramo della produzione;
+      Nei primi due esempi si utilizza la prima parte della prima produzione per indicare una data senza periodo esplicito di incertezza
+      (a titolo informativo, il giorno giuliano indicato corrisponde alle ore 00:00:00 del 15 ottobre 1582);
+      il terzo indica un periodo compreso tra il 1980 e il 2010 dC;
+      il quarto mostra come si possono mescolare calendari indicando il perioro tra il primo decennio aC e il secondo decennio dC.
+    </p>
+    <p class="samp">
+      GR:EC:2010-12-31TCN:10:30:50,999 2010-12-31T10:30:50,999 
+      <br />JD:2299159,5
+      <br />1980..2010 
+      <br />GI-N:10..GI:20
+    </p>
+    <p>
+      Di seguito vengono dati tempi imprecisi più complessi, con l'utilizzo di entrambe le produzioni;
+      la seconda produzione è in realtà superflua ma permette di scrivere le date in maniera più compatta.
+      nel primo esempio si indica un periodo compreso tra il 4 marzo e il 6 maggio del 2010;
+      nel secondo si indica un periodo compreso tra il 4 e il 10 marzo del 2010;
+      nel terzo si indica un periodo compreso tra le 10:10 e le 11:20 del 4 marzo del 2010;
+      l'ultimo mostra una data e ora localizzata utilizando solo la produzione più compatta:
+      vengono rappresentate il periodo corrispondente alle ore di luce (da 01 a 12) del 2 gennaio 1276 secondo il calendario giuliano a Bologna.
+    </p>
+    <p class="samp">
+      2010-03-04..2010-05-06 2010#03-04..05-06
+      <br />2010-03-04..2010-03-10 2010-03#04..10
+      <br />2010-03-04T10:10..2010-03-10T11:20 2010-03-04#T10:10..T11:20
+      <br />GI:1276-01-02#TED01..TED12@BOLOGNA
+    </p>
+    <p>
+      Alcuni formati Iso 8601 non possono essere ricondotti alla definizione presente.
+      In particolare, i formati privi di separatore (<samp>20100102T304050,999</samp> per <samp>2010-01-02T30:40:50,999</samp>),
+      il formato settimanale (<samp>2010-W01-1</samp>, può essere reso come <samp>GR-IW:2010-01-1</samp>)
+      e il formato ordinale (<samp>2010-123</samp>, può essere reso come <samp>GR-IO:2010-123</samp>).
+    </p>
+    <!-- ================================================================================== -->
+    <h2>5. Durate</h2>
+    <p class="code">
+      ‹parti durata› →
+      <br /> &nbsp; ‹parte› ‹lettera-durata> { ‹parte› ‹lettera-durata> }
+    </p>
+    <p class="code">
+      ‹durata data› → [ ‹calendario-era› ] ‹parti durata›
+    </p>
+    <p class="code">
+      ‹durata ora› → T [ ‹orario› ] ‹parti durata›
+    </p>
+    <p class="code">
+      ‹durata› → P (
+      <br /> &nbsp; ‹durata data›
+      <br /> &nbsp; | ‹durata data› ‹durata ora›
+      <br /> &nbsp; | ‹durata ora›
+      <br /> &nbsp; | ‹data-ora-frazione›
+      <br />)
+    </p>
+    <p>
+      Come si vede, la lettera <code>P</code> precede obbligatoriamente la durata;
+      per questo motivo, per evitare ambiguità, non può essere utilizzata come primo carattere di un codice di calendario.
+      Esempi di durate sono:
+    </p>
+    <p class="samp">
+      P10W
+      <br />P10Y20M30D PGR:EC:10Y20M30D 
+      <br />P30DT10H20M PGR:EC:30DTCN:10H20M
+      <br />PT10H20M PTCN:10H20M
+      <br />P01-02-03T04:05
+    </p>
+    <!-- ================================================================================== -->
+    <h2>6. Intervalli</h2>
+    <p>
+      La produzione degli intervalli segue le regole dell'Iso 8601;
+      gli intervalli sono suddivisi tra determinati e indeterminati e tra ripetuti e non.
+    </p>
+    <!-- ================================================================================== -->
+    <h3>6.1 Intervalli determinati</h3>
+    <p>
+      La produzione avviene dando i due estremi dell'intervallo, ovvero l'inizio e la durata o la durata e la fine;
+      la quarta produzione dell'Iso 8601 è trattata a parte come intervallo indeterminato ed è formata dalla sola durata.
+    </p>
+    <p class="code">
+      ‹separatore› → / | --
+    </p>
+    <p class="code">
+      ‹intervallo› →
+      <br /> &nbsp; ( ‹data-ora› ‹separatore› ‹data-ora› )
+      <br /> &nbsp; | ( ‹data-ora› ‹separatore› ‹durata› )
+      <br /> &nbsp; | ( ‹durata› ‹separatore› ‹data-ora› )
+    </p>
+    <p class="code">
+      ‹intervallo localizzato› → ‹intervallo› [ ‹localizzazione› ]
+    </p>
+    <!-- ================================================================================== -->
+    <h3>6.2 Intervalli indeterminati</h3>
+    <p class="code">
+      ‹intervallo indeterminato› → ‹durata›
+    </p>
+    <!-- ================================================================================== -->
+    <h3>6.3 Intervalli ripetuti</h3>
+    <p class="code">
+      ‹intervallo ripetuto› → R ‹parte› / ‹intervallo›
+    </p>
+    <p class="code">
+      ‹intervallo ripetuto localizzato› →
+      <br /> &nbsp; ‹intervallo ripetuto› [ ‹localizzazione› ]
+    </p>
+    <p>
+      Come si vede, la lettera <code>R</code> precede obbligatoriamente l'intervallo ripetuto;
+      per questo motivo, per evitare ambiguità, non può essere utilizzata come primo carattere di un codice di calendario.
+    </p>
+    <!-- ================================================================================== -->
+    <h3>6.4 Intervalli ripetuti indeterminati</h3>
+    <p class="code">
+      ‹intervallo ripetuto indeterminato› → R (
+      <br /> &nbsp; ( ‹parte› / ‹intervallo indeterminato› )
+      <br /> &nbsp; | ( / ‹intervallo indeterminato› )
+      <br /> &nbsp; | ( / ‹intervallo› )
+      <br />)
+    </p>
+    <!-- ================================================================================== -->
+    <h2>Appendici</h2>
+    <ul>
+      <li><a href="calendari.html">Repertorio dei calendari</a></li>
+      <li><a href="ere.html">Repertorio delle ere e dei relativi stili</a></li>
+      <li><a href="orari.html">Repertorio degli orari</a></li>
+    </ul>
+  </div></body>
+</html>

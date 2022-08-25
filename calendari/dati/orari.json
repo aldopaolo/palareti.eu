@@ -1,0 +1,8 @@
+{"aaData": [[ "ND","00:00:00<br/>24:00:00",24,"mezzanotte" ,"orario contemporaneo a 24 ore" ,"Sono ammessi i valori da TCN:00:00:00 a TCN:23:59:60 (per i minuti bisestili) e TCN:24:00:00" ],
+[ "AM","01:00:00<br/>12:59:59",12,"–" ,"sistema anglosassone «am» per la mattina" ,"Le ore vanno da TAM:01:00:00 a TAM:12:59:59 e corrispondono alle ore da 01:00:00 a 12:59:59" ],
+[ "PM","13:00:00<br/>00:59:59",12,"mezzanotte" ,"sistema anglosassone «pm» per la sera" ,"Le ore vanno da TPM:01:00:00 a TPM:12:59:59; esempi: TPM:01:20:30 sono le 13:20:30, TPM:12:20:30 sono le 00:20:30 del giorno dopo" ],
+[ "ED","alba<br/>tramonto",12,"–" ,"sistema giudaico per il giorno" ,"usato per il giorno da greci, ebrei, romani, mussulmani, medioevo" ],
+[ "EN","tramonto<br/>alba",12,"tramonto" ,"sistema giudaico per la notte" ,"usato per la notte da greci, ebrei, romani, mussulmani, medioevo" ],
+[ "DN","12:00:00<br/>11:59:59",1,"mezzogiorno" ,"orario frazionario" ,"Usato nel giorno giuliano (TNN:0,0 corrisponde a mezzogiorno)" ],
+[ "ND&#x2011;EG","mezzanotte<br/>mezzanotte","","mezzanotte" ,"" ,"Usato da Egizi (numero di parti?)" ],
+[ "ND&#x2011;RM","mezzanotte<br/>mezzanotte","","mezzanotte" ,"" ,"Usato da antichi romani (numero di parti?)" ]]}

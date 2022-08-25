@@ -1,0 +1,12 @@
+{"aaData": [[ "GR","EC","ND<br/>","+4*Y+2M+2D" ,"Calendario gregoriano" ,"" ],
+[ "IW","EC!","ND<br/>","+4*Y+2W+1D" ,"Calendario Iso 8601 settimanale" ,"È utilizzabile solo un'era in quanto si ha un uso esclusivamente tecnico di questo calendario" ],
+[ "IO","EC!","ND<br/>","+4*Y+3D" ,"Calendario Iso 8601 ordinale" ,"È utilizzabile solo un'era in quanto si ha un uso esclusivamente tecnico di questo calendario" ],
+[ "GI","EC","EN<br/>ED","+4*Y+2M+2D" ,"Calendario giuliano" ,"" ],
+[ "GI&#x2011;AC","AC","EN<br/>ED","&#x2011;4*Y+2M+2D" ,"Calendario giuliano negativo" ,"Usato per gli anni precedenti all'inizio dell'era in uso" ],
+[ "FR","FR!","<br/>","+4Y+2M+2D" ,"Calendario della rivoluzione francese" ,"" ],
+[ "JD","ST!","DN<br/>","+4*D" ,"Giorno giuliano" ,"Inizia dal mezzogiorno del 4713 aC" ],
+[ "JD&#x2011;N","ST!","DN<br/>","&#x2011;4*D" ,"Giorno giuliano negativo" ,"Inizia dal mezzogiorno del 4713 aC" ],
+[ "EB","EB!","EN<br/>ED","+4Y+2M+2D" ,"Calendario ebraico" ,"lunisolare; si usa una sola Era" ],
+[ "AR","AH!","EN<br/>ED","+4Y+2M+2D" ,"Calendario islamico" ,"lunisolare; si usa una sola Era" ],
+[ "AR&#x2011;BH","BH!","EN<br/>ED","&#x2011;4Y+2M+2D" ,"Calendario islamico negativo" ,"Usato per gli anni precedenti all'Egira; si usa una sola Era" ],
+[ "X.","","<br/>","" ,"" ,"Tutti i codici che iniziano per X vanno considerati disponibili al di fuori di questo repertorio per l'indicazione di calendari liberi" ]]}
