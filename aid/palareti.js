@@ -1,10 +1,9 @@
 ﻿"use strict";
-// ================ modifiche di bootstrap ==================
+
 (function() {
-  /*
-    cambia le varibili globali usate in bootstrap
-    da https://www.w3schools.com/css/css3_variables_javascript.asp
-  */
+  // ==========================================
+  // cambia le varibili usate in bootstrap.css
+  // da https://www.w3schools.com/css/css3_variables_javascript.asp
   /*
     spiegazione di alcuni nomi che possono apparire in font-family
     -apple-system:
@@ -32,54 +31,28 @@
   const root=document.querySelector(':root');
   root.style.setProperty(
     '--bs-font-sans-serif',
-    `"Titilium Web", system-ui, -apple-system,
-    "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"`
-  );
-  /*
-  in bootstrap era:
+    `"Titilium Web",
     system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans",
     "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol", "Noto Color Emoji";
-  */
+    "Segoe UI Symbol", "Noto Color Emoji"`
+    /*
+    aggiunge "Titillium Web" all'inizio del valore presente in bootstrap che è:
+      system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans",
+      "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol", "Noto Color Emoji";
+    */
+  );
   root.style.setProperty(
     '--bs-font-monospace',
-    `"Roboto Mono", SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono", "Courier New", monospace`
+    `"Roboto Mono",
+    SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`
   );
   /*
-    in bootstrap era:
+    aggiunge "Roboto Mono" all'inizio del valore presente in bootstrap che è:
     SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   */
+  // ==========================================
+  // modifiche standard alla pagina
+  let title=document.getElementsByTagName("title")[0].text.trimEnd(" \n").trimStart(" \n");
+  document.body.insertAdjacentHTML("afterbegin", `<h1>${title}</h1>`)
 })();
-
-// ================ funzione generica per acqisire un file JSON locale ==================
-function getJson(fileUrl) {
-  let xhr=new XMLHttpRequest();
-  let response="[]";
-  let ret;
-
-  // acquisico il file nella variabile response
-  xhr.open('GET', fileUrl, false); // false: chiamata asincrona
-  xhr.setRequestHeader('Content-type', 'application/json; charset=utf-8');
-  try {
-    xhr.send();
-    if(xhr.status===200) {
-      response=xhr.response;
-    } else {
-      alert(`Error in file ${fileUrl}: Status ${xhr.status}, "${xhr.statusText}"`);
-    }
-  } catch(err) { // instead of onerror
-    alert(`Request failed -- file ${fileUrl}`);
-  }
-
-  // estraggo il formato Json nella variabile ret
-  try {
-    ret=JSON.parse(response);
-  } catch(err) {
-    alert(`Errori nel file json -- file ${fileUrl}`);
-    ret=[];
-  }
-
-  return ret;
-}
