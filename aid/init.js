@@ -205,6 +205,19 @@ function addStyle(href, integrity, crossorigin) {
 
 // ===========================================================
 // altre funzioni da inizializzare
+function urlDetailFormatter(value) {
+  let ret;
+  if(!value) {
+    ret=""
+  } else {
+    if(value.indexOf("//")<0) {
+      ret=`<a href="//${value}" target="_blank">${value}</a>`;
+    } else {
+      ret=`<a href="${value}" target="_blank">${value}</a>`;
+    }
+  }
+  return ret;
+}
 
 // funzione per acqisire un file JSON locale
 function getJson(fileUrl) {
