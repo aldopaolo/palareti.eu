@@ -15,12 +15,28 @@
 </head>
 
 <body>
+  <p>
+    Il filtro permette di selezionare le seguenti caratteristiche:
+  <dl>
+    <dt>Tutte</dt>
+    <dd>Tutte le URL, indipendentemente dal tipo</dd>
+    <dt>Siti</dt>
+    <dd>Solo le URL relativi a siti</dd>
+    <dt>URL</dt>
+    <dd>Solo le URL relative a pagine specifiche</dd>
+    <dt>Tinyurl</dt>
+    <dd>
+      Le URL per cui è stata definita una Tinyurl; per vedere la URL abbreviata si può utilizzare il tasto "Colonne"
+      e selezionare "Tinyurl" per mostrarla.
+    </dd>
+  </dl>
+  </p>
   <div class="toolbar">
-    <select class="form-control" id="selezione-tipo" title="Tipo selezionato">
-      <option value="all" selected>Tutti</option>
-      <option value="site">sito</option>
-      <option value="tinyurl">tinyurl</option>
-      <option value="url">url</option>
+    <select class="form-control selezione-tipo" id="selezione-tipo" title="Tipo selezionato">
+      <option value="all" selected>Tutte</option>
+      <option value="site">Siti</option>
+      <option value="url">URL</option>
+      <option value="tinyurl">Tinyurl</option>
     </select>
     <button type="button" class="btn btn-secondary" id="filtrare-tipo">Filtra</button>
   </div>
