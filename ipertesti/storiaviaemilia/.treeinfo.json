@@ -1,0 +1,21 @@
+{
+  "Titolo": "La storia urbanistica della via Emilia in eta contemporanea",
+  "Directory": "/ipertesti/storiaviaemilia",
+  "FileHTML": [
+    {
+      "Titolo": "Lo sviluppo urbanistico di Bologna",
+      "PathName": "bologna.html"
+    },
+    {
+      "Titolo": "La storia urbanistica della via Emilia in et� contemporanea",
+      "PathName": "index.html"
+    },
+    {
+      "Titolo": "Lo sviluppo urbanistico di Rimini",
+      "PathName": "rimini.html"
+    }
+  ],
+  "FilePDF": [],
+  "FilePPT": [],
+  "Descendant": null
+}

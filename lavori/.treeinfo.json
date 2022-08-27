@@ -1,0 +1,58 @@
+{
+  "Titolo": "Articoli e lavori",
+  "Directory": "/lavori",
+  "FileHTML": [],
+  "FilePDF": [
+    {
+      "Titolo": "2006-Aica.pdf",
+      "PathName": "2006-Aica.pdf"
+    },
+    {
+      "Titolo": "2007-Didamatica.pdf",
+      "PathName": "2007-Didamatica.pdf"
+    },
+    {
+      "Titolo": "2008-Didamatica.pdf",
+      "PathName": "2008-Didamatica.pdf"
+    },
+    {
+      "Titolo": "2009-Didamatica.pdf",
+      "PathName": "2009-Didamatica.pdf"
+    },
+    {
+      "Titolo": "2010-Aica.pdf",
+      "PathName": "2010-Aica.pdf"
+    },
+    {
+      "Titolo": "2010-Didamatica.pdf",
+      "PathName": "2010-Didamatica.pdf"
+    }
+  ],
+  "FilePPT": [
+    {
+      "Titolo": "2006-09-22-Cesena.ppt",
+      "PathName": "2006-09-22-Cesena.ppt"
+    },
+    {
+      "Titolo": "2007-05-11-Cesena.ppt",
+      "PathName": "2007-05-11-Cesena.ppt"
+    },
+    {
+      "Titolo": "2008-04-28-Taranto.ppt",
+      "PathName": "2008-04-28-Taranto.ppt"
+    },
+    {
+      "Titolo": "2009-04-24-Trento.ppt",
+      "PathName": "2009-04-24-Trento.ppt"
+    },
+    {
+      "Titolo": "2010-04-21-Roma.ppt",
+      "PathName": "2010-04-21-Roma.ppt"
+    },
+    {
+      "Titolo": "2010-09-29-Aquila.ppt",
+      "PathName": "2010-09-29-Aquila.ppt"
+    }
+  ],
+  "Descendant": null
+}

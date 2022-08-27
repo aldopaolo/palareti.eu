@@ -1,0 +1,21 @@
+{
+  "Titolo": "Dati bibliografici",
+  "Directory": "/datibibliografici",
+  "FileHTML": [
+    {
+      "Titolo": "Riferimenti bibliografici di ambito cartografico",
+      "PathName": "cartografia.html"
+    },
+    {
+      "Titolo": "Riferimenti bibliografici di ambito demografico",
+      "PathName": "demografia.html"
+    },
+    {
+      "Titolo": "Materiale prodotto dalla Direzione generale della Statistica e dall'ISTAT",
+      "PathName": "istat.html"
+    }
+  ],
+  "FilePDF": [],
+  "FilePPT": [],
+  "Descendant": null
+}

@@ -1,0 +1,25 @@
+{
+  "Titolo": "Tra guerra e Resistenza",
+  "Directory": "/ipertesti/tra-guerra-e-resistenza",
+  "FileHTML": [
+    {
+      "Titolo": "Tra guerra e Resistenza",
+      "PathName": "autori.htm"
+    },
+    {
+      "Titolo": "Tra guerra e Resistenza",
+      "PathName": "index.htm"
+    },
+    {
+      "Titolo": "Tra guerra e Resistenza",
+      "PathName": "pag2.htm"
+    },
+    {
+      "Titolo": "Tra guerra e Resistenza",
+      "PathName": "pag3.htm"
+    }
+  ],
+  "FilePDF": [],
+  "FilePPT": [],
+  "Descendant": null
+}

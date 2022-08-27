@@ -1,0 +1,32 @@
+{
+  "Titolo": "Ipertesti realizzati",
+  "Directory": "/ipertesti",
+  "FileHTML": [
+    {
+      "Titolo": "Ipertesti realizzati",
+      "PathName": "storiaviaemilia.html"
+    },
+    {
+      "Titolo": "Ipertesti realizzati",
+      "PathName": "tra-guerra-e-resistenza.html"
+    },
+    {
+      "Titolo": "Ipertesti realizzati",
+      "PathName": "urbanistica-bologna-guerre-mondiali.html"
+    }
+  ],
+  "FilePDF": [],
+  "FilePPT": [],
+  "Descendant": [
+    {
+      "Name": "storiaviaemilia",
+      "Titolo": "La storia urbanistica della via Emilia in eta contemporanea",
+      "Descendant": null
+    },
+    {
+      "Name": "tra-guerra-e-resistenza",
+      "Titolo": "Tra guerra e Resistenza",
+      "Descendant": null
+    }
+  ]
+}

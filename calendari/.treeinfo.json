@@ -1,0 +1,57 @@
+{
+  "Titolo": "La descrizione del tempo",
+  "Directory": "/calendari",
+  "FileHTML": [
+    {
+      "Titolo": "Repertorio di calendari",
+      "PathName": "calendari.html"
+    },
+    {
+      "Titolo": "La descrizione delle informazioni di tipo temporale",
+      "PathName": "descrizionedate-2011-02-11.html"
+    },
+    {
+      "Titolo": "1. La descrizione delle informazioni di tipo temporale -- Introduzione",
+      "PathName": "descrizionedate-2014-01-13-1.html"
+    },
+    {
+      "Titolo": "2. La descrizione delle informazioni di tipo temporale -- Requisiti per la descrizione di informazioni temporali storiche",
+      "PathName": "descrizionedate-2014-01-13-2.html"
+    },
+    {
+      "Titolo": "1. La descrizione delle informazioni di tipo temporale -- Introduzione",
+      "PathName": "descrizionedate-2014-01-13-3.html"
+    },
+    {
+      "Titolo": "1. La descrizione delle informazioni di tipo temporale -- Introduzione",
+      "PathName": "descrizionedate-2014-01-13-4.html"
+    },
+    {
+      "Titolo": "1. La descrizione delle informazioni di tipo temporale -- Introduzione",
+      "PathName": "descrizionedate-2014-01-13-5.html"
+    },
+    {
+      "Titolo": "La descrizione delle informazioni di tipo temporale",
+      "PathName": "descrizionedate-2014-01-13.html"
+    },
+    {
+      "Titolo": "Versioni del documento sulle informazioni temporali",
+      "PathName": "descrizionedate.html"
+    },
+    {
+      "Titolo": "Repertorio delle ere e dei relativi stili",
+      "PathName": "ere.html"
+    },
+    {
+      "Titolo": "La descrizione del tempo",
+      "PathName": "index.html"
+    },
+    {
+      "Titolo": "Repertorio di orari",
+      "PathName": "orari.html"
+    }
+  ],
+  "FilePDF": [],
+  "FilePPT": [],
+  "Descendant": null
+}

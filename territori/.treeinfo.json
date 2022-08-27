@@ -1,0 +1,17 @@
+{
+  "Titolo": "Storia e immagini delle variazioni territoriali",
+  "Directory": "/territori",
+  "FileHTML": [
+    {
+      "Titolo": "Storia e immagini delle variazioni territoriali",
+      "PathName": "index.html"
+    },
+    {
+      "Titolo": "Informazioni geografiche e temporali non disponibili",
+      "PathName": "territorio.html"
+    }
+  ],
+  "FilePDF": [],
+  "FilePPT": [],
+  "Descendant": null
+}

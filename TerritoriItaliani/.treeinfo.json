@@ -1,0 +1,21 @@
+{
+  "Titolo": "Appendici al testo “Informatica, comunicazione e discipline storiche tra ricerca e didattica”",
+  "Directory": "/TerritoriItaliani",
+  "FileHTML": [
+    {
+      "Titolo": "Tipi di suddivisioni amministrative nel periodo pontificio e nel periodo postunitario",
+      "PathName": "Appendice1.html"
+    },
+    {
+      "Titolo": "Stato pontificio: articolazione di province, distretti e governi nel 1853",
+      "PathName": "Appendice2.html"
+    },
+    {
+      "Titolo": "Formazione della provincia di Littoria (ora Latina)",
+      "PathName": "Appendice3.html"
+    }
+  ],
+  "FilePDF": [],
+  "FilePPT": [],
+  "Descendant": null
+}

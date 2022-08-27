@@ -1,0 +1,70 @@
+{
+  "Titolo": "L'utilizzo di strumenti informatici nella storia dei territori amministrativi",
+  "Directory": "C:/Users/aldop/Documents/Sync-Personale/Siti/palareti.eu",
+  "FileHTML": [
+    {
+      "Titolo": "L'utilizzo di strumenti informatici nella storia dei territori amministrativi",
+      "PathName": "index.html"
+    }
+  ],
+  "FilePDF": [],
+  "FilePPT": [],
+  "Descendant": [
+    {
+      "Name": "bnf",
+      "Titolo": "BNF utilizzata in questo sito",
+      "Descendant": null
+    },
+    {
+      "Name": "calendari",
+      "Titolo": "La descrizione del tempo",
+      "Descendant": null
+    },
+    {
+      "Name": "datibibliografici",
+      "Titolo": "Dati bibliografici",
+      "Descendant": null
+    },
+    {
+      "Name": "denominazioni",
+      "Titolo": "La normalizzazione delle denominazioni",
+      "Descendant": null
+    },
+    {
+      "Name": "ipertesti",
+      "Titolo": "Ipertesti realizzati",
+      "Descendant": [
+        {
+          "Name": "storiaviaemilia",
+          "Titolo": "La storia urbanistica della via Emilia in eta contemporanea",
+          "Descendant": null
+        },
+        {
+          "Name": "tra-guerra-e-resistenza",
+          "Titolo": "Tra guerra e Resistenza",
+          "Descendant": null
+        }
+      ]
+    },
+    {
+      "Name": "lavori",
+      "Titolo": "Articoli e lavori",
+      "Descendant": null
+    },
+    {
+      "Name": "storia-suddivisioni-territoriali",
+      "Titolo": "Pagine web per il testo “Per una storia delle suddivisioni territoriali”",
+      "Descendant": null
+    },
+    {
+      "Name": "territori",
+      "Titolo": "Storia e immagini delle variazioni territoriali",
+      "Descendant": null
+    },
+    {
+      "Name": "TerritoriItaliani",
+      "Titolo": "Appendici al testo “Informatica, comunicazione e discipline storiche tra ricerca e didattica”",
+      "Descendant": null
+    }
+  ]
+}
