@@ -17,6 +17,10 @@
     {
       "Titolo": "Tra guerra e Resistenza",
       "PathName": "pag3.htm"
+    },
+    {
+      "Titolo": "Mappa della directory",
+      "PathName": ".treeinfo.html"
     }
   ],
   "FilePDF": [],

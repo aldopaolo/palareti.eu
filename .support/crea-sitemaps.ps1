@@ -69,36 +69,46 @@ function getDescendantInfo{
   }
   return $ret
 }
-  # function creaUlFileList{
-  #   param($FileList,$Tipo)
-  #   $ret="<h2>Documenti HTML disponibili nella cartella</h2><p><ul>"
-  #   $FileList | ForEach-Object{ $ret+="<li><a href='$($_.Name)'>$($_.Titolo)</a><li>" }
-  #   $ret+=
-  #   $ret+="</ul></p>"
-  #   return $ret
-  # }
 
-  ## individuo tutte le cartelle di interesse
-  $location='C:\Users\aldop\Documents\Sync-Personale\Siti\palareti.eu'
-  Set-Location $location
-  $treeinfo=@(Get-ChildItem '.treeinfo' -Recurse)
+$treeinfoHTML=@"
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mappa della directory</title>
+<script src="/aid/init.js" class="alpa-bootstrap-resources alpa-treeinfo-resources"></script>
+</head>
+<body>
+<div id="treeinfo-html"></div>
+<div id="treeinfo-pdf"></div>
+<div id="treeinfo-ppt"></div>
+<div id="treeinfo-dir"></div>
+</body>
+</html>
+"@
+## individuo tutte le cartelle di interesse
+$location='C:\Users\aldop\Documents\Sync-Personale\Siti\palareti.eu'
+Set-Location $location
+$treeinfo=@(Get-ChildItem '.treeinfo' -Recurse)
 
-  ## per ogni cartella individuo i file da considerare
-  $treeinfo | ForEach-Object{
-    $Titolo=pulisciStringa (Get-Content $_.FullName)
-    $DirectoryWin=$_.Directory
-    $Directory=$DirectoryWin -Replace '^.*palareti\.eu\\', '/' -replace ('\\', '/')
-    $FileHTML=@(getFileInfoWithExtension $DirectoryWin 'htm')+@(getFileInfoWithExtension $DirectoryWin 'html')
-    $FilePDF=@(getFileInfoWithExtension $DirectoryWin 'pdf')
-    $FilePPT=@(getFileInfoWithExtension $DirectoryWin 'ppt')
-    $Descendant=getDescendantInfo($DirectoryWin)
-    $PsCustomObject=[pscustomobject]@{
-      Titolo     =$Titolo
-      Directory  =$Directory -Replace '^.*palareti\.eu\\', '/' -replace ('\\', '/')
-      FileHTML   =$FileHTML
-      FilePDF    =$FilePDF
-      FilePPT    =$FilePPT
-      Descendant =$Descendant
-    }
-    ConvertTo-Json -InputObject $PsCustomObject -Depth 10 | Out-File "$DirectoryWin\.treeinfo.json"
+## per ogni cartella individuo i file da considerare
+$treeinfo | ForEach-Object{
+  $Titolo=pulisciStringa (Get-Content $_.FullName)
+  $DirectoryWin=$_.Directory
+  $Directory=$DirectoryWin -Replace '^.*palareti\.eu\\', '/' -replace ('\\', '/')
+  $FileHTML=@(getFileInfoWithExtension $DirectoryWin 'htm')+@(getFileInfoWithExtension $DirectoryWin 'html')
+  $FilePDF=@(getFileInfoWithExtension $DirectoryWin 'pdf')
+  $FilePPT=@(getFileInfoWithExtension $DirectoryWin 'ppt')
+  $Descendant=getDescendantInfo($DirectoryWin)
+  $PsCustomObject=[pscustomobject]@{
+    Titolo     =$Titolo
+    Directory  =$Directory -Replace '^.*palareti\.eu\\', '/' -replace ('\\', '/')
+    FileHTML   =$FileHTML
+    FilePDF    =$FilePDF
+    FilePPT    =$FilePPT
+    Descendant =$Descendant
   }
+  ConvertTo-Json -InputObject $PsCustomObject -Depth 10 | Out-File "$DirectoryWin\.treeinfo.json"
+  $treeinfoHTML | Out-File "$DirectoryWin\.treeinfo.html"
+}

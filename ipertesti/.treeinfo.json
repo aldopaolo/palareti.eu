@@ -3,15 +3,19 @@
   "Directory": "/ipertesti",
   "FileHTML": [
     {
-      "Titolo": "Ipertesti realizzati",
+      "Titolo": "Mappa della directory",
+      "PathName": ".treeinfo.html"
+    },
+    {
+      "Titolo": "Mappa della directory",
       "PathName": "storiaviaemilia.html"
     },
     {
-      "Titolo": "Ipertesti realizzati",
+      "Titolo": "Mappa della directory",
       "PathName": "tra-guerra-e-resistenza.html"
     },
     {
-      "Titolo": "Ipertesti realizzati",
+      "Titolo": "Mappa della directory",
       "PathName": "urbanistica-bologna-guerre-mondiali.html"
     }
   ],

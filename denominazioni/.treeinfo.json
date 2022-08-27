@@ -3,6 +3,10 @@
   "Directory": "/denominazioni",
   "FileHTML": [
     {
+      "Titolo": "Mappa della directory",
+      "PathName": ".treeinfo.html"
+    },
+    {
       "Titolo": "La normalizzazione delle denominazioni",
       "PathName": "index.html"
     }

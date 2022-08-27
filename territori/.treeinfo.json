@@ -3,6 +3,10 @@
   "Directory": "/territori",
   "FileHTML": [
     {
+      "Titolo": "Mappa della directory",
+      "PathName": ".treeinfo.html"
+    },
+    {
       "Titolo": "Storia e immagini delle variazioni territoriali",
       "PathName": "index.html"
     },

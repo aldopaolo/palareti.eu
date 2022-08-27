@@ -3,6 +3,10 @@
   "Directory": "/TerritoriItaliani",
   "FileHTML": [
     {
+      "Titolo": "Mappa della directory",
+      "PathName": ".treeinfo.html"
+    },
+    {
       "Titolo": "Tipi di suddivisioni amministrative nel periodo pontificio e nel periodo postunitario",
       "PathName": "Appendice1.html"
     },

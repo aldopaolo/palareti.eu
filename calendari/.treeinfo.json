@@ -3,6 +3,10 @@
   "Directory": "/calendari",
   "FileHTML": [
     {
+      "Titolo": "Mappa della directory",
+      "PathName": ".treeinfo.html"
+    },
+    {
       "Titolo": "Repertorio di calendari",
       "PathName": "calendari.html"
     },
@@ -49,6 +53,10 @@
     {
       "Titolo": "Repertorio di orari",
       "PathName": "orari.html"
+    },
+    {
+      "Titolo": "Mappa della directory",
+      "PathName": "treeinfo.html"
     }
   ],
   "FilePDF": [],

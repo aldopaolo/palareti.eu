@@ -10,6 +10,7 @@
     alpa-bootstrap-resources: vengono caricati stile e script per bootstrap
     alpa-bootstrap-table-resources: vengono caricati stile e script per bootstrap
       se presente, i valori alpa-jQuery e alpa-bootstrap sono impliciti e quindi non è necessario indicarli
+    alpa-treeinfo-resources: vengono caricate le funzioni specifiche per la gestione dell'albero del sito
   - valori relativi alla directory della pagina web; i nomi sono uguali a quelli della directory, cambia l'estensione
     alpa-path-resources: vengono caricati stile e script specifici per la directory della pagina web
       se presente, i valori alpa-path-style e alpa-path-script sono impliciti e quindi non è necessario indicarli
@@ -49,12 +50,16 @@ function addStyle(href, integrity, crossorigin) {
   const scriptElements=[...document.getElementsByTagName('script')];
   const scriptWithPathName=scriptElements.find(e => (new URL(e.src)).pathname==='/aid/init.js');
   const classList=scriptWithPathName? [...scriptWithPathName.classList]:[];
+
   const classJQueryResources=classList.indexOf('alpa-jQuery-resources')>=0;
   const classBootstrapResources=classList.indexOf('alpa-bootstrap-resources')>=0;
   const classBootstrapTableResources=classList.indexOf('alpa-bootstrap-table-resources')>=0;
+  const classTreeinfoResources=classList.indexOf('alpa-treeinfo-resources')>=0;
+
   const classPathResources=classList.indexOf('alpa-path-resources')>=0;
   const classPathStyle=classList.indexOf('alpa-path-style')>=0;
   const classPathScript=classList.indexOf('alpa-path-script')>=0;
+
   const classPageResources=classList.indexOf('alpa-page-resources')>=0;
   const classPageStyle=classList.indexOf('alpa-page-style')>=0;
   const classPageScript=classList.indexOf('alpa-page-script')>=0;
@@ -166,6 +171,38 @@ function addStyle(href, integrity, crossorigin) {
       document.body.insertAdjacentHTML("afterbegin", `<h1>${title}</h1>`);
     }
   });
+
+  // ____________________________________
+  // treeinfo
+  if(classTreeinfoResources) {
+    window.addEventListener('DOMContentLoaded', (event) => {
+      const path=(location.pathname).replace(/\/[^\/]*$/, '')
+      const treeinfo_json=getJson(`${path}/.treeinfo.json`)
+
+      let treeinfo_html=document.getElementById('treeinfo-html');
+      if(treeinfo_html&&treeinfo_json.Titolo) {
+        treeinfo_html.insertAdjacentHTML("beforebegin", `<h2>${treeinfo_json.Titolo}<h2>`)
+      }
+      if(treeinfo_html&&treeinfo_json.FileHTML) {
+        treeinfo_html.innerHTML=treeinfo_json.FileHTML.length+" pagine"
+      }
+
+      let treeinfo_pdf=document.getElementById('treeinfo-pdf');
+      if(treeinfo_pdf&&treeinfo_json.FilePDF) {
+        treeinfo_pdf.innerHTML=treeinfo_json.FilePDF.length+" pagine"
+      }
+
+      let treeinfo_ppt=document.getElementById('treeinfo-ppt');
+      if(treeinfo_ppt&&treeinfo_json.FilePPT) {
+        treeinfo_ppt.innerHTML=treeinfo_json.FilePPT.length+" pagine"
+      }
+
+      let treeinfo_dir=document.getElementById('treeinfo-dir');
+      if(treeinfo_dir&&treeinfo_json.Descendant) {
+        treeinfo_dir.innerHTML=treeinfo_json.Descendant.length+" pagine"
+      }
+    });
+  }
 
   // ____________________________________
   // caricamenti comuni a tutta la directory

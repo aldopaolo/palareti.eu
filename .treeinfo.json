@@ -3,6 +3,10 @@
   "Directory": "C:/Users/aldop/Documents/Sync-Personale/Siti/palareti.eu",
   "FileHTML": [
     {
+      "Titolo": "Mappa della directory",
+      "PathName": ".treeinfo.html"
+    },
+    {
       "Titolo": "L'utilizzo di strumenti informatici nella storia dei territori amministrativi",
       "PathName": "index.html"
     }

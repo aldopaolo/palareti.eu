@@ -1,7 +1,12 @@
 {
   "Titolo": "Articoli e lavori",
   "Directory": "/lavori",
-  "FileHTML": [],
+  "FileHTML": [
+    {
+      "Titolo": "Mappa della directory",
+      "PathName": ".treeinfo.html"
+    }
+  ],
   "FilePDF": [
     {
       "Titolo": "2006-Aica.pdf",
