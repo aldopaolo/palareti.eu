@@ -3,10 +3,6 @@
   "Directory": "/calendari",
   "FileHTML": [
     {
-      "Titolo": "Mappa della directory",
-      "PathName": ".treeinfo.html"
-    },
-    {
       "Titolo": "Repertorio di calendari",
       "PathName": "calendari.html"
     },
@@ -61,5 +57,8 @@
   ],
   "FilePDF": [],
   "FilePPT": [],
-  "Descendant": null
+  "Ancestors": [
+    "/.treeinfo.html"
+  ],
+  "Descendants": []
 }

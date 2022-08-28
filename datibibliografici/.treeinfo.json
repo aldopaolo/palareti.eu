@@ -3,10 +3,6 @@
   "Directory": "/datibibliografici",
   "FileHTML": [
     {
-      "Titolo": "Mappa della directory",
-      "PathName": ".treeinfo.html"
-    },
-    {
       "Titolo": "Riferimenti bibliografici di ambito cartografico",
       "PathName": "cartografia.html"
     },
@@ -21,5 +17,8 @@
   ],
   "FilePDF": [],
   "FilePPT": [],
-  "Descendant": null
+  "Ancestors": [
+    "/.treeinfo.html"
+  ],
+  "Descendants": []
 }

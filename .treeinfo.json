@@ -1,11 +1,7 @@
 {
   "Titolo": "L'utilizzo di strumenti informatici nella storia dei territori amministrativi",
-  "Directory": "C:/Users/aldop/Documents/Sync-Personale/Siti/palareti.eu",
+  "Directory": "",
   "FileHTML": [
-    {
-      "Titolo": "Mappa della directory",
-      "PathName": ".treeinfo.html"
-    },
     {
       "Titolo": "L'utilizzo di strumenti informatici nella storia dei territori amministrativi",
       "PathName": "index.html"
@@ -13,62 +9,63 @@
   ],
   "FilePDF": [],
   "FilePPT": [],
-  "Descendant": [
+  "Ancestors": [],
+  "Descendants": [
     {
-      "Name": "bnf",
+      "Name": "bnf/.treeinfo.html",
       "Titolo": "BNF utilizzata in questo sito",
-      "Descendant": null
+      "Descendant": []
     },
     {
-      "Name": "calendari",
+      "Name": "calendari/.treeinfo.html",
       "Titolo": "La descrizione del tempo",
-      "Descendant": null
+      "Descendant": []
     },
     {
-      "Name": "datibibliografici",
+      "Name": "datibibliografici/.treeinfo.html",
       "Titolo": "Dati bibliografici",
-      "Descendant": null
+      "Descendant": []
     },
     {
-      "Name": "denominazioni",
+      "Name": "denominazioni/.treeinfo.html",
       "Titolo": "La normalizzazione delle denominazioni",
-      "Descendant": null
+      "Descendant": []
     },
     {
-      "Name": "ipertesti",
+      "Name": "ipertesti/.treeinfo.html",
       "Titolo": "Ipertesti realizzati",
       "Descendant": [
         {
-          "Name": "storiaviaemilia",
+          "Name": "ipertesti/storiaviaemilia/.treeinfo.html",
           "Titolo": "La storia urbanistica della via Emilia in eta contemporanea",
-          "Descendant": null
+          "Descendant": []
         },
         {
-          "Name": "tra-guerra-e-resistenza",
+          "Name": "ipertesti/tra-guerra-e-resistenza/.treeinfo.html",
           "Titolo": "Tra guerra e Resistenza",
-          "Descendant": null
+          "Descendant": []
         }
       ]
     },
     {
-      "Name": "lavori",
+      "Name": "lavori/.treeinfo.html",
       "Titolo": "Articoli e lavori",
-      "Descendant": null
+      "Descendant": []
     },
     {
-      "Name": "storia-suddivisioni-territoriali",
+      "Name": "storia-suddivisioni-territoriali/.treeinfo.html",
       "Titolo": "Pagine web per il testo “Per una storia delle suddivisioni territoriali”",
-      "Descendant": null
+      "Descendant": []
     },
     {
-      "Name": "territori",
+      "Name": "territori/.treeinfo.html",
       "Titolo": "Storia e immagini delle variazioni territoriali",
-      "Descendant": null
+      "Descendant": []
     },
     {
-      "Name": "TerritoriItaliani",
+      "Name": "TerritoriItaliani/.treeinfo.html",
       "Titolo": "Appendici al testo “Informatica, comunicazione e discipline storiche tra ricerca e didattica”",
-      "Descendant": null
+      "Descendant": []
     }
   ]
 }

@@ -17,13 +17,13 @@
     {
       "Titolo": "Tra guerra e Resistenza",
       "PathName": "pag3.htm"
-    },
-    {
-      "Titolo": "Mappa della directory",
-      "PathName": ".treeinfo.html"
     }
   ],
   "FilePDF": [],
   "FilePPT": [],
-  "Descendant": null
+  "Ancestors": [
+    "/.treeinfo.html",
+    "/ipertesti/.treeinfo.html"
+  ],
+  "Descendants": []
 }

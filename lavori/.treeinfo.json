@@ -1,12 +1,7 @@
 {
   "Titolo": "Articoli e lavori",
   "Directory": "/lavori",
-  "FileHTML": [
-    {
-      "Titolo": "Mappa della directory",
-      "PathName": ".treeinfo.html"
-    }
-  ],
+  "FileHTML": [],
   "FilePDF": [
     {
       "Titolo": "2006-Aica.pdf",
@@ -59,5 +54,8 @@
       "PathName": "2010-09-29-Aquila.ppt"
     }
   ],
-  "Descendant": null
+  "Ancestors": [
+    "/.treeinfo.html"
+  ],
+  "Descendants": []
 }

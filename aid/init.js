@@ -181,25 +181,29 @@ function addStyle(href, integrity, crossorigin) {
 
       let treeinfo_html=document.getElementById('treeinfo-html');
       if(treeinfo_html&&treeinfo_json.Titolo) {
-        treeinfo_html.insertAdjacentHTML("beforebegin", `<h2>${treeinfo_json.Titolo}<h2>`)
+        treeinfo_html.insertAdjacentHTML("beforebegin", `<h2>${treeinfo_json.Titolo}<h2>`);
       }
-      if(treeinfo_html&&treeinfo_json.FileHTML) {
-        treeinfo_html.innerHTML=treeinfo_json.FileHTML.length+" pagine"
+      if(treeinfo_html&&treeinfo_json.FileHTML.length) {
+        treeinfo_html.insertAdjacentHTML("beforebegin", "<h3>Pagine HTML disponibili</h3>");
+        treeinfo_html.innerHTML=`${treeinfo_json.FileHTML.length} pagine`
       }
 
       let treeinfo_pdf=document.getElementById('treeinfo-pdf');
-      if(treeinfo_pdf&&treeinfo_json.FilePDF) {
-        treeinfo_pdf.innerHTML=treeinfo_json.FilePDF.length+" pagine"
+      if(treeinfo_pdf&&treeinfo_json.FilePDF.length) {
+        treeinfo_pdf.insertAdjacentHTML("beforebegin", "<h3>Documenti PDF disponibili</h3>");
+        treeinfo_pdf.innerHTML=`${treeinfo_json.FilePDF.length} documenti`
       }
 
       let treeinfo_ppt=document.getElementById('treeinfo-ppt');
-      if(treeinfo_ppt&&treeinfo_json.FilePPT) {
-        treeinfo_ppt.innerHTML=treeinfo_json.FilePPT.length+" pagine"
+      if(treeinfo_ppt&&treeinfo_json.FilePPT.length) {
+        treeinfo_ppt.insertAdjacentHTML("beforebegin", "<h3>Documenti PPT disponibili</h3>");
+        treeinfo_ppt.innerHTML=`${treeinfo_json.FilePPT.length} documenti`
       }
 
       let treeinfo_dir=document.getElementById('treeinfo-dir');
-      if(treeinfo_dir&&treeinfo_json.Descendant) {
-        treeinfo_dir.innerHTML=treeinfo_json.Descendant.length+" pagine"
+      if(treeinfo_dir&&treeinfo_json.Descendant.length) {
+        treeinfo_dir.insertAdjacentHTML("beforebegin", "<h3>Altre cartelle contenute</h3>");
+        treeinfo_dir.innerHTML=`${treeinfo_json.Descendant.length} cartelle`
       }
     });
   }

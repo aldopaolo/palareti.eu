@@ -3,15 +3,14 @@
   "Directory": "/bnf",
   "FileHTML": [
     {
-      "Titolo": "Mappa della directory",
-      "PathName": ".treeinfo.html"
-    },
-    {
       "Titolo": "BNF utilizzata in questo sito",
       "PathName": "index.html"
     }
   ],
   "FilePDF": [],
   "FilePPT": [],
-  "Descendant": null
+  "Ancestors": [
+    "/.treeinfo.html"
+  ],
+  "Descendants": []
 }

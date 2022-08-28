@@ -3,10 +3,6 @@
   "Directory": "/ipertesti/storiaviaemilia",
   "FileHTML": [
     {
-      "Titolo": "Mappa della directory",
-      "PathName": ".treeinfo.html"
-    },
-    {
       "Titolo": "Lo sviluppo urbanistico di Bologna",
       "PathName": "bologna.html"
     },
@@ -21,5 +17,9 @@
   ],
   "FilePDF": [],
   "FilePPT": [],
-  "Descendant": null
+  "Ancestors": [
+    "/.treeinfo.html",
+    "/ipertesti/.treeinfo.html"
+  ],
+  "Descendants": []
 }

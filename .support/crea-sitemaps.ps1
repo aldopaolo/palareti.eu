@@ -33,38 +33,57 @@ function getFileInfoWithExtension{
   param($path, $extension)
   Get-ChildItem -Path "$Path\*.$extension" `
   | ForEach-Object {
-    if($extension -like 'htm*'){
-      $_content=Get-Content $_.fullname -Raw
-      if($_content -match '<h1>(.*)</h1>'){
-        $Titolo=pulisciStringa $matches[1]
+    $Name=$_.Name
+    if($Name -notlike ".*"){
+      if($extension -like 'htm*'){
+        $_content=Get-Content $_.fullname -Raw
+        if($_content -match '<h1>(.*)</h1>'){
+          $Titolo=pulisciStringa $matches[1]
+        }
+        elseif($_content -match '<title>(.*)</title>'){
+          $Titolo=pulisciStringa $matches[1]
+        }
       }
-      elseif($_content -match '<title>(.*)</title>'){
-        $Titolo=pulisciStringa $matches[1]
+      else{
+        $Titolo=$Name
       }
-    }
-    else{
-      $Titolo=$_.Name
-    }
-    [pscustomobject]@{
-      Titolo   =$Titolo
-      # Estensione =$extension
-      PathName =$_.Name
-      # FileDir    =$_.DirectoryName -Replace '^.*palareti\.eu\\', '/' -replace ('\\', '/')
+      [pscustomobject]@{
+        Titolo   =$Titolo
+        # Estensione =$extension
+        PathName =$Name
+        # FileDir    =$_.DirectoryName -Replace '^.*palareti\.eu\\', '/' -replace ('\\', '/')
+      }
     }
   }
 }
 
-function getDescendantInfo{
-  param($path)
+function getAncestorsInfo{
+  param([string]$wwwPath)
   $ret=@()
-  Get-ChildItem -Directory $path `
+  $pathArray=$wwwPath.split('/')
+  $el=''
+  for($i=0;$i -lt $pathArray.length-1;$i++){
+    $el+=$pathArray[$i]+"/"
+    $ret+="$el.treeinfo.html"
+  }
+  return $ret
+}
+
+function getDescendantsInfo{
+  param(
+    [string]$prefix,
+    [string]$winPath
+  )
+  $ret=@()
+  Get-ChildItem -Directory $winPath `
   | Where-Object { (Test-Path "$($_.FullName)/.treeinfo") } `
   | ForEach-Object {
     $FullName=$_.fullname
+    $DirPath="$Prefix$($_.Name)/"
     $ret+=[PSCustomObject]@{
-      Name       = $_.Name
+      Name       = "$DirPath.treeinfo.html"
       Titolo=pulisciStringa (Get-Content "$Fullname\.treeinfo")
-      Descendant =getDescendantInfo $FullName
+      Descendant =@(getDescendantsInfo $DirPath $FullName)
     }
   }
   return $ret
@@ -76,10 +95,11 @@ $treeinfoHTML=@"
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mappa della directory</title>
+<title>Mappa della cartella attuale</title>
 <script src="/aid/init.js" class="alpa-bootstrap-resources alpa-treeinfo-resources"></script>
 </head>
 <body>
+<div id="treeinfo-ancestors"></div>
 <div id="treeinfo-html"></div>
 <div id="treeinfo-pdf"></div>
 <div id="treeinfo-ppt"></div>
@@ -96,18 +116,21 @@ $treeinfo=@(Get-ChildItem '.treeinfo' -Recurse)
 $treeinfo | ForEach-Object{
   $Titolo=pulisciStringa (Get-Content $_.FullName)
   $DirectoryWin=$_.Directory
-  $Directory=$DirectoryWin -Replace '^.*palareti\.eu\\', '/' -replace ('\\', '/')
+  $Directory=$DirectoryWin -Replace '^.*palareti\.eu', '' -replace ('\\', '/')
   $FileHTML=@(getFileInfoWithExtension $DirectoryWin 'htm')+@(getFileInfoWithExtension $DirectoryWin 'html')
   $FilePDF=@(getFileInfoWithExtension $DirectoryWin 'pdf')
   $FilePPT=@(getFileInfoWithExtension $DirectoryWin 'ppt')
-  $Descendant=getDescendantInfo($DirectoryWin)
+  $Ancestors=@(getAncestorsInfo $Directory)
+  $Descendants=@(getDescendantsInfo "" $DirectoryWin)
+  if($Descendant -eq $null){$Descendant=@()}
   $PsCustomObject=[pscustomobject]@{
     Titolo     =$Titolo
-    Directory  =$Directory -Replace '^.*palareti\.eu\\', '/' -replace ('\\', '/')
+    Directory  =$Directory
     FileHTML   =$FileHTML
     FilePDF    =$FilePDF
     FilePPT    =$FilePPT
-    Descendant =$Descendant
+    Ancestors  =$Ancestors
+    Descendants=$Descendants
   }
   ConvertTo-Json -InputObject $PsCustomObject -Depth 10 | Out-File "$DirectoryWin\.treeinfo.json"
   $treeinfoHTML | Out-File "$DirectoryWin\.treeinfo.html"
