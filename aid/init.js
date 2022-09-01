@@ -68,7 +68,7 @@ function addStyle(href, integrity, crossorigin) {
 
   // ____________________________________
   // jquery
-  if(classJQueryResources||classBootstrapTableResources) {
+  if(classJQueryResources||classBootstrapTableResources||classTreeinfoResources) {
     /*
     equivalente a
       <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
@@ -78,7 +78,7 @@ function addStyle(href, integrity, crossorigin) {
 
   // ____________________________________
   // bootstrap
-  if(classBootstrapResources||classBootstrapTableResources) {
+  if(classBootstrapResources||classBootstrapTableResources||classTreeinfoResources) {
     /*
     equivalente a
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -179,13 +179,26 @@ function addStyle(href, integrity, crossorigin) {
       const path=(location.pathname).replace(/\/[^\/]*$/, '')
       const treeinfo_json=getJson(`${path}/.treeinfo.json`)
 
-      let treeinfo_html=document.getElementById('treeinfo-html');
-      if(treeinfo_html&&treeinfo_json.Titolo) {
-        treeinfo_html.insertAdjacentHTML("beforebegin", `<h2>${treeinfo_json.Titolo}<h2>`);
+      let treeinfo_breadcrumb=document.getElementById('breadcrumb');
+      if(treeinfo_breadcrumb) {
+        // inserisco il titolo della pagina
+        if(treeinfo_json.Titolo) {
+          treeinfo_breadcrumb.insertAdjacentHTML("beforebegin", `<h2>${treeinfo_json.Titolo}<h2>`);
+        }
+        // aggiungo gli elementi antenati al breadcrumb
+        let breadcrumbList='<nav aria-label="breadcrumb"><ol class="breadcrumb">';
+        for(let Breadcrumb of treeinfo_json.Breadcrumb) {
+          breadcrumbList+=`<li class="breadcrumb-item"><a href="${Breadcrumb.Href}" class="breadcrumb-item">${Breadcrumb.Titolo}</a></li>`;
+        }
+        let treeinfo_breadcrumbAttive=document.getElementById('breadcrumb-attive');
+        treeinfo_breadcrumbAttive.insertAdjacentHTML("beforebegin", breadcrumbList);
+        treeinfo_breadcrumbAttive.innerHTML=treeinfo_json.Titolo;
       }
+
+      let treeinfo_html=document.getElementById('treeinfo-html');
       if(treeinfo_html&&treeinfo_json.FileHTML.length) {
-        treeinfo_html.insertAdjacentHTML("beforebegin", "<h3>Pagine HTML disponibili</h3>");
-        treeinfo_html.innerHTML=`${treeinfo_json.FileHTML.length} pagine`
+        treeinfo_html.insertAdjacentHTML("beforebegin", "<h3>Documenti HTML disponibili</h3>");
+        treeinfo_html.innerHTML=`${treeinfo_json.FileHTML.length} documenti`
       }
 
       let treeinfo_pdf=document.getElementById('treeinfo-pdf');
@@ -201,7 +214,7 @@ function addStyle(href, integrity, crossorigin) {
       }
 
       let treeinfo_dir=document.getElementById('treeinfo-dir');
-      if(treeinfo_dir&&treeinfo_json.Descendant.length) {
+      if(treeinfo_dir&&treeinfo_json.Descendants.length) {
         treeinfo_dir.insertAdjacentHTML("beforebegin", "<h3>Altre cartelle contenute</h3>");
         treeinfo_dir.innerHTML=`${treeinfo_json.Descendant.length} cartelle`
       }

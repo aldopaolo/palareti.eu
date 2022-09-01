@@ -13,8 +13,11 @@
   ],
   "FilePDF": [],
   "FilePPT": [],
-  "Ancestors": [
-    "/.treeinfo.html"
+  "Breadcrumb": [
+    {
+      "Href": "/.treeinfo.html",
+      "Titolo": "L'utilizzo di strumenti informatici nella storia dei territori amministrativi"
+    }
   ],
   "Descendants": []
 }

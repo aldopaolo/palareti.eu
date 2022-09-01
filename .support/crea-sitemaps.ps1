@@ -57,14 +57,20 @@ function getFileInfoWithExtension{
   }
 }
 
-function getAncestorsInfo{
-  param([string]$wwwPath)
+function getBreadcrumbInfo{
+  param(
+    [string]$wwwPath,
+    [string]$rootPath
+  )
   $ret=@()
   $pathArray=$wwwPath.split('/')
   $el=''
-  for($i=0;$i -lt $pathArray.length-1;$i++){
+  for($i=0; $i -lt $pathArray.length-1; $i++){
     $el+=$pathArray[$i]+"/"
-    $ret+="$el.treeinfo.html"
+    $ret+=[pscustomobject]@{
+      Href   ="$el.treeinfo.html"
+      Titolo =puliscistringa (Get-Content "$rootPath$($el -replace '/','\').treeinfo")
+    }
   }
   return $ret
 }
@@ -82,7 +88,7 @@ function getDescendantsInfo{
     $DirPath="$Prefix$($_.Name)/"
     $ret+=[PSCustomObject]@{
       Name       = "$DirPath.treeinfo.html"
-      Titolo=pulisciStringa (Get-Content "$Fullname\.treeinfo")
+      Titolo     =pulisciStringa (Get-Content "$Fullname\.treeinfo")
       Descendant =@(getDescendantsInfo $DirPath $FullName)
     }
   }
@@ -96,10 +102,12 @@ $treeinfoHTML=@"
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Mappa della cartella attuale</title>
-<script src="/aid/init.js" class="alpa-bootstrap-resources alpa-treeinfo-resources"></script>
+<script src="/aid/init.js" class="alpa-treeinfo-resources"></script>
 </head>
 <body>
-<div id="treeinfo-ancestors"></div>
+<nav aria-label="breadcrumb" id="breadcrumb"><ol class="breadcrumb">
+<li class="breadcrumb-item active" aria-current="page" id="breadcrumb-attive"></li>
+</ol></nav>
 <div id="treeinfo-html"></div>
 <div id="treeinfo-pdf"></div>
 <div id="treeinfo-ppt"></div>
@@ -117,10 +125,11 @@ $treeinfo | ForEach-Object{
   $Titolo=pulisciStringa (Get-Content $_.FullName)
   $DirectoryWin=$_.Directory
   $Directory=$DirectoryWin -Replace '^.*palareti\.eu', '' -replace ('\\', '/')
+  $DirectoryRoot=$DirectoryWin -replace '(palareti\.eu).*','$1'
   $FileHTML=@(getFileInfoWithExtension $DirectoryWin 'htm')+@(getFileInfoWithExtension $DirectoryWin 'html')
   $FilePDF=@(getFileInfoWithExtension $DirectoryWin 'pdf')
   $FilePPT=@(getFileInfoWithExtension $DirectoryWin 'ppt')
-  $Ancestors=@(getAncestorsInfo $Directory)
+  $Breadcrumb=@(getBreadcrumbInfo $Directory $DirectoryRoot)
   $Descendants=@(getDescendantsInfo "" $DirectoryWin)
   if($Descendant -eq $null){$Descendant=@()}
   $PsCustomObject=[pscustomobject]@{
@@ -129,7 +138,7 @@ $treeinfo | ForEach-Object{
     FileHTML   =$FileHTML
     FilePDF    =$FilePDF
     FilePPT    =$FilePPT
-    Ancestors  =$Ancestors
+    Breadcrumb  =$Breadcrumb
     Descendants=$Descendants
   }
   ConvertTo-Json -InputObject $PsCustomObject -Depth 10 | Out-File "$DirectoryWin\.treeinfo.json"

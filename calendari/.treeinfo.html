@@ -4,10 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Mappa della cartella attuale</title>
-<script src="/aid/init.js" class="alpa-bootstrap-resources alpa-treeinfo-resources"></script>
+<script src="/aid/init.js" class="alpa-treeinfo-resources"></script>
 </head>
 <body>
-<div id="treeinfo-ancestors"></div>
+<nav aria-label="breadcrumb" id="breadcrumb"><ol class="breadcrumb">
+<li class="breadcrumb-item active" aria-current="page" id="breadcrumb-attive"></li>
+</ol></nav>
 <div id="treeinfo-html"></div>
 <div id="treeinfo-pdf"></div>
 <div id="treeinfo-ppt"></div>
