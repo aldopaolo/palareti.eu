@@ -34,6 +34,8 @@ function getFileInfoWithExtension{
   Get-ChildItem -Path "$Path\*.$extension" `
   | ForEach-Object {
     $Name=$_.Name
+    $CreationTimeUtc=$_.CreationTimeUtc
+    $LastWriteTimeUtc=$_.LastWriteTimeUtc
     if($Name -notlike ".*"){
       if($extension -like 'htm*'){
         $_content=Get-Content $_.fullname -Raw
@@ -49,9 +51,9 @@ function getFileInfoWithExtension{
       }
       [pscustomobject]@{
         Titolo   =$Titolo
-        # Estensione =$extension
         PathName =$Name
-        # FileDir    =$_.DirectoryName -Replace '^.*palareti\.eu\\', '/' -replace ('\\', '/')
+        # CreationTimeUtc=$CreationTimeUtc
+        # LastWriteTimeUtc=$LastWriteTimeUtc
       }
     }
   }
@@ -102,16 +104,14 @@ $treeinfoHTML=@"
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Mappa della cartella attuale</title>
-<script src="/aid/init.js" class="alpa-treeinfo-resources"></script>
+<script src="/aid/init.js"></script>
 </head>
 <body>
-<nav aria-label="breadcrumb" id="breadcrumb"><ol class="breadcrumb">
-<li class="breadcrumb-item active" aria-current="page" id="breadcrumb-attive"></li>
-</ol></nav>
-<div id="treeinfo-html"></div>
-<div id="treeinfo-pdf"></div>
-<div id="treeinfo-ppt"></div>
-<div id="treeinfo-dir"></div>
+<nav class="breadcrumb" aria-label="breadcrumbs" id="breadcrumb"></nav>
+<div class="block" id="treeinfo-html"></div>
+<div class="block" id="treeinfo-pdf"></div>
+<div class="block" id="treeinfo-ppt"></div>
+<div class="block" id="treeinfo-dir"></div>
 </body>
 </html>
 "@
