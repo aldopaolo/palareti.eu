@@ -1,0 +1,49 @@
+{
+  "Titolo": "Tra guerra e Resistenza",
+  "Directory": "/ipertesti/tra-guerra-e-resistenza",
+  "FileHTML": [
+    {
+      "Titolo": "Tra guerra e Resistenza",
+      "Href": "autori.htm",
+      "CreationTime": "2022-08-20T17:16:56.6892097+02:00",
+      "LastWriteTime": "2003-04-23T11:23:34+02:00"
+    },
+    {
+      "Titolo": "Tra guerra e Resistenza",
+      "Href": "index.htm",
+      "CreationTime": "2022-08-20T17:17:00.9359384+02:00",
+      "LastWriteTime": "2003-08-07T01:46:04+02:00"
+    },
+    {
+      "Titolo": "Tra guerra e Resistenza",
+      "Href": "pag2.htm",
+      "CreationTime": "2022-08-20T17:17:08.2731001+02:00",
+      "LastWriteTime": "2003-08-06T03:18:10+02:00"
+    },
+    {
+      "Titolo": "Tra guerra e Resistenza",
+      "Href": "pag3.htm",
+      "CreationTime": "2022-08-20T17:16:58.6245597+02:00",
+      "LastWriteTime": "2003-08-14T16:25:00+02:00"
+    },
+    {
+      "Titolo": "Mappa della cartella attuale",
+      "Href": ".treeinfo.html",
+      "CreationTime": "2022-09-12T02:27:14.5587132+02:00",
+      "LastWriteTime": "2022-09-18T21:10:39.7885616+02:00"
+    }
+  ],
+  "FilePDF": [],
+  "FilePPT": [],
+  "Breadcrumb": [
+    {
+      "Href": "/.treeinfo.html",
+      "Titolo": "L'utilizzo di strumenti informatici nella storia dei territori amministrativi"
+    },
+    {
+      "Href": "/ipertesti/.treeinfo.html",
+      "Titolo": "Ipertesti realizzati"
+    }
+  ],
+  "Descendants": []
+}

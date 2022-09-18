@@ -1,0 +1,33 @@
+{
+  "Titolo": "Storia e immagini delle variazioni territoriali",
+  "Directory": "/territori",
+  "FileHTML": [
+    {
+      "Titolo": "Mappa della cartella attuale",
+      "Href": ".treeinfo.html",
+      "CreationTime": "2022-09-12T02:27:15.1966667+02:00",
+      "LastWriteTime": "2022-09-18T21:10:40.2154891+02:00"
+    },
+    {
+      "Titolo": "Storia e immagini delle variazioni territoriali",
+      "Href": "index.html",
+      "CreationTime": "2022-08-20T17:16:55.1261782+02:00",
+      "LastWriteTime": "2022-02-21T18:18:20+01:00"
+    },
+    {
+      "Titolo": "Informazioni geografiche e temporali non disponibili",
+      "Href": "territorio.html",
+      "CreationTime": "2022-08-20T17:17:02.0598663+02:00",
+      "LastWriteTime": "2022-02-21T18:18:25+01:00"
+    }
+  ],
+  "FilePDF": [],
+  "FilePPT": [],
+  "Breadcrumb": [
+    {
+      "Href": "/.treeinfo.html",
+      "Titolo": "L'utilizzo di strumenti informatici nella storia dei territori amministrativi"
+    }
+  ],
+  "Descendants": []
+}

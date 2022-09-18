@@ -1,0 +1,39 @@
+{
+  "Titolo": "Dati bibliografici",
+  "Directory": "/datibibliografici",
+  "FileHTML": [
+    {
+      "Titolo": "Mappa della cartella attuale",
+      "Href": ".treeinfo.html",
+      "CreationTime": "2022-09-12T02:27:14.3208099+02:00",
+      "LastWriteTime": "2022-09-18T21:10:39.7025221+02:00"
+    },
+    {
+      "Titolo": "Riferimenti bibliografici di ambito cartografico",
+      "Href": "cartografia.html",
+      "CreationTime": "2022-08-20T17:16:56.7952053+02:00",
+      "LastWriteTime": "2022-02-21T18:16:22+01:00"
+    },
+    {
+      "Titolo": "Riferimenti bibliografici di ambito demografico",
+      "Href": "demografia.html",
+      "CreationTime": "2022-08-20T17:17:05.8873027+02:00",
+      "LastWriteTime": "2022-02-21T18:16:23+01:00"
+    },
+    {
+      "Titolo": "Materiale prodotto dalla Direzione generale della Statistica e dall'ISTAT",
+      "Href": "istat.html",
+      "CreationTime": "2022-08-20T17:16:59.0179896+02:00",
+      "LastWriteTime": "2022-02-21T18:16:22+01:00"
+    }
+  ],
+  "FilePDF": [],
+  "FilePPT": [],
+  "Breadcrumb": [
+    {
+      "Href": "/.treeinfo.html",
+      "Titolo": "L'utilizzo di strumenti informatici nella storia dei territori amministrativi"
+    }
+  ],
+  "Descendants": []
+}

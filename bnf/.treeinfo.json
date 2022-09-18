@@ -1,0 +1,27 @@
+{
+  "Titolo": "BNF utilizzata in questo sito",
+  "Directory": "/bnf",
+  "FileHTML": [
+    {
+      "Titolo": "Mappa della cartella attuale",
+      "Href": ".treeinfo.html",
+      "CreationTime": "2022-09-12T02:27:14.1967792+02:00",
+      "LastWriteTime": "2022-09-18T21:10:39.6385795+02:00"
+    },
+    {
+      "Titolo": "BNF utilizzata in questo sito",
+      "Href": "index.html",
+      "CreationTime": "2022-08-20T17:16:42.1469165+02:00",
+      "LastWriteTime": "2022-02-21T18:10:26+01:00"
+    }
+  ],
+  "FilePDF": [],
+  "FilePPT": [],
+  "Breadcrumb": [
+    {
+      "Href": "/.treeinfo.html",
+      "Titolo": "L'utilizzo di strumenti informatici nella storia dei territori amministrativi"
+    }
+  ],
+  "Descendants": []
+}

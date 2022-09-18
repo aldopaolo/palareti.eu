@@ -1,0 +1,39 @@
+{
+  "Titolo": "Appendici al testo “Informatica, comunicazione e discipline storiche tra ricerca e didattica”",
+  "Directory": "/TerritoriItaliani",
+  "FileHTML": [
+    {
+      "Titolo": "Mappa della cartella attuale",
+      "Href": ".treeinfo.html",
+      "CreationTime": "2022-09-12T02:27:15.2735875+02:00",
+      "LastWriteTime": "2022-09-18T21:10:40.2413631+02:00"
+    },
+    {
+      "Titolo": "Tipi di suddivisioni amministrative nel periodo pontificio e nel periodo postunitario",
+      "Href": "Appendice1.html",
+      "CreationTime": "2022-08-20T17:17:10.300896+02:00",
+      "LastWriteTime": "2022-02-21T18:18:26+01:00"
+    },
+    {
+      "Titolo": "Stato pontificio: articolazione di province, distretti e governi nel 1853",
+      "Href": "Appendice2.html",
+      "CreationTime": "2022-08-20T17:16:55.6329095+02:00",
+      "LastWriteTime": "2022-02-21T18:18:26+01:00"
+    },
+    {
+      "Titolo": "Formazione della provincia di Littoria (ora Latina)",
+      "Href": "Appendice3.html",
+      "CreationTime": "2022-08-20T17:17:03.2100729+02:00",
+      "LastWriteTime": "2022-02-21T18:18:26+01:00"
+    }
+  ],
+  "FilePDF": [],
+  "FilePPT": [],
+  "Breadcrumb": [
+    {
+      "Href": "/.treeinfo.html",
+      "Titolo": "L'utilizzo di strumenti informatici nella storia dei territori amministrativi"
+    }
+  ],
+  "Descendants": []
+}

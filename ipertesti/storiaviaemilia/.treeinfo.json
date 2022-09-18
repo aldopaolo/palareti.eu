@@ -1,0 +1,43 @@
+{
+  "Titolo": "La storia urbanistica della via Emilia in eta contemporanea",
+  "Directory": "/ipertesti/storiaviaemilia",
+  "FileHTML": [
+    {
+      "Titolo": "Mappa della cartella attuale",
+      "Href": ".treeinfo.html",
+      "CreationTime": "2022-09-12T02:27:14.4404139+02:00",
+      "LastWriteTime": "2022-09-18T21:10:39.7542764+02:00"
+    },
+    {
+      "Titolo": "Lo sviluppo urbanistico di Bologna",
+      "Href": "bologna.html",
+      "CreationTime": "2022-08-20T17:16:56.6052909+02:00",
+      "LastWriteTime": "2022-02-21T18:18:18+01:00"
+    },
+    {
+      "Titolo": "La storia urbanistica della via Emilia in et� contemporanea",
+      "Href": "index.html",
+      "CreationTime": "2022-08-20T17:17:03.2258175+02:00",
+      "LastWriteTime": "2022-09-12T01:20:05.9208299+02:00"
+    },
+    {
+      "Titolo": "Lo sviluppo urbanistico di Rimini",
+      "Href": "rimini.html",
+      "CreationTime": "2022-08-20T17:16:58.2298794+02:00",
+      "LastWriteTime": "2022-02-21T18:18:19+01:00"
+    }
+  ],
+  "FilePDF": [],
+  "FilePPT": [],
+  "Breadcrumb": [
+    {
+      "Href": "/.treeinfo.html",
+      "Titolo": "L'utilizzo di strumenti informatici nella storia dei territori amministrativi"
+    },
+    {
+      "Href": "/ipertesti/.treeinfo.html",
+      "Titolo": "Ipertesti realizzati"
+    }
+  ],
+  "Descendants": []
+}

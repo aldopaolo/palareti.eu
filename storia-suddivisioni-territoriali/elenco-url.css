@@ -9,8 +9,8 @@ dl {
   display: flex;
   flex-flow: row wrap;
   /*
-  padding: 0.5em;
-*/
+    padding: 0.5em;
+  */
 }
 dt {
   flex-basis: 15%;
@@ -20,15 +20,15 @@ dt {
     background: #333;
     text-align: right;
     color: #fff;
--------
+    -------
     float: left;
-  clear: left;
-  width: 10ex;
-  margin-left: 2ex;
-  font-weight: bold;
+    clear: left;
+    width: 10ex;
+    margin-left: 2ex;
+    font-weight: bold;
     text-align: right;
     color: green;
-*/
+  */
 }
 dd {
   flex-basis: 80%;
@@ -37,8 +37,8 @@ dd {
   padding: 2px 2px;
   /*
     border-bottom: 1px solid #333;
--------
-  margin-left: 13ex;
+    -------
+    margin-left: 13ex;
     margin: 0 0 0 13ex;
     padding: 0 0 0.5em 0;
 */

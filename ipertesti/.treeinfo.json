@@ -1,0 +1,55 @@
+{
+  "Titolo": "Ipertesti realizzati",
+  "Directory": "/ipertesti",
+  "FileHTML": [
+    {
+      "Titolo": "Mappa della cartella attuale",
+      "Href": ".treeinfo.html",
+      "CreationTime": "2022-09-12T02:27:15.0376162+02:00",
+      "LastWriteTime": "2022-09-18T21:10:40.1328534+02:00"
+    },
+    {
+      "Titolo": "Ipertesto \"La storia urbanistica della via Emilia in età contemporanea\"",
+      "Href": "storiaviaemilia.html",
+      "CreationTime": "2022-08-25T20:13:39.8426634+02:00",
+      "LastWriteTime": "2022-09-12T01:20:05.917991+02:00"
+    },
+    {
+      "Titolo": "Ipertesto \"Tra guerra e Resistenza\"",
+      "Href": "tra-guerra-e-resistenza.html",
+      "CreationTime": "2022-08-25T20:04:52.9501144+02:00",
+      "LastWriteTime": "2022-09-12T01:20:05.922665+02:00"
+    },
+    {
+      "Titolo": "Ipertesto \"Lo sviluppo urbanistico di Bologna tra le due guerre mondiali\"",
+      "Href": "urbanistica-bologna-guerre-mondiali.html",
+      "CreationTime": "2022-08-25T19:59:31.2306598+02:00",
+      "LastWriteTime": "2022-09-12T01:20:05.9245979+02:00"
+    }
+  ],
+  "FilePDF": [],
+  "FilePPT": [],
+  "Breadcrumb": [
+    {
+      "Href": "/.treeinfo.html",
+      "Titolo": "L'utilizzo di strumenti informatici nella storia dei territori amministrativi"
+    }
+  ],
+  "Descendants": [
+    {
+      "Href": "storiaviaemilia/.treeinfo.html",
+      "Titolo": "La storia urbanistica della via Emilia in eta contemporanea",
+      "Descendants": []
+    },
+    {
+      "Href": "tra-guerra-e-resistenza/.treeinfo.html",
+      "Titolo": "Tra guerra e Resistenza",
+      "Descendants": []
+    },
+    {
+      "Href": "urbanistica-bologna-guerre-mondiali/.treeinfo.html",
+      "Titolo": "Lo sviluppo urbanistico di Bologna tra le due guerre mondiali",
+      "Descendants": []
+    }
+  ]
+}

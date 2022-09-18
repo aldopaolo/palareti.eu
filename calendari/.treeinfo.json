@@ -1,0 +1,93 @@
+{
+  "Titolo": "La descrizione del tempo",
+  "Directory": "/calendari",
+  "FileHTML": [
+    {
+      "Titolo": "Mappa della cartella attuale",
+      "Href": ".treeinfo.html",
+      "CreationTime": "2022-09-12T02:27:14.2673725+02:00",
+      "LastWriteTime": "2022-09-18T21:10:39.6762637+02:00"
+    },
+    {
+      "Titolo": "Repertorio di calendari",
+      "Href": "calendari.html",
+      "CreationTime": "2022-08-20T17:16:44.5182225+02:00",
+      "LastWriteTime": "2022-02-21T18:10:27+01:00"
+    },
+    {
+      "Titolo": "La descrizione delle informazioni di tipo temporale",
+      "Href": "descrizionedate-2011-02-11.html",
+      "CreationTime": "2022-08-20T17:16:41.6913176+02:00",
+      "LastWriteTime": "2022-02-21T18:10:28+01:00"
+    },
+    {
+      "Titolo": "1. La descrizione delle informazioni di tipo temporale -- Introduzione",
+      "Href": "descrizionedate-2014-01-13-1.html",
+      "CreationTime": "2022-08-20T17:16:49.93594+02:00",
+      "LastWriteTime": "2022-02-21T18:10:28+01:00"
+    },
+    {
+      "Titolo": "2. La descrizione delle informazioni di tipo temporale -- Requisiti per la descrizione di informazioni temporali storiche",
+      "Href": "descrizionedate-2014-01-13-2.html",
+      "CreationTime": "2022-08-20T17:16:41.7586323+02:00",
+      "LastWriteTime": "2022-02-21T18:10:28+01:00"
+    },
+    {
+      "Titolo": "1. La descrizione delle informazioni di tipo temporale -- Introduzione",
+      "Href": "descrizionedate-2014-01-13-3.html",
+      "CreationTime": "2022-08-20T17:16:44.8328324+02:00",
+      "LastWriteTime": "2022-02-21T18:10:28+01:00"
+    },
+    {
+      "Titolo": "1. La descrizione delle informazioni di tipo temporale -- Introduzione",
+      "Href": "descrizionedate-2014-01-13-4.html",
+      "CreationTime": "2022-08-20T17:16:35.9087198+02:00",
+      "LastWriteTime": "2022-02-21T18:10:29+01:00"
+    },
+    {
+      "Titolo": "1. La descrizione delle informazioni di tipo temporale -- Introduzione",
+      "Href": "descrizionedate-2014-01-13-5.html",
+      "CreationTime": "2022-08-20T17:16:44.7235918+02:00",
+      "LastWriteTime": "2022-02-21T18:10:29+01:00"
+    },
+    {
+      "Titolo": "La descrizione delle informazioni di tipo temporale",
+      "Href": "descrizionedate-2014-01-13.html",
+      "CreationTime": "2022-08-20T17:16:48.4776177+02:00",
+      "LastWriteTime": "2022-02-21T18:10:28+01:00"
+    },
+    {
+      "Titolo": "Versioni del documento sulle informazioni temporali",
+      "Href": "descrizionedate.html",
+      "CreationTime": "2022-08-20T17:16:48.3228728+02:00",
+      "LastWriteTime": "2022-02-21T18:10:27+01:00"
+    },
+    {
+      "Titolo": "Repertorio delle ere e dei relativi stili",
+      "Href": "ere.html",
+      "CreationTime": "2022-08-20T17:16:49.0064444+02:00",
+      "LastWriteTime": "2022-02-21T18:10:27+01:00"
+    },
+    {
+      "Titolo": "La descrizione del tempo",
+      "Href": "index.html",
+      "CreationTime": "2022-08-20T17:16:45.6403762+02:00",
+      "LastWriteTime": "2022-02-21T18:10:27+01:00"
+    },
+    {
+      "Titolo": "Repertorio di orari",
+      "Href": "orari.html",
+      "CreationTime": "2022-08-20T17:16:50.1136273+02:00",
+      "LastWriteTime": "2022-02-21T18:10:28+01:00"
+    }
+  ],
+  "FilePDF": [],
+  "FilePPT": [],
+  "Breadcrumb": [
+    {
+      "Href": "/.treeinfo.html",
+      "Titolo": "L'utilizzo di strumenti informatici nella storia dei territori amministrativi"
+    }
+  ],
+  "Descendants": []
+}

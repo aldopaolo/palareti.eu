@@ -1,0 +1,1357 @@
+{
+  "Titolo": "Lo sviluppo urbanistico di Bologna tra le due guerre mondiali",
+  "Directory": "/ipertesti/urbanistica-bologna-guerre-mondiali",
+  "FileHTML": [
+    {
+      "Titolo": "Mappa della cartella attuale",
+      "Href": ".treeinfo.html",
+      "CreationTime": "2022-09-12T02:27:14.9639946+02:00",
+      "LastWriteTime": "2022-09-18T21:10:40.0952876+02:00"
+    },
+    {
+      "Titolo": "Aeroporto di Borgo Panigale",
+      "Href": "aeroporto.html",
+      "CreationTime": "2022-08-20T17:17:08.7155129+02:00",
+      "LastWriteTime": "2022-02-21T18:17:22+01:00"
+    },
+    {
+      "Titolo": "Elenco delle aree analizzate, relativo al periodo 1925-1939",
+      "Href": "aree.html",
+      "CreationTime": "2022-08-20T17:16:55.2491206+02:00",
+      "LastWriteTime": "2022-02-21T18:17:22+01:00"
+    },
+    {
+      "Titolo": "La riorganizzazione della rete tramviaria",
+      "Href": "capolinea.html",
+      "CreationTime": "2022-08-20T17:16:56.2690487+02:00",
+      "LastWriteTime": "2022-02-21T18:17:23+01:00"
+    },
+    {
+      "Titolo": "Case popolarissime di via Pier de' Crescenzi",
+      "Href": "cp_pdc.html",
+      "CreationTime": "2022-08-20T17:16:54.4874357+02:00",
+      "LastWriteTime": "2022-02-21T18:17:23+01:00"
+    },
+    {
+      "Titolo": "Case popolarissime di via Scipione dal Ferro",
+      "Href": "cp_sdf.html",
+      "CreationTime": "2022-08-20T17:17:03.1462458+02:00",
+      "LastWriteTime": "2022-02-21T18:17:23+01:00"
+    },
+    {
+      "Titolo": "Case popolarissime di via Vezza",
+      "Href": "cp_vezza.html",
+      "CreationTime": "2022-08-20T17:16:59.5888599+02:00",
+      "LastWriteTime": "2022-02-21T18:17:23+01:00"
+    },
+    {
+      "Titolo": "Delibera podestarile del 3 giugno 1933",
+      "Href": "delibera_000.html",
+      "CreationTime": "2022-08-20T17:17:01.4859175+02:00",
+      "LastWriteTime": "2022-02-21T18:17:24+01:00"
+    },
+    {
+      "Titolo": "Delibera podestarile del 22 settembre 1934",
+      "Href": "delibera_001.html",
+      "CreationTime": "2022-08-20T17:17:07.5118846+02:00",
+      "LastWriteTime": "2022-02-21T18:17:24+01:00"
+    },
+    {
+      "Titolo": "Delibera podestarile del 25 giugno 1935",
+      "Href": "delibera_002.html",
+      "CreationTime": "2022-08-20T17:17:00.5267156+02:00",
+      "LastWriteTime": "2022-02-21T18:17:24+01:00"
+    },
+    {
+      "Titolo": "Delibera consiliare del 16 aprile 1909",
+      "Href": "delibera_003.html",
+      "CreationTime": "2022-08-20T17:17:08.8701457+02:00",
+      "LastWriteTime": "2022-02-21T18:17:24+01:00"
+    },
+    {
+      "Titolo": "Delibera consiliare dell'11 febbraio 1931",
+      "Href": "delibera_004.html",
+      "CreationTime": "2022-08-20T17:17:11.1961363+02:00",
+      "LastWriteTime": "2022-02-21T18:17:24+01:00"
+    },
+    {
+      "Titolo": "Delibera podestarile del 10 agosto 1935",
+      "Href": "delibera_005.html",
+      "CreationTime": "2022-08-20T17:17:07.6304257+02:00",
+      "LastWriteTime": "2022-02-21T18:17:25+01:00"
+    },
+    {
+      "Titolo": "Delibera consiliare del 25 febbraio 1974",
+      "Href": "delibera_006.html",
+      "CreationTime": "2022-08-20T17:16:59.5797516+02:00",
+      "LastWriteTime": "2022-02-21T18:17:25+01:00"
+    },
+    {
+      "Titolo": "Delibera podestarile del 3 agosto 1934",
+      "Href": "delibera_007.html",
+      "CreationTime": "2022-08-20T17:17:05.7202902+02:00",
+      "LastWriteTime": "2022-02-21T18:17:25+01:00"
+    },
+    {
+      "Titolo": "Delibera podestarile dell'8 gennaio 1934",
+      "Href": "delibera_008.html",
+      "CreationTime": "2022-08-20T17:16:59.1733176+02:00",
+      "LastWriteTime": "2022-02-21T18:17:25+01:00"
+    },
+    {
+      "Titolo": "Delibera consiliare del 17 aprile 1959",
+      "Href": "delibera_009.html",
+      "CreationTime": "2022-08-20T17:17:03.4624743+02:00",
+      "LastWriteTime": "2022-02-21T18:17:25+01:00"
+    },
+    {
+      "Titolo": "Delibera consiliare del 10 febbraio 1967",
+      "Href": "delibera_010.html",
+      "CreationTime": "2022-08-20T17:17:01.4959133+02:00",
+      "LastWriteTime": "2022-02-21T18:17:26+01:00"
+    },
+    {
+      "Titolo": "Delibera podestarile del 30 dicembre 1933",
+      "Href": "delibera_011.html",
+      "CreationTime": "2022-08-20T17:17:03.5447516+02:00",
+      "LastWriteTime": "2022-02-21T18:17:26+01:00"
+    },
+    {
+      "Titolo": "Delibera consiliare del 9 novembre 1953",
+      "Href": "delibera_012.html",
+      "CreationTime": "2022-08-20T17:16:57.9814628+02:00",
+      "LastWriteTime": "2022-02-21T18:17:26+01:00"
+    },
+    {
+      "Titolo": "La ferrovia �Direttissima� Bologna-Firenze",
+      "Href": "direttissima.html",
+      "CreationTime": "2022-08-20T17:16:58.3497875+02:00",
+      "LastWriteTime": "2022-02-21T18:17:26+01:00"
+    },
+    {
+      "Titolo": "La �citt�-giardino� sul lato collinare del primo tratto di via Toscana",
+      "Href": "giardino1.html",
+      "CreationTime": "2022-08-20T17:17:00.927438+02:00",
+      "LastWriteTime": "2022-02-21T18:17:28+01:00"
+    },
+    {
+      "Titolo": "L'urbanizzazione dell'area tra il primo tratto di via Toscana e Strada Maggiore",
+      "Href": "giardino2.html",
+      "CreationTime": "2022-08-20T17:16:54.067641+02:00",
+      "LastWriteTime": "2022-02-21T18:17:28+01:00"
+    },
+    {
+      "Titolo": "Aspetti dello sviluppo urbanistico di Bologna tra le due guerre mondiali.<br /> Un percorso ipertestuale",
+      "Href": "index_originale.html",
+      "CreationTime": "2022-08-20T17:16:57.0189081+02:00",
+      "LastWriteTime": "2022-02-21T18:17:29+01:00"
+    },
+    {
+      "Titolo": "Lo sviluppo urbanistico di Bologna tra le due guerre mondiali.",
+      "Href": "index.html",
+      "CreationTime": "2022-08-20T17:17:08.4410131+02:00",
+      "LastWriteTime": "2022-02-21T18:17:28+01:00"
+    },
+    {
+      "Titolo": "La Facolt� di Ingegneria",
+      "Href": "ingegneria.html",
+      "CreationTime": "2022-08-20T17:16:55.3349773+02:00",
+      "LastWriteTime": "2022-02-21T18:17:29+01:00"
+    },
+    {
+      "Titolo": "Periferia tra la �Direttissima� e il Mulino Parisio",
+      "Href": "mulinoParisio.html",
+      "CreationTime": "2022-08-20T17:16:59.1387087+02:00",
+      "LastWriteTime": "2022-02-21T18:17:29+01:00"
+    },
+    {
+      "Titolo": "Adiacenze di via Toscana",
+      "Href": "murri.html",
+      "CreationTime": "2022-08-20T17:16:56.2442763+02:00",
+      "LastWriteTime": "2022-02-21T18:17:29+01:00"
+    },
+    {
+      "Titolo": "Il mercato ortofrutticolo",
+      "Href": "ortofrutta.html",
+      "CreationTime": "2022-08-20T17:17:09.2971554+02:00",
+      "LastWriteTime": "2022-02-21T18:17:30+01:00"
+    },
+    {
+      "Titolo": "Denominazioni stradali nella zona Pontelungo-Santa Viola",
+      "Href": "pontelungo.html",
+      "CreationTime": "2022-08-20T17:17:08.803195+02:00",
+      "LastWriteTime": "2022-02-21T18:17:30+01:00"
+    },
+    {
+      "Titolo": "La nuova via Roma (oggi via Marconi)",
+      "Href": "roma.html",
+      "CreationTime": "2022-08-20T17:16:54.3923998+02:00",
+      "LastWriteTime": "2022-02-21T18:17:30+01:00"
+    },
+    {
+      "Titolo": "Stadio Littoriale (oggi Comunale)",
+      "Href": "stadio.html",
+      "CreationTime": "2022-08-20T17:17:05.7343059+02:00",
+      "LastWriteTime": "2022-02-21T18:17:31+01:00"
+    },
+    {
+      "Titolo": "Allargamento di via Ugo Bassi",
+      "Href": "ugobassi.html",
+      "CreationTime": "2022-08-20T17:16:55.84239+02:00",
+      "LastWriteTime": "2022-02-21T18:17:31+01:00"
+    },
+    {
+      "Titolo": "L'edilizia universitaria",
+      "Href": "universita.html",
+      "CreationTime": "2022-08-20T17:17:04.1107821+02:00",
+      "LastWriteTime": "2022-02-21T18:17:31+01:00"
+    },
+    {
+      "Titolo": "Via Bassa dei Sassi",
+      "Href": "via_000.html",
+      "CreationTime": "2022-08-20T17:17:06.0764832+02:00",
+      "LastWriteTime": "2022-02-21T18:17:31+01:00"
+    },
+    {
+      "Titolo": "Via Battindarno",
+      "Href": "via_001.html",
+      "CreationTime": "2022-08-20T17:16:54.4630987+02:00",
+      "LastWriteTime": "2022-02-21T18:17:32+01:00"
+    },
+    {
+      "Titolo": "Via Bellaria",
+      "Href": "via_003.html",
+      "CreationTime": "2022-08-20T17:17:09.6345331+02:00",
+      "LastWriteTime": "2022-02-21T18:17:32+01:00"
+    },
+    {
+      "Titolo": "Via Berretta Rossa",
+      "Href": "via_004.html",
+      "CreationTime": "2022-08-20T17:16:57.0744258+02:00",
+      "LastWriteTime": "2022-02-21T18:17:32+01:00"
+    },
+    {
+      "Titolo": "Via Cadriano",
+      "Href": "via_005.html",
+      "CreationTime": "2022-08-20T17:17:09.9399776+02:00",
+      "LastWriteTime": "2022-02-21T18:17:32+01:00"
+    },
+    {
+      "Titolo": "Via Calamosco",
+      "Href": "via_006.html",
+      "CreationTime": "2022-08-20T17:17:07.042437+02:00",
+      "LastWriteTime": "2022-02-21T18:17:32+01:00"
+    },
+    {
+      "Titolo": "Via Calanco",
+      "Href": "via_007.html",
+      "CreationTime": "2022-08-20T17:17:09.9349558+02:00",
+      "LastWriteTime": "2022-02-21T18:17:33+01:00"
+    },
+    {
+      "Titolo": "Via Cavaioni",
+      "Href": "via_008.html",
+      "CreationTime": "2022-08-20T17:17:09.971761+02:00",
+      "LastWriteTime": "2022-02-21T18:17:33+01:00"
+    },
+    {
+      "Titolo": "Via Cavedone",
+      "Href": "via_009.html",
+      "CreationTime": "2022-08-20T17:17:06.9068908+02:00",
+      "LastWriteTime": "2022-02-21T18:17:33+01:00"
+    },
+    {
+      "Titolo": "Via Cerodolo <span style='{font-size: smaller}'>(pronuncia <em>Cer�dolo</em>)</span>",
+      "Href": "via_010.html",
+      "CreationTime": "2022-08-20T17:16:54.5258358+02:00",
+      "LastWriteTime": "2022-02-21T18:17:33+01:00"
+    },
+    {
+      "Titolo": "Via Chiesa Calamosco",
+      "Href": "via_011.html",
+      "CreationTime": "2022-08-20T17:16:56.8658385+02:00",
+      "LastWriteTime": "2022-02-21T18:17:33+01:00"
+    },
+    {
+      "Titolo": "Via Colombarola",
+      "Href": "via_012.html",
+      "CreationTime": "2022-08-20T17:17:00.7852181+02:00",
+      "LastWriteTime": "2022-02-21T18:17:34+01:00"
+    },
+    {
+      "Titolo": "Via Crocione",
+      "Href": "via_013.html",
+      "CreationTime": "2022-08-20T17:16:59.4075351+02:00",
+      "LastWriteTime": "2022-02-21T18:17:34+01:00"
+    },
+    {
+      "Titolo": "Via degli Scalini",
+      "Href": "via_014.html",
+      "CreationTime": "2022-08-20T17:17:02.0901625+02:00",
+      "LastWriteTime": "2022-02-21T18:17:34+01:00"
+    },
+    {
+      "Titolo": "Via dei Carrettieri",
+      "Href": "via_015.html",
+      "CreationTime": "2022-08-20T17:17:03.0383055+02:00",
+      "LastWriteTime": "2022-02-21T18:17:34+01:00"
+    },
+    {
+      "Titolo": "Via dei Colli",
+      "Href": "via_016.html",
+      "CreationTime": "2022-08-20T17:17:03.3115407+02:00",
+      "LastWriteTime": "2022-02-21T18:17:34+01:00"
+    },
+    {
+      "Titolo": "Via dei Gessaroli",
+      "Href": "via_017.html",
+      "CreationTime": "2022-08-20T17:17:04.8029237+02:00",
+      "LastWriteTime": "2022-02-21T18:17:34+01:00"
+    },
+    {
+      "Titolo": "Via del Gomito",
+      "Href": "via_018.html",
+      "CreationTime": "2022-08-20T17:17:00.9186201+02:00",
+      "LastWriteTime": "2022-02-21T18:17:35+01:00"
+    },
+    {
+      "Titolo": "Via del Lazzaretto",
+      "Href": "via_019.html",
+      "CreationTime": "2022-08-20T17:17:03.6020886+02:00",
+      "LastWriteTime": "2022-02-21T18:17:35+01:00"
+    },
+    {
+      "Titolo": "Via del Pagnone",
+      "Href": "via_020.html",
+      "CreationTime": "2022-08-20T17:17:10.8545487+02:00",
+      "LastWriteTime": "2022-02-21T18:17:35+01:00"
+    },
+    {
+      "Titolo": "Via del Paleotto",
+      "Href": "via_021.html",
+      "CreationTime": "2022-08-20T17:17:10.7969971+02:00",
+      "LastWriteTime": "2022-02-21T18:17:35+01:00"
+    },
+    {
+      "Titolo": "Via del Pozzo",
+      "Href": "via_022.html",
+      "CreationTime": "2022-08-20T17:17:04.2333734+02:00",
+      "LastWriteTime": "2022-02-21T18:17:35+01:00"
+    },
+    {
+      "Titolo": "Via del Sostegnazzo",
+      "Href": "via_023.html",
+      "CreationTime": "2022-08-20T17:17:04.6583805+02:00",
+      "LastWriteTime": "2022-02-21T18:17:36+01:00"
+    },
+    {
+      "Titolo": "Via del Trebbo",
+      "Href": "via_024.html",
+      "CreationTime": "2022-08-20T17:16:55.7681891+02:00",
+      "LastWriteTime": "2022-02-21T18:17:36+01:00"
+    },
+    {
+      "Titolo": "Via della Cava",
+      "Href": "via_025.html",
+      "CreationTime": "2022-08-20T17:16:56.5799042+02:00",
+      "LastWriteTime": "2022-02-21T18:17:36+01:00"
+    },
+    {
+      "Titolo": "Via della Cavriola",
+      "Href": "via_026.html",
+      "CreationTime": "2022-08-20T17:17:01.5474584+02:00",
+      "LastWriteTime": "2022-02-21T18:17:36+01:00"
+    },
+    {
+      "Titolo": "Via della Croce Coperta",
+      "Href": "via_027.html",
+      "CreationTime": "2022-08-20T17:17:11.0247414+02:00",
+      "LastWriteTime": "2022-02-21T18:17:36+01:00"
+    },
+    {
+      "Titolo": "Via della Foscherara",
+      "Href": "via_028.html",
+      "CreationTime": "2022-08-20T17:17:04.5363971+02:00",
+      "LastWriteTime": "2022-02-21T18:17:37+01:00"
+    },
+    {
+      "Titolo": "Via della Palma",
+      "Href": "via_029.html",
+      "CreationTime": "2022-08-20T17:17:08.3341173+02:00",
+      "LastWriteTime": "2022-02-21T18:17:37+01:00"
+    },
+    {
+      "Titolo": "Via della Torre",
+      "Href": "via_030.html",
+      "CreationTime": "2022-08-20T17:17:07.3299755+02:00",
+      "LastWriteTime": "2022-02-21T18:17:37+01:00"
+    },
+    {
+      "Titolo": "Via della Trappola",
+      "Href": "via_031.html",
+      "CreationTime": "2022-08-20T17:17:06.8084181+02:00",
+      "LastWriteTime": "2022-02-21T18:17:37+01:00"
+    },
+    {
+      "Titolo": "Via dell'Angelo Custode",
+      "Href": "via_032.html",
+      "CreationTime": "2022-08-20T17:16:55.2947539+02:00",
+      "LastWriteTime": "2022-02-21T18:17:37+01:00"
+    },
+    {
+      "Titolo": "Via dell'Arcoveggio",
+      "Href": "via_033.html",
+      "CreationTime": "2022-08-20T17:17:08.6186465+02:00",
+      "LastWriteTime": "2022-02-21T18:17:38+01:00"
+    },
+    {
+      "Titolo": "Via delle Biscie",
+      "Href": "via_034.html",
+      "CreationTime": "2022-08-20T17:17:00.9221823+02:00",
+      "LastWriteTime": "2022-02-21T18:17:38+01:00"
+    },
+    {
+      "Titolo": "Via delle Borre",
+      "Href": "via_035.html",
+      "CreationTime": "2022-08-20T17:16:54.3593555+02:00",
+      "LastWriteTime": "2022-02-21T18:17:38+01:00"
+    },
+    {
+      "Titolo": "Via delle Lastre",
+      "Href": "via_036.html",
+      "CreationTime": "2022-08-20T17:16:56.2580554+02:00",
+      "LastWriteTime": "2022-02-21T18:17:38+01:00"
+    },
+    {
+      "Titolo": "Via di Barbiano",
+      "Href": "via_037.html",
+      "CreationTime": "2022-08-20T17:17:00.8437109+02:00",
+      "LastWriteTime": "2022-02-21T18:17:38+01:00"
+    },
+    {
+      "Titolo": "Via di Jano",
+      "Href": "via_038.html",
+      "CreationTime": "2022-08-20T17:17:08.9106683+02:00",
+      "LastWriteTime": "2022-02-21T18:17:39+01:00"
+    },
+    {
+      "Titolo": "Via di Monte Albano",
+      "Href": "via_039.html",
+      "CreationTime": "2022-08-20T17:17:06.8981421+02:00",
+      "LastWriteTime": "2022-02-21T18:17:39+01:00"
+    },
+    {
+      "Titolo": "Via di Monte Donato",
+      "Href": "via_040.html",
+      "CreationTime": "2022-08-20T17:16:59.0461602+02:00",
+      "LastWriteTime": "2022-02-21T18:17:39+01:00"
+    },
+    {
+      "Titolo": "Via di Roncrio <span style='{font-size: smaller}'>(pronuncia <em>Roncr�o</em>)</span>",
+      "Href": "via_041.html",
+      "CreationTime": "2022-08-20T17:17:00.1888893+02:00",
+      "LastWriteTime": "2022-02-21T18:17:39+01:00"
+    },
+    {
+      "Titolo": "Via di Roveretolo",
+      "Href": "via_042.html",
+      "CreationTime": "2022-08-20T17:17:02.1009055+02:00",
+      "LastWriteTime": "2022-02-21T18:17:39+01:00"
+    },
+    {
+      "Titolo": "Via di San Luca",
+      "Href": "via_043.html",
+      "CreationTime": "2022-08-20T17:16:55.0838199+02:00",
+      "LastWriteTime": "2022-02-21T18:17:39+01:00"
+    },
+    {
+      "Titolo": "Via di Sabbiuno",
+      "Href": "via_044.html",
+      "CreationTime": "2022-08-20T17:16:55.2132131+02:00",
+      "LastWriteTime": "2022-02-21T18:17:40+01:00"
+    },
+    {
+      "Titolo": "Via Due Madonne",
+      "Href": "via_045.html",
+      "CreationTime": "2022-08-20T17:17:06.7356154+02:00",
+      "LastWriteTime": "2022-02-21T18:17:40+01:00"
+    },
+    {
+      "Titolo": "Via Emilia Levante",
+      "Href": "via_046.html",
+      "CreationTime": "2022-08-20T17:16:58.2558707+02:00",
+      "LastWriteTime": "2022-02-21T18:17:40+01:00"
+    },
+    {
+      "Titolo": "Via Emilia Ponente",
+      "Href": "via_047.html",
+      "CreationTime": "2022-08-20T17:17:07.2660405+02:00",
+      "LastWriteTime": "2022-02-21T18:17:40+01:00"
+    },
+    {
+      "Titolo": "Via Erbosa",
+      "Href": "via_048.html",
+      "CreationTime": "2022-08-20T17:16:59.9150096+02:00",
+      "LastWriteTime": "2022-02-21T18:17:40+01:00"
+    },
+    {
+      "Titolo": "Via Filippini",
+      "Href": "via_049.html",
+      "CreationTime": "2022-08-20T17:17:02.1827371+02:00",
+      "LastWriteTime": "2022-02-21T18:17:41+01:00"
+    },
+    {
+      "Titolo": "Via Frabazza",
+      "Href": "via_050.html",
+      "CreationTime": "2022-08-20T17:17:06.8887487+02:00",
+      "LastWriteTime": "2022-02-21T18:17:41+01:00"
+    },
+    {
+      "Titolo": "Via Gaibara",
+      "Href": "via_051.html",
+      "CreationTime": "2022-08-20T17:16:58.7408669+02:00",
+      "LastWriteTime": "2022-02-21T18:17:41+01:00"
+    },
+    {
+      "Titolo": "Via Golfreda",
+      "Href": "via_052.html",
+      "CreationTime": "2022-08-20T17:16:54.7510633+02:00",
+      "LastWriteTime": "2022-02-21T18:17:41+01:00"
+    },
+    {
+      "Titolo": "Via Guazzaloca",
+      "Href": "via_053.html",
+      "CreationTime": "2022-08-20T17:17:10.3468228+02:00",
+      "LastWriteTime": "2022-02-21T18:17:41+01:00"
+    },
+    {
+      "Titolo": "Via Guelfa",
+      "Href": "via_054.html",
+      "CreationTime": "2022-08-20T17:17:07.7600683+02:00",
+      "LastWriteTime": "2022-02-21T18:17:42+01:00"
+    },
+    {
+      "Titolo": "Via Larga",
+      "Href": "via_055.html",
+      "CreationTime": "2022-08-20T17:17:05.9257282+02:00",
+      "LastWriteTime": "2022-02-21T18:17:42+01:00"
+    },
+    {
+      "Titolo": "Via Leona",
+      "Href": "via_056.html",
+      "CreationTime": "2022-08-20T17:17:09.7334849+02:00",
+      "LastWriteTime": "2022-02-21T18:17:42+01:00"
+    },
+    {
+      "Titolo": "Via Michelino",
+      "Href": "via_057.html",
+      "CreationTime": "2022-08-20T17:17:04.7703618+02:00",
+      "LastWriteTime": "2022-02-21T18:17:42+01:00"
+    },
+    {
+      "Titolo": "Via Mondo",
+      "Href": "via_058.html",
+      "CreationTime": "2022-08-20T17:17:10.0634223+02:00",
+      "LastWriteTime": "2022-02-21T18:17:42+01:00"
+    },
+    {
+      "Titolo": "Via Pallavicini",
+      "Href": "via_059.html",
+      "CreationTime": "2022-08-20T17:17:03.0628958+02:00",
+      "LastWriteTime": "2022-02-21T18:17:43+01:00"
+    },
+    {
+      "Titolo": "Via Parisio",
+      "Href": "via_060.html",
+      "CreationTime": "2022-08-20T17:17:09.1326785+02:00",
+      "LastWriteTime": "2022-02-21T18:17:43+01:00"
+    },
+    {
+      "Titolo": "Via Pioppe",
+      "Href": "via_061.html",
+      "CreationTime": "2022-08-20T17:17:01.8431557+02:00",
+      "LastWriteTime": "2022-02-21T18:17:43+01:00"
+    },
+    {
+      "Titolo": "Via Piratino",
+      "Href": "via_062.html",
+      "CreationTime": "2022-08-20T17:17:00.9103366+02:00",
+      "LastWriteTime": "2022-02-21T18:17:43+01:00"
+    },
+    {
+      "Titolo": "Via Porrettana",
+      "Href": "via_063.html",
+      "CreationTime": "2022-08-20T17:17:09.5479993+02:00",
+      "LastWriteTime": "2022-02-21T18:17:43+01:00"
+    },
+    {
+      "Titolo": "Via Portazza",
+      "Href": "via_064.html",
+      "CreationTime": "2022-08-20T17:17:11.2537554+02:00",
+      "LastWriteTime": "2022-02-21T18:17:44+01:00"
+    },
+    {
+      "Titolo": "Via Quarto di Sopra",
+      "Href": "via_065.html",
+      "CreationTime": "2022-08-20T17:17:00.8358992+02:00",
+      "LastWriteTime": "2022-02-21T18:17:44+01:00"
+    },
+    {
+      "Titolo": "Via Roncaglio",
+      "Href": "via_066.html",
+      "CreationTime": "2022-08-20T17:16:59.6410846+02:00",
+      "LastWriteTime": "2022-02-21T18:17:44+01:00"
+    },
+    {
+      "Titolo": "Via Rosario",
+      "Href": "via_067.html",
+      "CreationTime": "2022-08-20T17:16:56.3957917+02:00",
+      "LastWriteTime": "2022-02-21T18:17:44+01:00"
+    },
+    {
+      "Titolo": "Via San Nicol� di Villola <span style='{font-size: smaller}'>(pronuncia <em>San Nicol� di V�llola</em>)</span>",
+      "Href": "via_068.html",
+      "CreationTime": "2022-08-20T17:16:56.3280451+02:00",
+      "LastWriteTime": "2022-02-21T18:17:44+01:00"
+    },
+    {
+      "Titolo": "Via San Vittore",
+      "Href": "via_069.html",
+      "CreationTime": "2022-08-20T17:17:10.5593845+02:00",
+      "LastWriteTime": "2022-02-21T18:17:45+01:00"
+    },
+    {
+      "Titolo": "Via Santa Barbara",
+      "Href": "via_070.html",
+      "CreationTime": "2022-08-20T17:17:01.5085198+02:00",
+      "LastWriteTime": "2022-02-21T18:17:45+01:00"
+    },
+    {
+      "Titolo": "Via Santa Maria",
+      "Href": "via_071.html",
+      "CreationTime": "2022-08-20T17:17:09.6829872+02:00",
+      "LastWriteTime": "2022-02-21T18:17:45+01:00"
+    },
+    {
+      "Titolo": "Via Sant'Anna",
+      "Href": "via_072.html",
+      "CreationTime": "2022-08-20T17:17:02.9137316+02:00",
+      "LastWriteTime": "2022-02-21T18:17:45+01:00"
+    },
+    {
+      "Titolo": "Via Sant'Antonino",
+      "Href": "via_073.html",
+      "CreationTime": "2022-08-20T17:17:04.0539259+02:00",
+      "LastWriteTime": "2022-02-21T18:17:45+01:00"
+    },
+    {
+      "Titolo": "Via Speranza",
+      "Href": "via_074.html",
+      "CreationTime": "2022-08-20T17:16:59.8106189+02:00",
+      "LastWriteTime": "2022-02-21T18:17:46+01:00"
+    },
+    {
+      "Titolo": "Via Stazione Roveri",
+      "Href": "via_075.html",
+      "CreationTime": "2022-08-20T17:17:08.8467612+02:00",
+      "LastWriteTime": "2022-02-21T18:17:46+01:00"
+    },
+    {
+      "Titolo": "Via Viadagola <span style='{font-size: smaller}'>(pronuncia <em>Viad�gola</em>)</span>",
+      "Href": "via_076.html",
+      "CreationTime": "2022-08-20T17:17:10.1966001+02:00",
+      "LastWriteTime": "2022-02-21T18:17:46+01:00"
+    },
+    {
+      "Titolo": "Via Villanova",
+      "Href": "via_077.html",
+      "CreationTime": "2022-08-20T17:16:59.3091037+02:00",
+      "LastWriteTime": "2022-02-21T18:17:46+01:00"
+    },
+    {
+      "Titolo": "Vicolo dei Prati",
+      "Href": "via_078.html",
+      "CreationTime": "2022-08-20T17:17:02.9500154+02:00",
+      "LastWriteTime": "2022-02-21T18:17:46+01:00"
+    },
+    {
+      "Titolo": "Vicolo del Bosco",
+      "Href": "via_079.html",
+      "CreationTime": "2022-08-20T17:17:10.0855022+02:00",
+      "LastWriteTime": "2022-02-21T18:17:47+01:00"
+    },
+    {
+      "Titolo": "Vicolo Nero",
+      "Href": "via_080.html",
+      "CreationTime": "2022-08-20T17:16:56.921759+02:00",
+      "LastWriteTime": "2022-02-21T18:17:47+01:00"
+    },
+    {
+      "Titolo": "Via Balda",
+      "Href": "via_081.html",
+      "CreationTime": "2022-08-20T17:17:03.2558512+02:00",
+      "LastWriteTime": "2022-02-21T18:17:47+01:00"
+    },
+    {
+      "Titolo": "Via Benazza",
+      "Href": "via_082.html",
+      "CreationTime": "2022-08-20T17:17:04.9811079+02:00",
+      "LastWriteTime": "2022-02-21T18:17:47+01:00"
+    },
+    {
+      "Titolo": "Via Castelmerlo",
+      "Href": "via_083.html",
+      "CreationTime": "2022-08-20T17:17:09.1575456+02:00",
+      "LastWriteTime": "2022-02-21T18:17:47+01:00"
+    },
+    {
+      "Titolo": "Via del Bordone",
+      "Href": "via_084.html",
+      "CreationTime": "2022-08-20T17:16:55.8218305+02:00",
+      "LastWriteTime": "2022-02-21T18:17:48+01:00"
+    },
+    {
+      "Titolo": "Via del Pane",
+      "Href": "via_085.html",
+      "CreationTime": "2022-08-20T17:16:58.3634075+02:00",
+      "LastWriteTime": "2022-02-21T18:17:48+01:00"
+    },
+    {
+      "Titolo": "Via del Parco",
+      "Href": "via_086.html",
+      "CreationTime": "2022-08-20T17:16:58.2185174+02:00",
+      "LastWriteTime": "2022-02-21T18:17:48+01:00"
+    },
+    {
+      "Titolo": "Via del Poggio",
+      "Href": "via_087.html",
+      "CreationTime": "2022-08-20T17:16:59.8580788+02:00",
+      "LastWriteTime": "2022-02-21T18:17:48+01:00"
+    },
+    {
+      "Titolo": "Via del Sostegno",
+      "Href": "via_088.html",
+      "CreationTime": "2022-08-20T17:16:58.8562672+02:00",
+      "LastWriteTime": "2022-02-21T18:17:48+01:00"
+    },
+    {
+      "Titolo": "Via della Selva Pescarola",
+      "Href": "via_089.html",
+      "CreationTime": "2022-08-20T17:17:06.0609524+02:00",
+      "LastWriteTime": "2022-02-21T18:17:49+01:00"
+    },
+    {
+      "Titolo": "Via di Paderno",
+      "Href": "via_090.html",
+      "CreationTime": "2022-08-20T17:17:03.1168622+02:00",
+      "LastWriteTime": "2022-02-21T18:17:49+01:00"
+    },
+    {
+      "Titolo": "Via di Ravone",
+      "Href": "via_091.html",
+      "CreationTime": "2022-08-20T17:17:05.4336985+02:00",
+      "LastWriteTime": "2022-02-21T18:17:49+01:00"
+    },
+    {
+      "Titolo": "Via Malvezza",
+      "Href": "via_092.html",
+      "CreationTime": "2022-08-20T17:17:06.7174666+02:00",
+      "LastWriteTime": "2022-02-21T18:17:49+01:00"
+    },
+    {
+      "Titolo": "Via Santa Margherita al Colle",
+      "Href": "via_093.html",
+      "CreationTime": "2022-08-20T17:17:07.3122214+02:00",
+      "LastWriteTime": "2022-02-21T18:17:49+01:00"
+    },
+    {
+      "Titolo": "Via Scandellara",
+      "Href": "via_094.html",
+      "CreationTime": "2022-08-20T17:17:02.6623356+02:00",
+      "LastWriteTime": "2022-02-21T18:17:50+01:00"
+    },
+    {
+      "Titolo": "Localit� La Castiglia",
+      "Href": "via_095.html",
+      "CreationTime": "2022-08-20T17:16:58.7567027+02:00",
+      "LastWriteTime": "2022-02-21T18:17:50+01:00"
+    },
+    {
+      "Titolo": "Via Altura",
+      "Href": "via_096.html",
+      "CreationTime": "2022-08-20T17:16:57.8518431+02:00",
+      "LastWriteTime": "2022-02-21T18:17:50+01:00"
+    },
+    {
+      "Titolo": "Via Dalla Volta",
+      "Href": "via_097.html",
+      "CreationTime": "2022-08-20T17:17:00.8063584+02:00",
+      "LastWriteTime": "2022-02-21T18:17:50+01:00"
+    },
+    {
+      "Titolo": "Via degli Aceri",
+      "Href": "via_098.html",
+      "CreationTime": "2022-08-20T17:17:04.188969+02:00",
+      "LastWriteTime": "2022-02-21T18:17:50+01:00"
+    },
+    {
+      "Titolo": "Via degli Olmi",
+      "Href": "via_099.html",
+      "CreationTime": "2022-08-20T17:16:59.830002+02:00",
+      "LastWriteTime": "2022-02-21T18:17:51+01:00"
+    },
+    {
+      "Titolo": "Via degli Ortolani",
+      "Href": "via_100.html",
+      "CreationTime": "2022-08-20T17:17:00.7190629+02:00",
+      "LastWriteTime": "2022-02-21T18:17:51+01:00"
+    },
+    {
+      "Titolo": "Via dei Gelsi",
+      "Href": "via_101.html",
+      "CreationTime": "2022-08-20T17:17:07.2781246+02:00",
+      "LastWriteTime": "2022-02-21T18:17:51+01:00"
+    },
+    {
+      "Titolo": "Via dei Pozzetti",
+      "Href": "via_102.html",
+      "CreationTime": "2022-08-20T17:16:56.4928524+02:00",
+      "LastWriteTime": "2022-02-21T18:17:51+01:00"
+    },
+    {
+      "Titolo": "Via del Beccaccino",
+      "Href": "via_103.html",
+      "CreationTime": "2022-08-20T17:17:02.9340276+02:00",
+      "LastWriteTime": "2022-02-21T18:17:51+01:00"
+    },
+    {
+      "Titolo": "Via del Chi�",
+      "Href": "via_104.html",
+      "CreationTime": "2022-08-20T17:17:07.7023951+02:00",
+      "LastWriteTime": "2022-02-21T18:17:52+01:00"
+    },
+    {
+      "Titolo": "Via del Forte",
+      "Href": "via_105.html",
+      "CreationTime": "2022-08-20T17:17:11.1870626+02:00",
+      "LastWriteTime": "2022-02-21T18:17:52+01:00"
+    },
+    {
+      "Titolo": "Via del Genio",
+      "Href": "via_106.html",
+      "CreationTime": "2022-08-20T17:16:54.9464699+02:00",
+      "LastWriteTime": "2022-02-21T18:17:52+01:00"
+    },
+    {
+      "Titolo": "Via del Pilastro",
+      "Href": "via_107.html",
+      "CreationTime": "2022-08-20T17:17:08.8322996+02:00",
+      "LastWriteTime": "2022-02-21T18:17:52+01:00"
+    },
+    {
+      "Titolo": "Via del Terrapieno",
+      "Href": "via_108.html",
+      "CreationTime": "2022-08-20T17:17:00.9061171+02:00",
+      "LastWriteTime": "2022-02-21T18:17:52+01:00"
+    },
+    {
+      "Titolo": "Via del Traghetto",
+      "Href": "via_109.html",
+      "CreationTime": "2022-08-20T17:16:59.0379517+02:00",
+      "LastWriteTime": "2022-02-21T18:17:53+01:00"
+    },
+    {
+      "Titolo": "Via della Barca",
+      "Href": "via_110.html",
+      "CreationTime": "2022-08-20T17:16:55.3253517+02:00",
+      "LastWriteTime": "2022-02-21T18:17:53+01:00"
+    },
+    {
+      "Titolo": "Via della Battaglia",
+      "Href": "via_111.html",
+      "CreationTime": "2022-08-20T17:17:02.655776+02:00",
+      "LastWriteTime": "2022-02-21T18:17:53+01:00"
+    },
+    {
+      "Titolo": "Via della Ca' Bianca",
+      "Href": "via_112.html",
+      "CreationTime": "2022-08-20T17:17:10.5192066+02:00",
+      "LastWriteTime": "2022-02-21T18:17:53+01:00"
+    },
+    {
+      "Titolo": "Via della Filanda",
+      "Href": "via_113.html",
+      "CreationTime": "2022-08-20T17:16:57.0626473+02:00",
+      "LastWriteTime": "2022-02-21T18:17:53+01:00"
+    },
+    {
+      "Titolo": "Via della Fratta",
+      "Href": "via_114.html",
+      "CreationTime": "2022-08-20T17:16:59.2156491+02:00",
+      "LastWriteTime": "2022-02-21T18:17:54+01:00"
+    },
+    {
+      "Titolo": "Via della Villa",
+      "Href": "via_115.html",
+      "CreationTime": "2022-08-20T17:17:00.8132614+02:00",
+      "LastWriteTime": "2022-02-21T18:17:54+01:00"
+    },
+    {
+      "Titolo": "Via delle Armi",
+      "Href": "via_116.html",
+      "CreationTime": "2022-08-20T17:17:07.6135162+02:00",
+      "LastWriteTime": "2022-02-21T18:17:54+01:00"
+    },
+    {
+      "Titolo": "Via delle Fonti",
+      "Href": "via_117.html",
+      "CreationTime": "2022-08-20T17:17:05.292853+02:00",
+      "LastWriteTime": "2022-02-21T18:17:54+01:00"
+    },
+    {
+      "Titolo": "Via delle Fosse Ardeatine",
+      "Href": "via_118.html",
+      "CreationTime": "2022-08-20T17:16:56.3377885+02:00",
+      "LastWriteTime": "2022-02-21T18:17:54+01:00"
+    },
+    {
+      "Titolo": "Via delle Viti",
+      "Href": "via_119.html",
+      "CreationTime": "2022-08-20T17:17:04.5580889+02:00",
+      "LastWriteTime": "2022-02-21T18:17:55+01:00"
+    },
+    {
+      "Titolo": "Via dello Spiraglio",
+      "Href": "via_120.html",
+      "CreationTime": "2022-08-20T17:17:04.2805627+02:00",
+      "LastWriteTime": "2022-02-21T18:17:55+01:00"
+    },
+    {
+      "Titolo": "Via di Bertalia <span style='{font-size: smaller}'>(pronuncia <em>Bertal�a</em>)</span>",
+      "Href": "via_121.html",
+      "CreationTime": "2022-08-20T17:16:57.2240838+02:00",
+      "LastWriteTime": "2022-02-21T18:17:55+01:00"
+    },
+    {
+      "Titolo": "Via di Corticella",
+      "Href": "via_122.html",
+      "CreationTime": "2022-08-20T17:16:57.0526052+02:00",
+      "LastWriteTime": "2022-02-21T18:17:55+01:00"
+    },
+    {
+      "Titolo": "Via di Gaibola",
+      "Href": "via_123.html",
+      "CreationTime": "2022-08-20T17:16:59.9241915+02:00",
+      "LastWriteTime": "2022-02-21T18:17:55+01:00"
+    },
+    {
+      "Titolo": "Via di Jola",
+      "Href": "via_124.html",
+      "CreationTime": "2022-08-20T17:17:02.7884629+02:00",
+      "LastWriteTime": "2022-02-21T18:17:56+01:00"
+    },
+    {
+      "Titolo": "Via d'Oltre Reno",
+      "Href": "via_125.html",
+      "CreationTime": "2022-08-20T17:17:09.2402645+02:00",
+      "LastWriteTime": "2022-02-21T18:17:56+01:00"
+    },
+    {
+      "Titolo": "Via Nuova",
+      "Href": "via_126.html",
+      "CreationTime": "2022-08-20T17:17:04.3847426+02:00",
+      "LastWriteTime": "2022-02-21T18:17:56+01:00"
+    },
+    {
+      "Titolo": "Via Piana",
+      "Href": "via_127.html",
+      "CreationTime": "2022-08-20T17:17:01.9711562+02:00",
+      "LastWriteTime": "2022-02-21T18:17:56+01:00"
+    },
+    {
+      "Titolo": "Via Prati di Caprara",
+      "Href": "via_128.html",
+      "CreationTime": "2022-08-20T17:17:06.8393654+02:00",
+      "LastWriteTime": "2022-02-21T18:17:56+01:00"
+    },
+    {
+      "Titolo": "Via Romita",
+      "Href": "via_129.html",
+      "CreationTime": "2022-08-20T17:17:01.9209815+02:00",
+      "LastWriteTime": "2022-02-21T18:17:57+01:00"
+    },
+    {
+      "Titolo": "Via San Ruffillo",
+      "Href": "via_130.html",
+      "CreationTime": "2022-08-20T17:16:54.0926092+02:00",
+      "LastWriteTime": "2022-02-21T18:17:57+01:00"
+    },
+    {
+      "Titolo": "Via San Savino",
+      "Href": "via_131.html",
+      "CreationTime": "2022-08-20T17:17:04.9928195+02:00",
+      "LastWriteTime": "2022-02-21T18:17:57+01:00"
+    },
+    {
+      "Titolo": "Via Santa Liberata",
+      "Href": "via_132.html",
+      "CreationTime": "2022-08-20T17:17:07.6879395+02:00",
+      "LastWriteTime": "2022-02-21T18:17:57+01:00"
+    },
+    {
+      "Titolo": "Via Serena",
+      "Href": "via_133.html",
+      "CreationTime": "2022-08-20T17:17:06.7772332+02:00",
+      "LastWriteTime": "2022-02-21T18:17:57+01:00"
+    },
+    {
+      "Titolo": "Via Tolmino",
+      "Href": "via_134.html",
+      "CreationTime": "2022-08-20T17:16:57.6373392+02:00",
+      "LastWriteTime": "2022-02-21T18:17:58+01:00"
+    },
+    {
+      "Titolo": "Via Torriane",
+      "Href": "via_135.html",
+      "CreationTime": "2022-08-20T17:16:58.1052485+02:00",
+      "LastWriteTime": "2022-02-21T18:17:58+01:00"
+    },
+    {
+      "Titolo": "Vicolo del Passo",
+      "Href": "via_136.html",
+      "CreationTime": "2022-08-20T17:16:59.055438+02:00",
+      "LastWriteTime": "2022-02-21T18:17:58+01:00"
+    },
+    {
+      "Titolo": "Localit� Castell'Arienti",
+      "Href": "via_137.html",
+      "CreationTime": "2022-08-20T17:16:57.5856717+02:00",
+      "LastWriteTime": "2022-02-21T18:17:58+01:00"
+    },
+    {
+      "Titolo": "Localit� La Bastia <span style='{font-size: smaller}'>(pronuncia <em>Bast�a</em>)</span>",
+      "Href": "via_138.html",
+      "CreationTime": "2022-08-20T17:17:03.7926829+02:00",
+      "LastWriteTime": "2022-02-21T18:17:58+01:00"
+    },
+    {
+      "Titolo": "Via Azzurra",
+      "Href": "via_139.html",
+      "CreationTime": "2022-08-20T17:17:11.0168758+02:00",
+      "LastWriteTime": "2022-02-21T18:17:59+01:00"
+    },
+    {
+      "Titolo": "Via Bagni di Mario",
+      "Href": "via_140.html",
+      "CreationTime": "2022-08-20T17:17:05.660437+02:00",
+      "LastWriteTime": "2022-02-21T18:17:59+01:00"
+    },
+    {
+      "Titolo": "Via Bellacosta",
+      "Href": "via_141.html",
+      "CreationTime": "2022-08-20T17:17:01.4290951+02:00",
+      "LastWriteTime": "2022-02-21T18:17:59+01:00"
+    },
+    {
+      "Titolo": "Via Camonia <span style='{font-size: smaller}'>(pronuncia <em>Cam�nia</em>)</span>",
+      "Href": "via_142.html",
+      "CreationTime": "2022-08-20T17:16:58.6132266+02:00",
+      "LastWriteTime": "2022-02-21T18:17:59+01:00"
+    },
+    {
+      "Titolo": "Via Chiusa",
+      "Href": "via_143.html",
+      "CreationTime": "2022-08-20T17:16:59.7871214+02:00",
+      "LastWriteTime": "2022-02-21T18:17:59+01:00"
+    },
+    {
+      "Titolo": "Via Cristoforo da Bologna",
+      "Href": "via_144.html",
+      "CreationTime": "2022-08-20T17:16:59.1625606+02:00",
+      "LastWriteTime": "2022-02-21T18:18:00+01:00"
+    },
+    {
+      "Titolo": "Via Dal Lino",
+      "Href": "via_145.html",
+      "CreationTime": "2022-08-20T17:17:06.1850722+02:00",
+      "LastWriteTime": "2022-02-21T18:18:00+01:00"
+    },
+    {
+      "Titolo": "Via Decumana",
+      "Href": "via_146.html",
+      "CreationTime": "2022-08-20T17:16:58.1254933+02:00",
+      "LastWriteTime": "2022-02-21T18:18:00+01:00"
+    },
+    {
+      "Titolo": "Via dei Lamponi",
+      "Href": "via_147.html",
+      "CreationTime": "2022-08-20T17:17:10.8605416+02:00",
+      "LastWriteTime": "2022-02-21T18:18:00+01:00"
+    },
+    {
+      "Titolo": "Via dei Maceri",
+      "Href": "via_148.html",
+      "CreationTime": "2022-08-20T17:17:06.4510813+02:00",
+      "LastWriteTime": "2022-02-21T18:18:00+01:00"
+    },
+    {
+      "Titolo": "Via del Barroccio",
+      "Href": "via_149.html",
+      "CreationTime": "2022-08-20T17:16:55.886112+02:00",
+      "LastWriteTime": "2022-02-21T18:18:01+01:00"
+    },
+    {
+      "Titolo": "Via del Battiferro",
+      "Href": "via_150.html",
+      "CreationTime": "2022-08-20T17:17:11.1361428+02:00",
+      "LastWriteTime": "2022-02-21T18:18:01+01:00"
+    },
+    {
+      "Titolo": "Via del Cardo",
+      "Href": "via_151.html",
+      "CreationTime": "2022-08-20T17:17:00.8643116+02:00",
+      "LastWriteTime": "2022-02-21T18:18:01+01:00"
+    },
+    {
+      "Titolo": "Via del Giacinto",
+      "Href": "via_152.html",
+      "CreationTime": "2022-08-20T17:17:10.8316575+02:00",
+      "LastWriteTime": "2022-02-21T18:18:01+01:00"
+    },
+    {
+      "Titolo": "Via del Giglio",
+      "Href": "via_153.html",
+      "CreationTime": "2022-08-20T17:16:54.3457953+02:00",
+      "LastWriteTime": "2022-02-21T18:18:01+01:00"
+    },
+    {
+      "Titolo": "Via del Greto",
+      "Href": "via_154.html",
+      "CreationTime": "2022-08-20T17:17:10.3903361+02:00",
+      "LastWriteTime": "2022-02-21T18:18:02+01:00"
+    },
+    {
+      "Titolo": "Via del Milliario",
+      "Href": "via_155.html",
+      "CreationTime": "2022-08-20T17:17:05.3750009+02:00",
+      "LastWriteTime": "2022-02-21T18:18:02+01:00"
+    },
+    {
+      "Titolo": "Via del Navile",
+      "Href": "via_156.html",
+      "CreationTime": "2022-08-20T17:17:02.1328975+02:00",
+      "LastWriteTime": "2022-02-21T18:18:02+01:00"
+    },
+    {
+      "Titolo": "Via del Sole",
+      "Href": "via_157.html",
+      "CreationTime": "2022-08-20T17:17:03.6151176+02:00",
+      "LastWriteTime": "2022-02-21T18:18:02+01:00"
+    },
+    {
+      "Titolo": "Via della Ferriera",
+      "Href": "via_158.html",
+      "CreationTime": "2022-08-20T17:16:56.032002+02:00",
+      "LastWriteTime": "2022-02-21T18:18:02+01:00"
+    },
+    {
+      "Titolo": "Via della Grazia",
+      "Href": "via_159.html",
+      "CreationTime": "2022-08-20T17:16:55.9247677+02:00",
+      "LastWriteTime": "2022-02-21T18:18:03+01:00"
+    },
+    {
+      "Titolo": "Via della Guardia",
+      "Href": "via_160.html",
+      "CreationTime": "2022-08-20T17:16:55.5415348+02:00",
+      "LastWriteTime": "2022-02-21T18:18:03+01:00"
+    },
+    {
+      "Titolo": "Via della Salita",
+      "Href": "via_161.html",
+      "CreationTime": "2022-08-20T17:16:54.4286581+02:00",
+      "LastWriteTime": "2022-02-21T18:18:03+01:00"
+    },
+    {
+      "Titolo": "Via della Viola",
+      "Href": "via_162.html",
+      "CreationTime": "2022-08-20T17:16:55.4667677+02:00",
+      "LastWriteTime": "2022-02-21T18:18:03+01:00"
+    },
+    {
+      "Titolo": "Via delle Fragole",
+      "Href": "via_163.html",
+      "CreationTime": "2022-08-20T17:16:54.8147079+02:00",
+      "LastWriteTime": "2022-02-21T18:18:03+01:00"
+    },
+    {
+      "Titolo": "Via delle Ruote",
+      "Href": "via_164.html",
+      "CreationTime": "2022-08-20T17:16:57.007292+02:00",
+      "LastWriteTime": "2022-02-21T18:18:04+01:00"
+    },
+    {
+      "Titolo": "Via delle Tofane",
+      "Href": "via_165.html",
+      "CreationTime": "2022-08-20T17:17:08.1700399+02:00",
+      "LastWriteTime": "2022-02-21T18:18:04+01:00"
+    },
+    {
+      "Titolo": "Via dello Spalto",
+      "Href": "via_166.html",
+      "CreationTime": "2022-08-20T17:17:01.7330013+02:00",
+      "LastWriteTime": "2022-02-21T18:18:04+01:00"
+    },
+    {
+      "Titolo": "Via dello Stallo",
+      "Href": "via_167.html",
+      "CreationTime": "2022-08-20T17:17:07.4158487+02:00",
+      "LastWriteTime": "2022-02-21T18:18:04+01:00"
+    },
+    {
+      "Titolo": "Via Egnazia",
+      "Href": "via_168.html",
+      "CreationTime": "2022-08-20T17:16:54.6079136+02:00",
+      "LastWriteTime": "2022-02-21T18:18:04+01:00"
+    },
+    {
+      "Titolo": "Via Fiorita",
+      "Href": "via_169.html",
+      "CreationTime": "2022-08-20T17:17:06.7556134+02:00",
+      "LastWriteTime": "2022-02-21T18:18:05+01:00"
+    },
+    {
+      "Titolo": "Via Francesco Primaticcio",
+      "Href": "via_170.html",
+      "CreationTime": "2022-08-20T17:17:08.1847876+02:00",
+      "LastWriteTime": "2022-02-21T18:18:05+01:00"
+    },
+    {
+      "Titolo": "Via Jacopo di Paolo",
+      "Href": "via_171.html",
+      "CreationTime": "2022-08-20T17:16:54.6434242+02:00",
+      "LastWriteTime": "2022-02-21T18:18:05+01:00"
+    },
+    {
+      "Titolo": "Via Lemonia <span style='{font-size: smaller}'>(pronuncia <em>Lem�nia</em>)</span>",
+      "Href": "via_172.html",
+      "CreationTime": "2022-08-20T17:16:58.5537366+02:00",
+      "LastWriteTime": "2022-02-21T18:18:05+01:00"
+    },
+    {
+      "Titolo": "Via Licinia <span style='{font-size: smaller}'>(pronuncia <em>Lic�nia</em>)</span>",
+      "Href": "via_173.html",
+      "CreationTime": "2022-08-20T17:17:03.8672198+02:00",
+      "LastWriteTime": "2022-02-21T18:18:05+01:00"
+    },
+    {
+      "Titolo": "Via Marcello Oretti",
+      "Href": "via_174.html",
+      "CreationTime": "2022-08-20T17:17:11.2912942+02:00",
+      "LastWriteTime": "2022-02-21T18:18:06+01:00"
+    },
+    {
+      "Titolo": "Via Mezzacosta",
+      "Href": "via_175.html",
+      "CreationTime": "2022-08-20T17:16:57.6010904+02:00",
+      "LastWriteTime": "2022-02-21T18:18:06+01:00"
+    },
+    {
+      "Titolo": "Via Nicol� Pasquali Alidosi",
+      "Href": "via_176.html",
+      "CreationTime": "2022-08-20T17:17:08.8200371+02:00",
+      "LastWriteTime": "2022-02-21T18:18:06+01:00"
+    },
+    {
+      "Titolo": "Via Piave",
+      "Href": "via_177.html",
+      "CreationTime": "2022-08-20T17:17:08.2072516+02:00",
+      "LastWriteTime": "2022-02-21T18:18:06+01:00"
+    },
+    {
+      "Titolo": "Via Pomponia <span style='{font-size: smaller}'>(pronuncia <em>Pomp�nia</em>)</span>",
+      "Href": "via_178.html",
+      "CreationTime": "2022-08-20T17:17:06.8203793+02:00",
+      "LastWriteTime": "2022-02-21T18:18:06+01:00"
+    },
+    {
+      "Titolo": "Via Ponte Romano",
+      "Href": "via_179.html",
+      "CreationTime": "2022-08-20T17:17:07.8783927+02:00",
+      "LastWriteTime": "2022-02-21T18:18:07+01:00"
+    },
+    {
+      "Titolo": "Via Traversa",
+      "Href": "via_180.html",
+      "CreationTime": "2022-08-20T17:17:10.4705289+02:00",
+      "LastWriteTime": "2022-02-21T18:18:07+01:00"
+    },
+    {
+      "Titolo": "Via Valeria",
+      "Href": "via_181.html",
+      "CreationTime": "2022-08-20T17:17:02.4343486+02:00",
+      "LastWriteTime": "2022-02-21T18:18:07+01:00"
+    },
+    {
+      "Titolo": "Via Verde",
+      "Href": "via_182.html",
+      "CreationTime": "2022-08-20T17:17:08.5766576+02:00",
+      "LastWriteTime": "2022-02-21T18:18:07+01:00"
+    },
+    {
+      "Titolo": "Vicolo Bianco",
+      "Href": "via_183.html",
+      "CreationTime": "2022-08-20T17:16:55.4454097+02:00",
+      "LastWriteTime": "2022-02-21T18:18:07+01:00"
+    },
+    {
+      "Titolo": "Vicolo Case",
+      "Href": "via_184.html",
+      "CreationTime": "2022-08-20T17:17:05.7043652+02:00",
+      "LastWriteTime": "2022-02-21T18:18:08+01:00"
+    },
+    {
+      "Titolo": "Vicolo del Pellegrino",
+      "Href": "via_185.html",
+      "CreationTime": "2022-08-20T17:16:59.4263953+02:00",
+      "LastWriteTime": "2022-02-21T18:18:08+01:00"
+    },
+    {
+      "Titolo": "Via Agucchi",
+      "Href": "via_186.html",
+      "CreationTime": "2022-08-20T17:17:06.150803+02:00",
+      "LastWriteTime": "2022-02-21T18:18:08+01:00"
+    },
+    {
+      "Titolo": "Elenco delle 186 vie ufficialmente denominate nel periodo 1933-1935 dal Comune di Bologna",
+      "Href": "vie.html",
+      "CreationTime": "2022-08-20T17:16:54.6669553+02:00",
+      "LastWriteTime": "2022-02-21T18:18:08+01:00"
+    },
+    {
+      "Titolo": "Piazza della Vittoria (oggi piazza Roosvelt) e piazza Galileo",
+      "Href": "vittoria.html",
+      "CreationTime": "2022-08-20T17:16:54.6219393+02:00",
+      "LastWriteTime": "2022-02-21T18:18:09+01:00"
+    },
+    {
+      "Titolo": "Villaggio della rivoluzione fascista",
+      "Href": "vrf.html",
+      "CreationTime": "2022-08-20T17:17:06.8288604+02:00",
+      "LastWriteTime": "2022-02-21T18:18:09+01:00"
+    }
+  ],
+  "FilePDF": [],
+  "FilePPT": [],
+  "Breadcrumb": [
+    {
+      "Href": "/.treeinfo.html",
+      "Titolo": "L'utilizzo di strumenti informatici nella storia dei territori amministrativi"
+    },
+    {
+      "Href": "/ipertesti/.treeinfo.html",
+      "Titolo": "Ipertesti realizzati"
+    }
+  ],
+  "Descendants": []
+}

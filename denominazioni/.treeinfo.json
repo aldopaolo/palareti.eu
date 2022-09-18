@@ -1,0 +1,27 @@
+{
+  "Titolo": "La normalizzazione delle denominazioni",
+  "Directory": "/denominazioni",
+  "FileHTML": [
+    {
+      "Titolo": "Mappa della cartella attuale",
+      "Href": ".treeinfo.html",
+      "CreationTime": "2022-09-12T02:27:14.3793287+02:00",
+      "LastWriteTime": "2022-09-18T21:10:39.7259976+02:00"
+    },
+    {
+      "Titolo": "La normalizzazione delle denominazioni",
+      "Href": "index.html",
+      "CreationTime": "2022-08-20T17:17:09.6046469+02:00",
+      "LastWriteTime": "2022-02-21T18:16:23+01:00"
+    }
+  ],
+  "FilePDF": [],
+  "FilePPT": [],
+  "Breadcrumb": [
+    {
+      "Href": "/.treeinfo.html",
+      "Titolo": "L'utilizzo di strumenti informatici nella storia dei territori amministrativi"
+    }
+  ],
+  "Descendants": []
+}

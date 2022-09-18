@@ -1,0 +1,95 @@
+{
+  "Titolo": "Articoli e lavori",
+  "Directory": "/lavori",
+  "FileHTML": [
+    {
+      "Titolo": "Mappa della cartella attuale",
+      "Href": ".treeinfo.html",
+      "CreationTime": "2022-09-12T02:27:15.0925358+02:00",
+      "LastWriteTime": "2022-09-18T21:10:40.1588414+02:00"
+    }
+  ],
+  "FilePDF": [
+    {
+      "Titolo": "2006-Aica.pdf",
+      "Href": "2006-Aica.pdf",
+      "CreationTime": "2022-08-20T17:17:10.2597231+02:00",
+      "LastWriteTime": "2022-02-21T18:17:17+01:00"
+    },
+    {
+      "Titolo": "2007-Didamatica.pdf",
+      "Href": "2007-Didamatica.pdf",
+      "CreationTime": "2022-08-20T17:17:07.7700741+02:00",
+      "LastWriteTime": "2022-02-21T18:17:18+01:00"
+    },
+    {
+      "Titolo": "2008-Didamatica.pdf",
+      "Href": "2008-Didamatica.pdf",
+      "CreationTime": "2022-08-20T17:16:59.616899+02:00",
+      "LastWriteTime": "2022-02-21T18:17:19+01:00"
+    },
+    {
+      "Titolo": "2009-Didamatica.pdf",
+      "Href": "2009-Didamatica.pdf",
+      "CreationTime": "2022-08-20T17:17:10.2734972+02:00",
+      "LastWriteTime": "2022-02-21T18:17:19+01:00"
+    },
+    {
+      "Titolo": "2010-Aica.pdf",
+      "Href": "2010-Aica.pdf",
+      "CreationTime": "2022-08-20T17:16:59.6442335+02:00",
+      "LastWriteTime": "2022-02-21T18:17:21+01:00"
+    },
+    {
+      "Titolo": "2010-Didamatica.pdf",
+      "Href": "2010-Didamatica.pdf",
+      "CreationTime": "2022-08-20T17:17:01.3715689+02:00",
+      "LastWriteTime": "2022-02-21T18:17:22+01:00"
+    }
+  ],
+  "FilePPT": [
+    {
+      "Titolo": "2006-09-22-Cesena.ppt",
+      "Href": "2006-09-22-Cesena.ppt",
+      "CreationTime": "2022-08-20T17:16:55.5995366+02:00",
+      "LastWriteTime": "2022-02-21T18:17:16+01:00"
+    },
+    {
+      "Titolo": "2007-05-11-Cesena.ppt",
+      "Href": "2007-05-11-Cesena.ppt",
+      "CreationTime": "2022-08-20T17:16:57.9138958+02:00",
+      "LastWriteTime": "2022-02-21T18:17:17+01:00"
+    },
+    {
+      "Titolo": "2008-04-28-Taranto.ppt",
+      "Href": "2008-04-28-Taranto.ppt",
+      "CreationTime": "2022-08-20T17:16:57.6990107+02:00",
+      "LastWriteTime": "2022-02-21T18:17:18+01:00"
+    },
+    {
+      "Titolo": "2009-04-24-Trento.ppt",
+      "Href": "2009-04-24-Trento.ppt",
+      "CreationTime": "2022-08-20T17:17:02.6731744+02:00",
+      "LastWriteTime": "2022-02-21T18:17:19+01:00"
+    },
+    {
+      "Titolo": "2010-04-21-Roma.ppt",
+      "Href": "2010-04-21-Roma.ppt",
+      "CreationTime": "2022-08-20T17:16:54.771915+02:00",
+      "LastWriteTime": "2022-02-21T18:17:20+01:00"
+    },
+    {
+      "Titolo": "2010-09-29-Aquila.ppt",
+      "Href": "2010-09-29-Aquila.ppt",
+      "CreationTime": "2022-08-20T17:16:54.8254374+02:00",
+      "LastWriteTime": "2022-02-21T18:17:21+01:00"
+    }
+  ],
+  "Breadcrumb": [
+    {
+      "Href": "/.treeinfo.html",
+      "Titolo": "L'utilizzo di strumenti informatici nella storia dei territori amministrativi"
+    }
+  ],
+  "Descendants": []
+}
