@@ -3,6 +3,7 @@
   "Directory": "/ipertesti/storiaviaemilia",
   "FileHTML": [
     {
+<<<<<<< HEAD
       "Titolo": "Mappa della cartella attuale",
       "Href": ".treeinfo.html",
       "CreationTime": "2022-09-12T02:27:14.4404139+02:00",
@@ -25,6 +26,18 @@
       "Href": "rimini.html",
       "CreationTime": "2022-08-20T17:16:58.2298794+02:00",
       "LastWriteTime": "2022-02-21T18:18:19+01:00"
+=======
+      "Titolo": "Lo sviluppo urbanistico di Bologna",
+      "PathName": "bologna.html"
+    },
+    {
+      "Titolo": "La storia urbanistica della via Emilia in et� contemporanea",
+      "PathName": "index.html"
+    },
+    {
+      "Titolo": "Lo sviluppo urbanistico di Rimini",
+      "PathName": "rimini.html"
+>>>>>>> 174d673d89f49c029436a3e841c5205b97263e1e
     }
   ],
   "FilePDF": [],

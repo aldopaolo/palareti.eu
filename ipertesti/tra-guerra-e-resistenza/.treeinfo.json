@@ -4,6 +4,7 @@
   "FileHTML": [
     {
       "Titolo": "Tra guerra e Resistenza",
+<<<<<<< HEAD
       "Href": "autori.htm",
       "CreationTime": "2022-08-20T17:16:56.6892097+02:00",
       "LastWriteTime": "2003-04-23T11:23:34+02:00"
@@ -31,6 +32,21 @@
       "Href": ".treeinfo.html",
       "CreationTime": "2022-09-12T02:27:14.5587132+02:00",
       "LastWriteTime": "2022-09-18T21:10:39.7885616+02:00"
+=======
+      "PathName": "autori.htm"
+    },
+    {
+      "Titolo": "Tra guerra e Resistenza",
+      "PathName": "index.htm"
+    },
+    {
+      "Titolo": "Tra guerra e Resistenza",
+      "PathName": "pag2.htm"
+    },
+    {
+      "Titolo": "Tra guerra e Resistenza",
+      "PathName": "pag3.htm"
+>>>>>>> 174d673d89f49c029436a3e841c5205b97263e1e
     }
   ],
   "FilePDF": [],

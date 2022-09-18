@@ -1,7 +1,9 @@
 "use strict"
 
-let table=$('#table')
-//const table=document.getElementById("table")
+let table=$('#table');
+//let table=document.getElementById("table")
+
+// gestione del filtro
 document.getElementById("filtrare-tipo").addEventListener("click", function() {
   const selezioneTipo=(document.getElementById("selezione-tipo")).value;
   $('[name="selezione-tipo"]').val()

@@ -3,6 +3,7 @@
   "Directory": "/territori",
   "FileHTML": [
     {
+<<<<<<< HEAD
       "Titolo": "Mappa della cartella attuale",
       "Href": ".treeinfo.html",
       "CreationTime": "2022-09-12T02:27:15.1966667+02:00",
@@ -19,6 +20,14 @@
       "Href": "territorio.html",
       "CreationTime": "2022-08-20T17:17:02.0598663+02:00",
       "LastWriteTime": "2022-02-21T18:18:25+01:00"
+=======
+      "Titolo": "Storia e immagini delle variazioni territoriali",
+      "PathName": "index.html"
+    },
+    {
+      "Titolo": "Informazioni geografiche e temporali non disponibili",
+      "PathName": "territorio.html"
+>>>>>>> 174d673d89f49c029436a3e841c5205b97263e1e
     }
   ],
   "FilePDF": [],

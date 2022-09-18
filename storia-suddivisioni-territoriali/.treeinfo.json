@@ -3,6 +3,7 @@
   "Directory": "/storia-suddivisioni-territoriali",
   "FileHTML": [
     {
+<<<<<<< HEAD
       "Titolo": "Mappa della cartella attuale",
       "Href": ".treeinfo.html",
       "CreationTime": "2022-09-12T02:27:15.1435201+02:00",
@@ -55,6 +56,38 @@
       "Href": "siti-cartografia-storica.html",
       "CreationTime": "2022-08-20T17:16:57.3503898+02:00",
       "LastWriteTime": "2022-09-12T01:20:05.9483951+02:00"
+=======
+      "Titolo": "Pagine web per il testo “Per una storia delle suddivisioni territoriali”",
+      "PathName": "denominazioni-storiche-italiane.html"
+    },
+    {
+      "Titolo": "Pagine web per il testo “Per una storia delle suddivisioni territoriali”",
+      "PathName": "elenco-url-abbreviate.html"
+    },
+    {
+      "Titolo": "Pagine web per il testo “Per una storia delle suddivisioni territoriali”",
+      "PathName": "elenco-url.html"
+    },
+    {
+      "Titolo": "Pagine web per il testo “Per una storia delle suddivisioni territoriali”",
+      "PathName": "errata-corrige.html"
+    },
+    {
+      "Titolo": "Pagine web per il testo “Per una storia delle suddivisioni territoriali”",
+      "PathName": "evoluzione-appodiati-stato-pontificio.html"
+    },
+    {
+      "Titolo": "Pagine web per il testo “Per una storia delle suddivisioni territoriali”",
+      "PathName": "index.html"
+    },
+    {
+      "Titolo": "Pagine web per il testo “Per una storia delle suddivisioni territoriali”",
+      "PathName": "omonimie.html"
+    },
+    {
+      "Titolo": "Pagine web per il testo “Per una storia delle suddivisioni territoriali”",
+      "PathName": "siti-cartografia-storica.html"
+>>>>>>> 174d673d89f49c029436a3e841c5205b97263e1e
     }
   ],
   "FilePDF": [],

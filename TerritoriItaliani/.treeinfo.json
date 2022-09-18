@@ -3,6 +3,7 @@
   "Directory": "/TerritoriItaliani",
   "FileHTML": [
     {
+<<<<<<< HEAD
       "Titolo": "Mappa della cartella attuale",
       "Href": ".treeinfo.html",
       "CreationTime": "2022-09-12T02:27:15.2735875+02:00",
@@ -25,6 +26,18 @@
       "Href": "Appendice3.html",
       "CreationTime": "2022-08-20T17:17:03.2100729+02:00",
       "LastWriteTime": "2022-02-21T18:18:26+01:00"
+=======
+      "Titolo": "Tipi di suddivisioni amministrative nel periodo pontificio e nel periodo postunitario",
+      "PathName": "Appendice1.html"
+    },
+    {
+      "Titolo": "Stato pontificio: articolazione di province, distretti e governi nel 1853",
+      "PathName": "Appendice2.html"
+    },
+    {
+      "Titolo": "Formazione della provincia di Littoria (ora Latina)",
+      "PathName": "Appendice3.html"
+>>>>>>> 174d673d89f49c029436a3e841c5205b97263e1e
     }
   ],
   "FilePDF": [],

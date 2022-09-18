@@ -3,6 +3,7 @@
   "Directory": "/datibibliografici",
   "FileHTML": [
     {
+<<<<<<< HEAD
       "Titolo": "Mappa della cartella attuale",
       "Href": ".treeinfo.html",
       "CreationTime": "2022-09-12T02:27:14.3208099+02:00",
@@ -25,6 +26,18 @@
       "Href": "istat.html",
       "CreationTime": "2022-08-20T17:16:59.0179896+02:00",
       "LastWriteTime": "2022-02-21T18:16:22+01:00"
+=======
+      "Titolo": "Riferimenti bibliografici di ambito cartografico",
+      "PathName": "cartografia.html"
+    },
+    {
+      "Titolo": "Riferimenti bibliografici di ambito demografico",
+      "PathName": "demografia.html"
+    },
+    {
+      "Titolo": "Materiale prodotto dalla Direzione generale della Statistica e dall'ISTAT",
+      "PathName": "istat.html"
+>>>>>>> 174d673d89f49c029436a3e841c5205b97263e1e
     }
   ],
   "FilePDF": [],

@@ -23,7 +23,7 @@ Import-Csv -Delimiter ";" -Path "$PathCSV$FileUrlIn.csv" -Encoding utf8 `
     if ($url -like 'tinyurl.com/*') {
       ## per le tinyurl considero la url di riferimento
       $tinyurl=$url
-      $_tinyurlId=$tinyurl.split("/", 2)[1]
+      $_tinyurlId=$url.split("/", 2)[1]
       $url= ($ObjAbbr | Where-Object { $_.tinyurl -eq $_tinyurlId }).url
       $_uri=[uri]$url
       $schema=$_uri.Scheme

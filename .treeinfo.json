@@ -3,6 +3,7 @@
   "Directory": "",
   "FileHTML": [
     {
+<<<<<<< HEAD
       "Titolo": "Mappa della cartella attuale",
       "Href": ".treeinfo.html",
       "CreationTime": "2022-09-12T08:41:46.5425198+02:00",
@@ -13,6 +14,10 @@
       "Href": "index.html",
       "CreationTime": "2022-08-20T17:16:58.9998242+02:00",
       "LastWriteTime": "2022-08-25T20:28:32.6362741+02:00"
+=======
+      "Titolo": "L'utilizzo di strumenti informatici nella storia dei territori amministrativi",
+      "PathName": "index.html"
+>>>>>>> 174d673d89f49c029436a3e841c5205b97263e1e
     }
   ],
   "FilePDF": [],
@@ -20,6 +25,7 @@
   "Breadcrumb": [],
   "Descendants": [
     {
+<<<<<<< HEAD
       "Href": "bnf/.treeinfo.html",
       "Titolo": "BNF utilizzata in questo sito",
       "Descendants": []
@@ -57,10 +63,45 @@
           "Href": "ipertesti/urbanistica-bologna-guerre-mondiali/.treeinfo.html",
           "Titolo": "Lo sviluppo urbanistico di Bologna tra le due guerre mondiali",
           "Descendants": []
+=======
+      "Name": "bnf/.treeinfo.html",
+      "Titolo": "BNF utilizzata in questo sito",
+      "Descendant": []
+    },
+    {
+      "Name": "calendari/.treeinfo.html",
+      "Titolo": "La descrizione del tempo",
+      "Descendant": []
+    },
+    {
+      "Name": "datibibliografici/.treeinfo.html",
+      "Titolo": "Dati bibliografici",
+      "Descendant": []
+    },
+    {
+      "Name": "denominazioni/.treeinfo.html",
+      "Titolo": "La normalizzazione delle denominazioni",
+      "Descendant": []
+    },
+    {
+      "Name": "ipertesti/.treeinfo.html",
+      "Titolo": "Ipertesti realizzati",
+      "Descendant": [
+        {
+          "Name": "ipertesti/storiaviaemilia/.treeinfo.html",
+          "Titolo": "La storia urbanistica della via Emilia in eta contemporanea",
+          "Descendant": []
+        },
+        {
+          "Name": "ipertesti/tra-guerra-e-resistenza/.treeinfo.html",
+          "Titolo": "Tra guerra e Resistenza",
+          "Descendant": []
+>>>>>>> 174d673d89f49c029436a3e841c5205b97263e1e
         }
       ]
     },
     {
+<<<<<<< HEAD
       "Href": "lavori/.treeinfo.html",
       "Titolo": "Articoli e lavori",
       "Descendants": []
@@ -79,6 +120,26 @@
       "Href": "TerritoriItaliani/.treeinfo.html",
       "Titolo": "Appendici al testo “Informatica, comunicazione e discipline storiche tra ricerca e didattica”",
       "Descendants": []
+=======
+      "Name": "lavori/.treeinfo.html",
+      "Titolo": "Articoli e lavori",
+      "Descendant": []
+    },
+    {
+      "Name": "storia-suddivisioni-territoriali/.treeinfo.html",
+      "Titolo": "Pagine web per il testo “Per una storia delle suddivisioni territoriali”",
+      "Descendant": []
+    },
+    {
+      "Name": "territori/.treeinfo.html",
+      "Titolo": "Storia e immagini delle variazioni territoriali",
+      "Descendant": []
+    },
+    {
+      "Name": "TerritoriItaliani/.treeinfo.html",
+      "Titolo": "Appendici al testo “Informatica, comunicazione e discipline storiche tra ricerca e didattica”",
+      "Descendant": []
+>>>>>>> 174d673d89f49c029436a3e841c5205b97263e1e
     }
   ]
 }

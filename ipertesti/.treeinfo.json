@@ -3,6 +3,7 @@
   "Directory": "/ipertesti",
   "FileHTML": [
     {
+<<<<<<< HEAD
       "Titolo": "Mappa della cartella attuale",
       "Href": ".treeinfo.html",
       "CreationTime": "2022-09-12T02:27:15.0376162+02:00",
@@ -25,6 +26,18 @@
       "Href": "urbanistica-bologna-guerre-mondiali.html",
       "CreationTime": "2022-08-25T19:59:31.2306598+02:00",
       "LastWriteTime": "2022-09-12T01:20:05.9245979+02:00"
+=======
+      "Titolo": "Ipertesti realizzati",
+      "PathName": "storiaviaemilia.html"
+    },
+    {
+      "Titolo": "Ipertesti realizzati",
+      "PathName": "tra-guerra-e-resistenza.html"
+    },
+    {
+      "Titolo": "Ipertesti realizzati",
+      "PathName": "urbanistica-bologna-guerre-mondiali.html"
+>>>>>>> 174d673d89f49c029436a3e841c5205b97263e1e
     }
   ],
   "FilePDF": [],
@@ -37,6 +50,7 @@
   ],
   "Descendants": [
     {
+<<<<<<< HEAD
       "Href": "storiaviaemilia/.treeinfo.html",
       "Titolo": "La storia urbanistica della via Emilia in eta contemporanea",
       "Descendants": []
@@ -50,6 +64,16 @@
       "Href": "urbanistica-bologna-guerre-mondiali/.treeinfo.html",
       "Titolo": "Lo sviluppo urbanistico di Bologna tra le due guerre mondiali",
       "Descendants": []
+=======
+      "Name": "storiaviaemilia/.treeinfo.html",
+      "Titolo": "La storia urbanistica della via Emilia in eta contemporanea",
+      "Descendant": []
+    },
+    {
+      "Name": "tra-guerra-e-resistenza/.treeinfo.html",
+      "Titolo": "Tra guerra e Resistenza",
+      "Descendant": []
+>>>>>>> 174d673d89f49c029436a3e841c5205b97263e1e
     }
   ]
 }

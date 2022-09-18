@@ -1,6 +1,7 @@
 {
   "Titolo": "Articoli e lavori",
   "Directory": "/lavori",
+<<<<<<< HEAD
   "FileHTML": [
     {
       "Titolo": "Mappa della cartella attuale",
@@ -45,11 +46,39 @@
       "Href": "2010-Didamatica.pdf",
       "CreationTime": "2022-08-20T17:17:01.3715689+02:00",
       "LastWriteTime": "2022-02-21T18:17:22+01:00"
+=======
+  "FileHTML": [],
+  "FilePDF": [
+    {
+      "Titolo": "2006-Aica.pdf",
+      "PathName": "2006-Aica.pdf"
+    },
+    {
+      "Titolo": "2007-Didamatica.pdf",
+      "PathName": "2007-Didamatica.pdf"
+    },
+    {
+      "Titolo": "2008-Didamatica.pdf",
+      "PathName": "2008-Didamatica.pdf"
+    },
+    {
+      "Titolo": "2009-Didamatica.pdf",
+      "PathName": "2009-Didamatica.pdf"
+    },
+    {
+      "Titolo": "2010-Aica.pdf",
+      "PathName": "2010-Aica.pdf"
+    },
+    {
+      "Titolo": "2010-Didamatica.pdf",
+      "PathName": "2010-Didamatica.pdf"
+>>>>>>> 174d673d89f49c029436a3e841c5205b97263e1e
     }
   ],
   "FilePPT": [
     {
       "Titolo": "2006-09-22-Cesena.ppt",
+<<<<<<< HEAD
       "Href": "2006-09-22-Cesena.ppt",
       "CreationTime": "2022-08-20T17:16:55.5995366+02:00",
       "LastWriteTime": "2022-02-21T18:17:16+01:00"
@@ -83,6 +112,29 @@
       "Href": "2010-09-29-Aquila.ppt",
       "CreationTime": "2022-08-20T17:16:54.8254374+02:00",
       "LastWriteTime": "2022-02-21T18:17:21+01:00"
+=======
+      "PathName": "2006-09-22-Cesena.ppt"
+    },
+    {
+      "Titolo": "2007-05-11-Cesena.ppt",
+      "PathName": "2007-05-11-Cesena.ppt"
+    },
+    {
+      "Titolo": "2008-04-28-Taranto.ppt",
+      "PathName": "2008-04-28-Taranto.ppt"
+    },
+    {
+      "Titolo": "2009-04-24-Trento.ppt",
+      "PathName": "2009-04-24-Trento.ppt"
+    },
+    {
+      "Titolo": "2010-04-21-Roma.ppt",
+      "PathName": "2010-04-21-Roma.ppt"
+    },
+    {
+      "Titolo": "2010-09-29-Aquila.ppt",
+      "PathName": "2010-09-29-Aquila.ppt"
+>>>>>>> 174d673d89f49c029436a3e841c5205b97263e1e
     }
   ],
   "Breadcrumb": [
